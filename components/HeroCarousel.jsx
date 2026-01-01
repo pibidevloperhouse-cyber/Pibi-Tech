@@ -1,0 +1,112 @@
+"use client";
+
+import { useState, useEffect } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+
+const slides = [
+  {
+    slogan: "Smart SEO, Made Easy",
+    title: "Your Content Ranks Everywhere.",
+    cta: "Your Brand Voice Stays Authentic.",
+    content:
+      "SEOengine.ai is the only AI content platform built for founders and marketers who need enterprise-level SEO results without sacrificing their authentic brand voice.",
+    button1: "Start Your Content Autopilot",
+    button2: "Get started",
+  },
+  {
+    slogan: "Smart SEO, Made Easy",
+    title: "Your Content1 Ranks Everywhere.",
+    cta: "Your Brand Voice Stays Authentic.",
+    content:
+      "SEOengine.ai is the only AI content platform built for founders and marketers who need enterprise-level SEO results without sacrificing their authentic brand voice.",
+    button1: "Start Your Content Autopilot",
+    button2: "Get started",
+  },
+  {
+    slogan: "Smart SEO, Made Easy",
+    title: "Your Content2 Ranks Everywhere.",
+    cta: "Your Brand Voice Stays Authentic.",
+    content:
+      "SEOengine.ai is the only AI content platform built for founders and marketers who need enterprise-level SEO results without sacrificing their authentic brand voice.",
+    button1: "Start Your Content Autopilot",
+    button2: "Get started",
+  },
+];
+
+export default function HeroCarousel() {
+  const [current, setCurrent] = useState(0);
+  const [autoPlay, setAutoPlay] = useState(true);
+
+  useEffect(() => {
+    if (!autoPlay) return;
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % slides.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [autoPlay]);
+
+  const next = () => {
+    setCurrent((prev) => (prev + 1) % slides.length);
+    setAutoPlay(false);
+  };
+
+  const prev = () => {
+    setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
+    setAutoPlay(false);
+  };
+
+  return (
+    <div className="relative w-full h-[90vh] bg-white overflow-hidden">
+      {/* <div
+        className="absolute inset-0 opacity-[0.1] bg-linear-to-b from-transparent to-white"
+        style={{
+          backgroundImage: "url('/grid-pattern.png')",
+          backgroundSize: "contain",
+          backgroundRepeat: "repeat",
+        }}
+      ></div> */}
+
+      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
+        <p className="text-[#0C1B33] text-lg md:text-xl mb-4">
+          {slides[0].slogan}
+        </p>
+
+        <h1 className="text-5xl font-normal leading-[1.2] text-[#0C1B33]">
+          {slides[0].title}
+        </h1>
+
+        <h2 className="text-5xl font-normal mt-4 text-[#0046B8]">
+          {slides[0].cta}
+        </h2>
+
+        <p className="max-w-3xl text-[#0C1B33]/70 mt-6 text-md md:text-lg">
+          {slides[0].content}
+        </p>
+
+        <div className="mt-10 flex items-center gap-4">
+          <button className="bg-[#0046B8] hover:bg-[#003A96] text-white px-8 py-3 rounded-full font-semibold shadow-lg">
+            {slides[0].button1}
+          </button>
+
+          <button className="bg-[#ffffff] border border-gray-300 hover:border-gray-400 px-8 py-3 rounded-full font-semibold shadow-md">
+            {slides[0].button2}
+          </button>
+        </div>
+      </div>
+
+      <button
+        onClick={prev}
+        className="absolute left-6 top-1/2 -translate-y-1/2 z-20 text-black p-3 rounded-full bg-white shadow"
+      >
+        <ChevronLeft className="w-6 h-6" />
+      </button>
+
+      <button
+        onClick={next}
+        className="absolute right-6 top-1/2 -translate-y-1/2 z-20 text-black p-3 rounded-full bg-white shadow"
+      >
+        <ChevronRight className="w-6 h-6" />
+      </button>
+    </div>
+  );
+}
