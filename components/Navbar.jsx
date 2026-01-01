@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Menu, X, ChevronDown, Linkedin, Twitter } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,10 +38,15 @@ export default function Navbar() {
       <div className="container-max">
         <div className="flex items-center justify-between h-16 md:h-20">
           <div className="text-2xl font-bold text-slate-900 flex items-center gap-1">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white font-bold">
-              SW
+            <div className="w-10 h-10 relative">
+              <Image
+                src={"/logo.png"}
+                alt="Logo"
+                fill
+                className="object-contain"
+              />
             </div>
-            <span className="hidden sm:inline">SHARPWIZ</span>
+            <span className="hidden sm:inline">Pibi Tech</span>
           </div>
 
           <div className="hidden lg:flex items-center gap-8">

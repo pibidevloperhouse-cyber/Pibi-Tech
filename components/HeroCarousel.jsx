@@ -71,11 +71,11 @@ export default function HeroCarousel() {
           {slides[0].slogan}
         </p>
 
-        <h1 className="text-5xl font-normal leading-[1.2] text-[#0C1B33]">
+        <h1 className="text-2xl md:text-5xl font-normal leading-[1.2] text-[#0C1B33]">
           {slides[0].title}
         </h1>
 
-        <h2 className="text-5xl font-normal mt-4 text-[#0046B8]">
+        <h2 className="text-2xl md:text-5xl font-normal mt-4 text-[#0046B8]">
           {slides[0].cta}
         </h2>
 
