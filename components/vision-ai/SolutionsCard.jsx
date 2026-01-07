@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 export default function SolutionCard({
   title,
@@ -25,7 +25,7 @@ export default function SolutionCard({
               {description}
             </p>
             <Link
-              to="#"
+              href="#"
               className="inline-block px-5 py-3 bg-scanflow-blue text-white text-base font-medium font-sen rounded hover:opacity-90 transition-opacity"
             >
               Explore
