@@ -37,7 +37,7 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 bg-white border-b border-slate-200">
       <div className="container-max">
         <div className="flex items-center justify-between h-16 md:h-20">
-          <div className="text-2xl font-bold text-slate-900 flex items-center gap-1">
+          <div className="text-2xl font-bold bg-clip-text text-transparent bg-brand-gradient flex items-center gap-1">
             <div className="w-10 h-10 relative">
               <Image
                 src={"/logo.png"}

@@ -1,4 +1,3 @@
-import Navbar from "@/components/Navbar";
 import HeroCarousel from "@/components/HeroCarousel";
 import IntroSection from "@/components/IntroSection";
 import MissionVisionOfferings from "@/components/MissionVisionOfferings";
