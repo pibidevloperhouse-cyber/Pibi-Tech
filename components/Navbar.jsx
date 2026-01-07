@@ -46,26 +46,26 @@ export default function Navbar() {
             </Link>
             <Link
               href="/#Services"
-              className="w-full text-left py-3 text-slate-700 hover:text-primary transition flex items-center justify-between"
+              className="text-slate-700 hover:text-primary transition"
             >
               Services
             </Link>
 
             <Link
               href="/#WhoWeAre"
-              className="block py-3 text-slate-700 hover:text-primary transition"
+              className="text-slate-700 hover:text-primary transition"
             >
               Who we are
             </Link>
             <Link
               href="/#Careers"
-              className="block py-3 text-slate-700 hover:text-primary transition"
+              className="text-slate-700 hover:text-primary transition"
             >
               Careers
             </Link>
             <Link
               href="/contact-us"
-              className="block py-3 text-slate-700 hover:text-primary transition"
+              className="text-slate-700 hover:text-primary transition"
             >
               Contact us
             </Link>
