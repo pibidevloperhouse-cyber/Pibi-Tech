@@ -38,7 +38,7 @@ export default function Index() {
         icon={<Settings className="w-8 h-8" />}
         image={"/vision-ai/solutions/industrial-safety.png"}
       />
-      description, icon, image,
+
       <WhyPibi />
       <DeliveryProcess />
       <DeploymentFlexibility />
