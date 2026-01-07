@@ -14,21 +14,11 @@ const slides = [
     button2: "Get started",
   },
   {
-    slogan: "Human-Centered",
-    title: "Agentic AI for Real Business Impact",
+    slogan: "",
+    title: "Human-Centered Agentic AI for Real Business Impact",
     cta: "Design intelligent systems that act, adapt, and scale with purpose.",
     content: "",
     button1: "Innovate Today",
-    button2: "Get started",
-  },
-
-  {
-    slogan: "Smart SEO, Made Easy",
-    title: "Your Content2 Ranks Everywhere.",
-    cta: "Your Brand Voice Stays Authentic.",
-    content:
-      "SEOengine.ai is the only AI content platform built for founders and marketers who need enterprise-level SEO results without sacrificing their authentic brand voice.",
-    button1: "Start Your Content Autopilot",
     button2: "Get started",
   },
 ];
@@ -71,7 +61,11 @@ export default function HeroCarousel() {
           {slides[current].slogan}
         </p>
 
-        <h1 className="text-2xl md:text-5xl max-w-4xl mx-auto font-normal leading-[1.2] text-[#0C1B33]">
+        <h1
+          className={`${
+            current == 1 ? "text-2xl md:text-3xl" : "text-2xl md:text-5xl"
+          } max-w-4xl mx-auto font-normal leading-[1.2] text-[#0C1B33]`}
+        >
           {slides[current].title}
         </h1>
 
