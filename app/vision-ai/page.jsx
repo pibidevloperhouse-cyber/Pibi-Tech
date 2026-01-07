@@ -43,7 +43,7 @@ export default function Index() {
       <DeliveryProcess />
       <DeploymentFlexibility />
       <BuiltForIndustry />
-      <CustomerStories />
+      {/* <CustomerStories /> */}
       <ContactForm />
     </div>
   );
