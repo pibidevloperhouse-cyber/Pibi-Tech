@@ -1,5 +1,6 @@
 import { Geist, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,7 +26,10 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${plusJakartaSans.variable} antialiased`}
       >
-        <main>{children}</main>
+        <main>
+          <Navbar />
+          {children}
+        </main>
       </body>
     </html>
   );

@@ -5,23 +5,23 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const slides = [
   {
-    slogan: "Smart SEO, Made Easy",
+    slogan: "Agentic Website Development",
     title: "Your Content Ranks Everywhere.",
-    cta: "Your Brand Voice Stays Authentic.",
+    cta: "Your Brand Voice Stays True.",
     content:
-      "SEOengine.ai is the only AI content platform built for founders and marketers who need enterprise-level SEO results without sacrificing their authentic brand voice.",
-    button1: "Start Your Content Autopilot",
+      "Built for founders  who want  strong digital presence and lasting brand authority..",
+    button1: "Explore Agentic Websites",
     button2: "Get started",
   },
   {
-    slogan: "Smart SEO, Made Easy",
-    title: "Your Content1 Ranks Everywhere.",
-    cta: "Your Brand Voice Stays Authentic.",
-    content:
-      "SEOengine.ai is the only AI content platform built for founders and marketers who need enterprise-level SEO results without sacrificing their authentic brand voice.",
-    button1: "Start Your Content Autopilot",
+    slogan: "Human-Centered",
+    title: "Agentic AI for Real Business Impact",
+    cta: "Design intelligent systems that act, adapt, and scale with purpose.",
+    content: "",
+    button1: "Innovate Today",
     button2: "Get started",
   },
+
   {
     slogan: "Smart SEO, Made Easy",
     title: "Your Content2 Ranks Everywhere.",
@@ -68,28 +68,28 @@ export default function HeroCarousel() {
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
         <p className="text-[#0C1B33] text-lg md:text-xl mb-4">
-          {slides[0].slogan}
+          {slides[current].slogan}
         </p>
 
-        <h1 className="text-2xl md:text-5xl font-normal leading-[1.2] text-[#0C1B33]">
-          {slides[0].title}
+        <h1 className="text-2xl md:text-5xl max-w-4xl mx-auto font-normal leading-[1.2] text-[#0C1B33]">
+          {slides[current].title}
         </h1>
 
-        <h2 className="text-2xl md:text-5xl font-normal mt-4 text-[#0046B8]">
-          {slides[0].cta}
+        <h2 className="text-2xl md:text-5xl max-w-5xl mx-auto font-normal mt-4 text-[#0046B8]">
+          {slides[current].cta}
         </h2>
 
         <p className="max-w-3xl text-[#0C1B33]/70 mt-6 text-md md:text-lg">
-          {slides[0].content}
+          {slides[current].content}
         </p>
 
         <div className="mt-10 flex items-center gap-4">
           <button className="bg-[#0046B8] hover:bg-[#003A96] text-white px-8 py-3 rounded-full font-semibold shadow-lg">
-            {slides[0].button1}
+            {slides[current].button1}
           </button>
 
           <button className="bg-[#ffffff] border border-gray-300 hover:border-gray-400 px-8 py-3 rounded-full font-semibold shadow-md">
-            {slides[0].button2}
+            {slides[current].button2}
           </button>
         </div>
       </div>

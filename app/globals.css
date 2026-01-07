@@ -15,16 +15,17 @@
   --popover: 0 0% 100%;
   --popover-foreground: 217 32.6% 17.5%;
 
-  --primary: 38 100% 50%;
+  --primary: 207 70% 41%;
   --primary-foreground: 0 0% 100%;
 
-  --secondary: 210 50% 35%;
+  /* 🟢 Logo Teal */
+  --secondary: 174 62% 47%;
   --secondary-foreground: 0 0% 100%;
 
   --muted: 210 14% 97.3%;
   --muted-foreground: 217 14.3% 40.2%;
 
-  --accent: 38 100% 50%;
+  --accent: 180 84% 35%;
   --accent-foreground: 0 0% 100%;
 
   --destructive: 0 84.2% 60.2%;
@@ -63,17 +64,17 @@
   --popover: 222.2 84% 4.9%;
   --popover-foreground: 210 40% 98%;
 
-  --primary: 38 100% 50%;
+  --primary: 174 62% 47%;
   --primary-foreground: 0 0% 100%;
 
-  --secondary: 217.2 32.6% 17.5%;
-  --secondary-foreground: 210 40% 98%;
+  --secondary: 207 70% 41%;
+  --secondary-foreground: 0 0% 100%;
+
+  --accent: 180 84% 35%;
+  --accent-foreground: 0 0% 100%;
 
   --muted: 217.2 32.6% 17.5%;
   --muted-foreground: 215 20.2% 65.1%;
-
-  --accent: 38 100% 50%;
-  --accent-foreground: 0 0% 100%;
 
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 210 40% 98%;
@@ -220,6 +221,10 @@
 
   .caret-icon {
     @apply inline-block w-5 h-5 text-primary;
+  }
+
+  .bg-brand-gradient {
+    background: linear-gradient(135deg, #1f6fb2, #2ec4b6);
   }
 
   .text-dark-heading {

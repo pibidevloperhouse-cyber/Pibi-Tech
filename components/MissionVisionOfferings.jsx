@@ -1,88 +1,98 @@
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function MissionVisionOfferings() {
   const offerings = [
     {
       id: 1,
-      title: "Vision AI",
-      description: "Facial recognition, real-time video analytics",
+      title: "Intelligent Web Engine (Foundations)",
+      description:
+        "We design and optimize your website for search engines and AI platforms",
       link: "#",
     },
     {
       id: 2,
-      title: "Generative AI",
-      description: "Chatbots, process automation",
+      title: "Secure Corporate Brain (Knowledge Layer)",
+      description:
+        "Enterprise-grade knowledge systems powered by LLMs, SLMs, RAG architecture",
       link: "#",
     },
     {
       id: 3,
-      title: "Digital Transformation",
-      description: "Connect devices, people, processes",
+      title: "Intelligent Business Process Automation (Execution Layer)",
+      description: "End-to-end automation using AI, RPA, LLMs.",
       link: "#",
     },
     {
       id: 4,
-      title: "POD and Hybrid Teams",
-      description: "POD Teams, staffing augmentation, hybrid teams",
+      title: "Autonomous Strategic Growth (Proactive Layer)",
+      description:
+        "AI-powered growth systems that proactively analyze market signals",
       link: "#",
     },
   ];
 
   return (
-    <section className="section-padding bg-slate-50">
+    <section className="section-padding bg-white">
       <div className="container-max">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div className="space-y-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+          <div className="space-y-12 lg:pr-10">
             <div>
-              <h3 className="text-2xl font-bold text-secondary mb-4">
-                Our Mission
-              </h3>
-              <p className="text-slate-700 leading-relaxed">
-                To drive technological advancement and business growth by
-                delivering innovative, high-quality solutions that empower our
-                clients to overcome challenges and seize opportunities in an
-                ever-evolving digital landscape.
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                <span className="bg-clip-text text-transparent bg-brand-gradient">
+                  Our Mission
+                </span>
+              </h2>
+              <p className="text-slate-700 text-lg leading-relaxed">
+                To drive AI-led transformation by delivering innovative,
+                enterprise-grade solutions that empower businesses to operate
+                smarter, faster, and at scale.
               </p>
             </div>
 
             <div>
-              <h3 className="text-2xl font-bold text-secondary mb-4">
-                Our Vision
-              </h3>
-              <p className="text-slate-700 leading-relaxed">
-                To be a leading global technology partner, renowned for shaping
-                the future through cutting-edge innovation, strategic
-                excellence, and unwavering commitment to client success and
-                societal impact.
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                <span className="bg-clip-text text-transparent bg-brand-gradient">
+                  Our Vision
+                </span>
+              </h2>
+              <p className="text-slate-700 text-lg leading-relaxed">
+                To become the most trusted global technology partner, shaping
+                the future of industries through practical, agentic AI systems
+                that deliver measurable growth.
               </p>
             </div>
           </div>
 
-          <div>
-            <h3 className="text-2xl font-bold text-slate-900 mb-8">
-              Our Offerings
-            </h3>
+          <div className="lg:col-span-2">
+            <h2 className="text-3xl md:text-4xl font-bold mb-10">
+              <span className="bg-clip-text text-transparent bg-brand-gradient">
+                Our Offerings
+              </span>
+            </h2>
+
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {offerings.map((offering) => (
                 <div
                   key={offering.id}
-                  className="bg-white rounded-lg p-6 border border-slate-200 hover:shadow-lg transition-shadow h-full flex flex-col justify-between"
+                  className="bg-white rounded-xl p-6 border border-slate-200 hover:shadow-xl transition-all duration-300 h-full flex flex-col justify-between"
                 >
                   <div>
-                    <h4 className="text-lg font-bold text-slate-900 mb-2">
+                    <h4 className="text-lg font-bold text-slate-900 mb-3">
                       {offering.title}
                     </h4>
-                    <p className="text-slate-600 text-sm mb-4">
+                    <p className="text-slate-600 leading-relaxed mb-6">
                       {offering.description}
                     </p>
                   </div>
-                  <a
+
+                  <Link
                     href={offering.link}
-                    className="text-primary hover:text-primary-600 font-semibold flex items-center gap-1 transition"
+                    className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
                   >
                     Know more
                     <ArrowRight className="w-4 h-4" />
-                  </a>
+                  </Link>
                 </div>
               ))}
             </div>

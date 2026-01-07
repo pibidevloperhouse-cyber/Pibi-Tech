@@ -1,4 +1,5 @@
 import { Linkedin, Twitter, MessageCircle } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -7,16 +8,17 @@ export default function Footer() {
       <div className="container-max section-padding">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white font-bold text-sm">
-                SW
+            <div className="text-2xl font-bold bg-clip-text text-transparent bg-brand-gradient flex items-center gap-1">
+              <div className="w-10 h-10 relative">
+                <Image
+                  src={"/logo.png"}
+                  alt="Logo"
+                  fill
+                  className="object-contain"
+                />
               </div>
-              <h3 className="text-white font-bold">SHARPWIZ</h3>
+              <span className="hidden sm:inline">Pibi Tech</span>
             </div>
-            <p className="text-sm text-slate-400 leading-relaxed">
-              Your trusted partner in AI and digital transformation. Delivering
-              innovative solutions that drive business success.
-            </p>
           </div>
 
           <div>
