@@ -53,8 +53,8 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-3 w-full place-items-center justify-center mt-12">
-            <div className="bg-white rounded shadow-[0_0_80px_0_rgba(0,0,0,0.06)] border border-[#DADBDD] p-4 h-full w-full">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 w-full max-w-2xl mx-auto items-center mt-12">
+            <div className="bg-white rounded shadow-[0_0_80px_0_rgba(0,0,0,0.06)] border border-[#DADBDD] p-4 h-full">
               <div className="flex items-center gap-2 mb-2">
                 <div className="w-9 h-9 rounded bg-[#F6F3FF] flex items-center justify-center">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -84,7 +84,7 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="bg-white rounded shadow-[0_0_80px_0_rgba(0,0,0,0.06)] border border-[#DADBDD] p-4 h-full w-full">
+            <div className="bg-white rounded shadow-[0_0_80px_0_rgba(0,0,0,0.06)] border border-[#DADBDD] p-4 h-full">
               <div className="flex items-center gap-2 mb-2">
                 <div className="w-9 h-9 rounded bg-[#F4F6FF] flex items-center justify-center">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
