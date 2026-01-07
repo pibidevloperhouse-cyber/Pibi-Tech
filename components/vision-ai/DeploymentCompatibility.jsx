@@ -1,111 +1,117 @@
 "use client";
 
 import { useState } from "react";
-import { Cloud, Server, Wifi, Smartphone, Cpu, Boxes } from "lucide-react";
 
-export default function DeploymentCompatibility() {
+export default function DeploymentFlexibility() {
   const [activeTab, setActiveTab] = useState("deployment");
 
   const deploymentModels = [
     {
-      icon: Server,
+      icon: "https://api.builder.io/api/v1/image/assets/TEMP/60e58e720bffb80e3626d15d4e117ce54e74b230?width=100",
       title: "Edge",
       description:
-        "On-premise processing for real-time performance and data privacy",
+        "On-site, real-time AI processing with no internet dependency. Perfect for sensitive data and instant response requirements.",
     },
     {
-      icon: Cloud,
+      icon: "https://api.builder.io/api/v1/image/assets/TEMP/5fced78f700adbf3b81963105e9057fae3f3678d?width=100",
       title: "Cloud",
-      description: "Scalable cloud-based solutions with global accessibility",
+      description:
+        "Scalable AI solutions with global access and automatic updates. Leverage the power of distributed computing.",
     },
     {
-      icon: Wifi,
+      icon: "https://api.builder.io/api/v1/image/assets/TEMP/be9315b88d6e351eab218e9dbaf5fdb475f72efb?width=100",
       title: "Offline",
       description:
-        "Operate without connectivity in remote manufacturing environments",
-    },
-  ];
-
-  const compatibilityOptions = [
-    {
-      icon: Cpu,
-      title: "Hardware",
-      description: "Compatible with industrial cameras and IoT devices",
-    },
-    {
-      icon: Smartphone,
-      title: "Mobile",
-      description: "Android and iOS apps for on-the-go access and monitoring",
-    },
-    {
-      icon: Boxes,
-      title: "Software",
-      description: "Integrates with ERP/MES and existing software ecosystems",
+        "Operates in low-connectivity environments—syncs data later. Ensures continuous operation regardless of network status.",
     },
   ];
 
   return (
-    <section className="w-full bg-white py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">
-            Deployment Flexibility & Compatibility
+    <section className="w-full py-16">
+      <div className="container mx-auto max-w-[1320px] px-6">
+        <div className="mb-12">
+          <h2 className="font-sen text-[35px] font-bold leading-[52.5px] text-scanflow-navy mb-2">
+            Deployment Flexibility
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Flexible deployment options and seamless integration with your
-            existing infrastructure
-          </p>
+          <h3 className="font-sen text-[35px] font-bold leading-[52.5px] text-scanflow-navy">
+            & Compatibility
+          </h3>
         </div>
 
-        <div className="flex justify-center mb-12">
-          <div className="inline-flex border border-gray-300 rounded-lg p-1">
-            <button
-              onClick={() => setActiveTab("deployment")}
-              className={`px-6 py-2 rounded-md font-medium transition ${
-                activeTab === "deployment"
-                  ? "bg-primary text-white"
-                  : "text-gray-700 hover:text-primary"
-              }`}
-            >
-              Deployment Models
-            </button>
-            <button
-              onClick={() => setActiveTab("compatibility")}
-              className={`px-6 py-2 rounded-md font-medium transition ${
-                activeTab === "compatibility"
-                  ? "bg-primary text-white"
-                  : "text-gray-700 hover:text-primary"
-              }`}
-            >
-              Compatibility
-            </button>
-          </div>
+        {/* Tab Navigation */}
+        <div className="flex items-center gap-8 mb-12 border-b border-scanflow-gray">
+          <button
+            onClick={() => setActiveTab("deployment")}
+            className={`pb-2 text-[20px] font-normal relative ${
+              activeTab === "deployment" ? "text-scanflow-navy" : "text-black"
+            }`}
+          >
+            Deployment Models
+            {activeTab === "deployment" && (
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-scanflow-blue rounded-t-[10px]" />
+            )}
+          </button>
+          <button
+            onClick={() => setActiveTab("compatibility")}
+            className={`pb-2 text-[20px] font-normal relative ${
+              activeTab === "compatibility"
+                ? "text-scanflow-navy"
+                : "text-black"
+            }`}
+          >
+            Compatability
+            {activeTab === "compatibility" && (
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-scanflow-blue rounded-t-[10px]" />
+            )}
+          </button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {(activeTab === "deployment"
-            ? deploymentModels
-            : compatibilityOptions
-          ).map((item, index) => {
-            const Icon = item.icon;
-            return (
+        {/* Deployment Models Content */}
+        {activeTab === "deployment" && (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {deploymentModels.map((model, index) => (
               <div
                 key={index}
-                className="text-center p-8 border border-gray-200 rounded-xl hover:shadow-lg transition"
+                className="bg-white rounded-b-[10px] border-t-[5px] border-scanflow-blue p-8"
               >
-                <div className="flex justify-center mb-4">
-                  <div className="w-14 h-14 bg-linear-to-br from-primary/10 to-accent/10 rounded-lg flex items-center justify-center">
-                    <Icon className="w-7 h-7 text-primary" />
-                  </div>
-                </div>
-                <h3 className="text-xl font-bold text-primary mb-2">
-                  {item.title}
-                </h3>
-                <p className="text-gray-600">{item.description}</p>
+                <img
+                  src={model.icon}
+                  alt={model.title}
+                  className="w-[50px] h-[50px] mb-6"
+                />
+                <h4 className="text-scanflow-navy text-[20px] font-medium leading-6 mb-4">
+                  {model.title}
+                </h4>
+                <p className="text-scanflow-gray text-base font-normal leading-6">
+                  {model.description}
+                </p>
               </div>
-            );
-          })}
-        </div>
+            ))}
+          </div>
+        )}
+
+        {activeTab === "compatibility" && (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {deploymentModels.map((model, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-b-[10px] border-t-[5px] border-scanflow-blue p-8"
+              >
+                <img
+                  src={model.icon}
+                  alt={model.title}
+                  className="w-[50px] h-[50px] mb-6"
+                />
+                <h4 className="text-scanflow-navy text-[20px] font-medium leading-6 mb-4">
+                  {model.title}
+                </h4>
+                <p className="text-scanflow-gray text-base font-normal leading-6">
+                  {model.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );

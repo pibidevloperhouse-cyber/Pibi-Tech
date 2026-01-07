@@ -1,0 +1,114 @@
+"use client";
+
+import { useState } from "react";
+
+export default function BuiltForIndustry() {
+  const [activeTab, setActiveTab] = useState("quality");
+
+  const industries = [
+    {
+      title: "Manufacturing",
+      image:
+        "https://api.builder.io/api/v1/image/assets/TEMP/8bfb7f5f268c4e0b079cd6ef52bd284a5b113336?width=1272",
+      description:
+        "Ensure flawless production with AI automated defect detection, Asset Identification, and enhanced workplace safety",
+    },
+    {
+      title: "Automotive",
+      image:
+        "https://api.builder.io/api/v1/image/assets/TEMP/f1bd09689c3264f37fbfb414521939f8083a5d42?width=1272",
+      description:
+        "Maintain quality standards with advanced visual inspections, AI number & text recognition, and enhance worker safety",
+    },
+  ];
+
+  return (
+    <section className="w-full py-16">
+      <div className="container mx-auto max-w-[1320px] px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-12">
+          <div className="lg:col-span-4">
+            <h2 className="font-sen text-[35px] font-bold leading-[52.5px] text-scanflow-navy mb-6">
+              Built for Every Industry
+            </h2>
+            <p className="font-inter text-[20px] font-normal leading-[30px] text-black">
+              Scanflow empowers teams across sectors to work smarter, trace
+              faster, and deliver with confidence
+            </p>
+          </div>
+
+          <div className="lg:col-span-8">
+            {/* Tab Navigation */}
+            <div className="flex items-center gap-8 mb-8 border-b border-scanflow-gray">
+              <button
+                onClick={() => setActiveTab("quality")}
+                className={`pb-2 text-[20px] font-normal relative ${
+                  activeTab === "quality" ? "text-scanflow-navy" : "text-black"
+                }`}
+              >
+                Quality Control
+                {activeTab === "quality" && (
+                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-scanflow-blue rounded-t-[10px]" />
+                )}
+              </button>
+              <button
+                onClick={() => setActiveTab("asset")}
+                className={`pb-2 text-[20px] font-normal relative ${
+                  activeTab === "asset" ? "text-scanflow-navy" : "text-black"
+                }`}
+              >
+                Asset Identification
+                {activeTab === "asset" && (
+                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-scanflow-blue rounded-t-[10px]" />
+                )}
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Industry Cards */}
+        <div className="bg-scanflow-bg-blue rounded-[10px] shadow-[0_0_10px_rgba(43,132,234,0.15)] p-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            {industries.map((industry, index) => (
+              <div
+                key={index}
+                className="relative rounded-md overflow-hidden shadow-lg group"
+              >
+                <img
+                  src={industry.image}
+                  alt={industry.title}
+                  className="w-full h-[487px] object-cover"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/70 to-transparent p-6">
+                  <h3 className="font-inter text-[29px] font-medium leading-[45px] text-white mb-2">
+                    {industry.title}
+                  </h3>
+                  <p className="font-inter text-[20px] font-bold leading-[30px] text-white mb-4">
+                    {industry.description}
+                  </p>
+                  <button className="absolute bottom-6 right-6 w-[50px] h-[50px] bg-scanflow-blue rounded-full flex items-center justify-center hover:opacity-90 transition-opacity">
+                    <svg width="21" height="10" viewBox="0 0 21 10" fill="none">
+                      <path
+                        d="M15.75 0.333008L19.9167 4.49967L15.75 8.66634"
+                        stroke="white"
+                        strokeWidth="2.08333"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M0.084 4.5H19.9173"
+                        stroke="white"
+                        strokeWidth="2.08333"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

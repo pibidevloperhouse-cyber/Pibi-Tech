@@ -1,73 +1,64 @@
-import { TrendingUp, Zap, Clock } from "lucide-react";
-
 export default function WhyPibi() {
-  const kpis = [
+  const outcomes = [
     {
-      icon: TrendingUp,
+      icon: "https://api.builder.io/api/v1/image/assets/TEMP/7bf1e33400b6c11f1a32b22b17a536cb170f4ac8?width=86",
       percentage: "80%",
       title: "Error Reduction",
       description:
-        "Significantly reduce defects and errors in production with AI-powered visual inspection.",
+        "AI-driven scanning and validation drastically minimize manual mistakes across quality checks and asset tracking.",
     },
     {
-      icon: Zap,
+      icon: "https://api.builder.io/api/v1/image/assets/TEMP/3d8e39f49b6a459bdff9bf9616a284789c20b7a3?width=86",
       percentage: "70%",
       title: "Productivity Gain",
       description:
-        "Increase operational efficiency and throughput with automated processes.",
+        "Automated inspections and asset capture boost operational throughput and free up your team for higher-value tasks.",
     },
     {
-      icon: Clock,
+      icon: "https://api.builder.io/api/v1/image/assets/TEMP/9d5b430a669bcd6a6c5e0d613ccd7d9a60e8f7d8?width=86",
       percentage: "50%",
       title: "Faster Operations",
       description:
-        "Accelerate production cycles and reduce time-to-market with intelligent automation.",
+        "Instant recognition and real-time defect detection cut cycle times and keep workflows moving seamlessly.",
     },
   ];
 
   return (
-    <section className="w-full bg-white py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">
-            Why Scanflow?
-          </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Industry-leading results that drive real business value
-          </p>
-        </div>
+    <section className="w-full bg-linear-to-r from-blue-900 to-blue-800 py-16">
+      <div className="container mx-auto max-w-[1320px] px-6">
+        <h3 className="font-inter text-[34px] font-bold leading-[42px] text-white mb-3">
+          Why Scanflow ?
+        </h3>
+        <h2 className="font-inter text-[34px] font-bold leading-[42px] text-white mb-12">
+          Business Outcomes That Drive Transformation
+        </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {kpis.map((kpi, index) => {
-            const Icon = kpi.icon;
-            return (
-              <div key={index} className="text-center">
-                <div className="flex justify-center mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-primary/10 to-accent/10 rounded-full flex items-center justify-center">
-                    <Icon className="w-8 h-8 text-primary" />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {outcomes.map((outcome, index) => (
+            <div
+              key={index}
+              className="bg-white/10 rounded-[10px] p-5 backdrop-blur-sm"
+            >
+              <div className="flex gap-4">
+                <img
+                  src={outcome.icon}
+                  alt={outcome.title}
+                  className="w-11 h-11 flex-shrink-0"
+                />
+                <div className="flex-1">
+                  <div className="text-yellow-400 text-[35px] font-medium leading-[48px] mb-2">
+                    {outcome.percentage}
                   </div>
+                  <h4 className="text-white text-[20px] font-medium leading-6 mb-4">
+                    {outcome.title}
+                  </h4>
+                  <p className="text-white text-base font-normal leading-6">
+                    {outcome.description}
+                  </p>
                 </div>
-                <div className="text-5xl font-bold text-accent mb-2">
-                  {kpi.percentage}
-                </div>
-                <h3 className="text-xl font-bold text-primary mb-3">
-                  {kpi.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  {kpi.description}
-                </p>
               </div>
-            );
-          })}
-        </div>
-
-        <div className="mt-16 text-center">
-          <p className="text-lg text-gray-600 mb-6">
-            Ready to transform your operations?
-          </p>
-          <button className="px-8 py-3 bg-gradient-to-r from-primary to-[#1D4CAE] text-white font-semibold rounded-lg hover:shadow-lg transition">
-            Get Started Today
-          </button>
+            </div>
+          ))}
         </div>
       </div>
     </section>

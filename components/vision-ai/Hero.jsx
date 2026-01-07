@@ -2,88 +2,70 @@
 
 import { useState } from "react";
 
-export default function Hero() {
-  const [activeTab, setActiveTab] = useState("inspection");
-
-  const tabs = [
-    {
-      id: "inspection",
-      label: "Visual Inspection",
-      title: "Visual Inspection Automated.",
-      description:
-        "Ensure product meets standards during every stage of manufacturing.",
-    },
-    {
-      id: "identification",
-      label: "Asset Identification",
-      title: "Asset Identification Simplified.",
-      description:
-        "Track and verify every asset in real-time with precision and reliability.",
-    },
-  ];
+export default function HeroBanner() {
+  const [activeTab, setActiveTab] = useState("asset");
 
   return (
-    <section className="w-full bg-white pt-12 pb-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div className="w-[90%] bg-blue-200 absolute left-1/2 -translate-x-1/2 top-0 h-full rounded-b-full -z-10" />
-        <div className="flex justify-center mb-12">
-          <div className="inline-flex border border-gray-300 rounded-lg p-1">
-            {tabs.map((tab) => (
-              <button
-                key={tab.id}
-                onClick={() => setActiveTab(tab.id)}
-                className={`px-6 py-2 rounded-md font-medium transition ${
-                  activeTab === tab.id
-                    ? "bg-primary text-white"
-                    : "text-gray-700 hover:text-primary"
-                }`}
-              >
-                {tab.label}
-              </button>
-            ))}
-          </div>
+    <section className="relative w-full h-[1200px] max-h-[80vh] overflow-hidden rounded-xl py-10 mt-10">
+      <div className="absolute max-w-[90vw] h-full mx-auto inset-0 overflow-hidden rounded-xl">
+        <img
+          src="https://api.builder.io/api/v1/image/assets/TEMP/8f4a01826ec5d5a352cc54b2b849b28d14eb3669?width=2694"
+          alt="Hero background"
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+      <div className="relative z-10 h-full flex flex-col items-center justify-center px-4">
+        <div className="flex items-center gap-5 mb-12">
+          <button
+            onClick={() => setActiveTab("visual")}
+            className={`flex items-center gap-3 px-9 py-3 rounded-full border-2 transition-all ${
+              activeTab === "visual"
+                ? "border-white bg-transparent"
+                : "border-white/40 bg-transparent opacity-50"
+            }`}
+          >
+            <span className="text-white text-[19px]"></span>
+            <span className="text-white text-[13px] font-semibold uppercase tracking-[5px]">
+              Visual Inspection
+            </span>
+          </button>
+          <button
+            onClick={() => setActiveTab("asset")}
+            className={`flex items-center gap-3 px-9 py-3 rounded-full border-2 transition-all ${
+              activeTab === "asset"
+                ? "border-white bg-transparent"
+                : "border-white/40 bg-transparent opacity-50"
+            }`}
+          >
+            <span className="text-white text-[19px]"></span>
+            <span className="text-white text-[13px] font-semibold uppercase tracking-[5px]">
+              Asset Identification
+            </span>
+          </button>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
-            {tabs.map(
-              (tab) =>
-                activeTab === tab.id && (
-                  <div key={tab.id} className="space-y-6">
-                    <h1 className="text-4xl sm:text-5xl font-bold text-primary leading-tight">
-                      {tab.title}
-                    </h1>
-                    <p className="text-lg text-gray-600 leading-relaxed max-w-xl">
-                      {tab.description}
-                    </p>
-                    <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                      <button className="px-8 py-3 bg-linear-to-r from-primary to-[#1D4CAE] text-white font-semibold rounded-lg hover:shadow-lg transition">
-                        Explore
-                      </button>
-                      <button className="px-8 py-3 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary hover:text-white transition">
-                        Request Demo
-                      </button>
-                    </div>
-                  </div>
-                )
-            )}
-          </div>
-
-          <div className="relative">
-            <div className="aspect-video rounded-xl bg-linear-to-br from-blue-50 via-blue-100 to-blue-50 flex items-center justify-center overflow-hidden">
-              <div className="absolute inset-0 bg-linear-to-t from-primary/10 to-transparent" />
-              <div className="relative z-10 text-center">
-                <div className="w-20 h-20 bg-primary/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <div className="w-12 h-12 bg-primary/40 rounded-full" />
-                </div>
-                <p className="text-gray-600 font-medium">
-                  {activeTab === "inspection"
-                    ? "Visual Inspection AI"
-                    : "Asset Tracking"}
-                </p>
-              </div>
+        <div className="text-center max-w-[819px] mb-8">
+          <h1 className="font-sen text-white mb-4">
+            <div className="text-[65px] font-normal leading-[78px]">
+              Visual Inspection
             </div>
-          </div>
+            <div className="text-[65px] font-bold leading-[78px]">
+              Automated.
+            </div>
+          </h1>
+          <p className="font-sen text-[#A2B1CC] text-[25px] font-normal leading-[37.5px]">
+            Ensure product meets standards during every stage of manufacturing
+          </p>
+        </div>
+
+        <div className="flex items-center gap-4">
+          <button className="px-5 py-3 bg-scanflow-blue text-white text-base font-medium font-sen rounded hover:opacity-90 transition-opacity">
+            Explore
+          </button>
+          <button className="px-6 py-3 border-2 border-white text-white text-base font-medium font-sen rounded hover:bg-white/10 transition-all">
+            Request Demo
+          </button>
         </div>
       </div>
     </section>

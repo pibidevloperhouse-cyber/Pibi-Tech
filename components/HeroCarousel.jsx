@@ -63,7 +63,7 @@ export default function HeroCarousel() {
 
         <h1
           className={`${
-            current == 1 ? "text-2xl md:text-3xl" : "text-2xl md:text-5xl"
+            current == 1 ? "text-2xl md:text-4xl" : "text-2xl md:text-5xl"
           } max-w-4xl mx-auto font-normal leading-[1.2] text-[#0C1B33]`}
         >
           {slides[current].title}

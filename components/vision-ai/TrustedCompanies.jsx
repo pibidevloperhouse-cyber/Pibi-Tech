@@ -1,43 +1,34 @@
-export default function TrustedCompanies() {
-  const companies = [
-    { name: "TechCorp", initials: "TC" },
-    { name: "ManufacturePro", initials: "MP" },
-    { name: "QualityFirst", initials: "QF" },
-    { name: "IndustryLeader", initials: "IL" },
-    { name: "GlobalFactory", initials: "GF" },
-    { name: "SmartMfg", initials: "SM" },
+export default function TrustedEnterprises() {
+  const logos = [
+    "https://api.builder.io/api/v1/image/assets/TEMP/45cf01306ea74dbd7ed6bb9e04feee19b7cac460?width=360",
+    "https://api.builder.io/api/v1/image/assets/TEMP/6f796713a6923c059357e6a886124ddecf2cd54a?width=348",
+    "https://api.builder.io/api/v1/image/assets/TEMP/6f6f9c53cda58040d0ec7ad11a1a85a1d0d9a938?width=384",
+    "https://api.builder.io/api/v1/image/assets/TEMP/928741f96677dddee2ec859e230227f65761c712?width=384",
+    "https://api.builder.io/api/v1/image/assets/TEMP/978d7bb9b354564a5c998b8770d8b4066837d964?width=242",
+    "https://api.builder.io/api/v1/image/assets/TEMP/2e9d6cf8e282666a2c4a051bb9d7cbe1c6611a72?width=386",
+    "https://api.builder.io/api/v1/image/assets/TEMP/dc6ac772d0207dd9a85c4b58f1ef4e31cc19d98b?width=348",
+    "https://api.builder.io/api/v1/image/assets/TEMP/aa5cc740cdd3531a51fa9ff3c43f5738ce49a8ec?width=386",
   ];
 
   return (
-    <section className="w-full bg-gray-50 py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-2xl font-bold text-gray-700 mb-2">
-            Trusted by Global Enterprises
-          </h2>
-          <p className="text-gray-600">
-            Leading companies rely on Scanflow for quality assurance
-          </p>
-        </div>
+    <section className="w-full bg-scanflow-bg-lighter py-24">
+      <div className="container mx-auto max-w-[1320px] px-6">
+        <h2 className="font-sen text-[35px] font-bold leading-[52.5px] text-scanflow-navy text-center mb-12">
+          Trusted by Global Enterprises
+        </h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 items-center">
-          {companies.map((company, index) => (
-            <div
-              key={index}
-              className="flex items-center justify-center h-20 bg-white rounded-lg border border-gray-200 hover:shadow-md transition"
-            >
-              <div className="flex flex-col items-center gap-2">
-                <div className="w-10 h-10 bg-linear-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-xs">
-                    {company.initials}
-                  </span>
-                </div>
-                <span className="text-xs font-medium text-gray-700 text-center">
-                  {company.name}
-                </span>
+        <div className="relative overflow-hidden">
+          <div className="flex items-center justify-center gap-14 flex-wrap">
+            {logos.map((logo, index) => (
+              <div key={index} className="flex-shrink-0">
+                <img
+                  src={logo}
+                  alt={`Partner logo ${index + 1}`}
+                  className="h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all"
+                />
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>

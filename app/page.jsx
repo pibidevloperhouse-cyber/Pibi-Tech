@@ -3,7 +3,6 @@ import IntroSection from "@/components/IntroSection";
 import MissionVisionOfferings from "@/components/MissionVisionOfferings";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import RecentEngagements from "@/components/RecentEngagements";
-import Footer from "@/components/Footer";
 import OurProducts from "@/components/OurProducts";
 import Specialist from "@/components/Specialist";
 import PerformanceGuarantee from "@/components/PerformanceGuarantee";
@@ -21,7 +20,6 @@ export default function HomePage() {
       <PerformanceGuarantee />
       <Roadmap />
       <RecentEngagements />
-      <Footer />
     </div>
   );
 }

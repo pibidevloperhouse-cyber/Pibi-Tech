@@ -8,7 +8,7 @@ export default function RecentEngagements() {
       subtitle: "Industry 5.0 for Enterprises",
       image:
         "https://images.unsplash.com/photo-1633356122544-f134324ef6db?auto=format&fit=crop&w=600&h=400",
-      link: "#",
+      link: "/vision-ai",
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ export default function RecentEngagements() {
       subtitle: "Personalised Shopping Assistant",
       image:
         "https://images.unsplash.com/photo-1677442d019cecf3d4a597a9d4b96c6d1badc0f78?auto=format&fit=crop&w=600&h=400",
-      link: "#",
+      link: "generative-ai",
     },
   ];
 
