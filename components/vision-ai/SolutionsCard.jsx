@@ -17,7 +17,7 @@ export default function SolutionCard({
         >
           {/* Content Side */}
           <div className="w-full lg:w-1/2">
-            <img src={icon} alt={title} className="w-[85px] h-[85px] mb-4" />
+            {icon}
             <h2 className="font-inter text-[25px] font-bold leading-[50px] text-scanflow-navy mb-4">
               {title}
             </h2>

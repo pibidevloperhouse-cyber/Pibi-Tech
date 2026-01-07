@@ -7,18 +7,8 @@ import HeroBanner from "@/components/vision-ai/Hero";
 import SolutionCard from "@/components/vision-ai/SolutionsCard";
 import TrustedCompanies from "@/components/vision-ai/TrustedCompanies";
 import WhyPibi from "@/components/vision-ai/WhyPibi";
+import { Settings } from "lucide-react";
 
-// Visual Inspection
-// Maintain high production standards by detecting defects early and ensuring consistent quality at every stage of manufacturing
-// Explore
-
-// Asset Identification
-// Automate track-and-trace across industries. Cut down on manual data entry, reduce error, and keep operations moving faster
-// Explore
-
-// Industrial Safety
-// Identify risks, monitor safety compliance, and prevent workplace hazards with smart AI safety solutions
-// Explore
 export default function Index() {
   return (
     <div className="min-h-screen bg-white">
@@ -29,16 +19,15 @@ export default function Index() {
         description={
           "Maintain high production standards by detecting defects early and ensuring consistent quality at every stage of manufacturing"
         }
-        icon={"/vision-ai/icons/visual-inspection-icon.png"}
+        icon={<Settings />}
         image={"/vision-ai/solutions/visual-inspection.png"}
       />
       <SolutionCard
-        reverse={true}
         title={"Asset Identification"}
         description={
           "Automate track-and-trace across industries. Cut down on manual data entry, reduce error, and keep operations moving faster"
         }
-        icon={"/vision-ai/icons/asset-identification-icon.png"}
+        icon={<Settings />}
         image={"/vision-ai/solutions/asset-identification.png"}
       />
       <SolutionCard
@@ -46,7 +35,7 @@ export default function Index() {
         description={
           "Identify risks, monitor safety compliance, and prevent workplace hazards with smart AI safety solutions"
         }
-        icon={"/vision-ai/icons/industrial-safety-icon.png"}
+        icon={<Settings />}
         image={"/vision-ai/solutions/industrial-safety.png"}
       />
       description, icon, image,
