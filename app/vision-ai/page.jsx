@@ -19,7 +19,7 @@ export default function Index() {
         description={
           "Maintain high production standards by detecting defects early and ensuring consistent quality at every stage of manufacturing"
         }
-        icon={<Settings />}
+        icon={<Settings className="w-8 h-8" />}
         image={"/vision-ai/solutions/visual-inspection.png"}
       />
       <SolutionCard
@@ -27,7 +27,7 @@ export default function Index() {
         description={
           "Automate track-and-trace across industries. Cut down on manual data entry, reduce error, and keep operations moving faster"
         }
-        icon={<Settings />}
+        icon={<Settings className="w-8 h-8" />}
         image={"/vision-ai/solutions/asset-identification.png"}
       />
       <SolutionCard
@@ -35,7 +35,7 @@ export default function Index() {
         description={
           "Identify risks, monitor safety compliance, and prevent workplace hazards with smart AI safety solutions"
         }
-        icon={<Settings />}
+        icon={<Settings className="w-8 h-8" />}
         image={"/vision-ai/solutions/industrial-safety.png"}
       />
       description, icon, image,
