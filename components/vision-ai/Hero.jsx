@@ -1,22 +1,18 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 export default function HeroBanner() {
   const [activeTab, setActiveTab] = useState("asset");
+  const router = useRouter();
 
   return (
     <section className="relative w-full h-[1200px] max-h-[80vh] overflow-hidden rounded-xl py-10 mt-10">
-      <div className="absolute max-w-[90vw] h-full mx-auto inset-0 overflow-hidden rounded-xl">
-        <img
-          src="https://api.builder.io/api/v1/image/assets/TEMP/8f4a01826ec5d5a352cc54b2b849b28d14eb3669?width=2694"
-          alt="Hero background"
-          className="w-full h-full object-cover"
-        />
-      </div>
+      <div className="absolute max-w-[90vw] bg-brand-gradient h-full mx-auto inset-0 overflow-hidden rounded-xl"></div>
 
       <div className="relative z-10 h-full flex flex-col items-center justify-center px-4">
-        <div className="flex items-center gap-5 mb-12">
+        <div className="flex items-center flex-col md:flex-row gap-5 mb-12">
           <button
             onClick={() => setActiveTab("visual")}
             className={`flex items-center gap-3 px-9 py-3 rounded-full border-2 transition-all ${
@@ -54,16 +50,22 @@ export default function HeroBanner() {
               Automated.
             </div>
           </h1>
-          <p className="font-sen text-[#A2B1CC] text-[25px] font-normal leading-[37.5px]">
+          <p className="font-sen text-[#292e35] text-[25px] font-normal leading-[37.5px]">
             Ensure product meets standards during every stage of manufacturing
           </p>
         </div>
 
         <div className="flex items-center gap-4">
-          <button className="px-5 py-3 bg-scanflow-blue text-white text-base font-medium font-sen rounded hover:opacity-90 transition-opacity">
+          <button
+            onClick={() => router.push("/contact-us")}
+            className="px-5 py-3 bg-PibiTech-blue text-white text-base font-medium font-sen rounded hover:opacity-90 transition-opacity"
+          >
             Explore
           </button>
-          <button className="px-6 py-3 border-2 border-white text-white text-base font-medium font-sen rounded hover:bg-white/10 transition-all">
+          <button
+            onClick={() => router.push("/contact-us")}
+            className="px-6 py-3 border-2 border-white text-white text-base font-medium font-sen rounded hover:bg-white/10 transition-all"
+          >
             Request Demo
           </button>
         </div>

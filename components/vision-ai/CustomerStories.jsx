@@ -15,7 +15,7 @@ export default function CustomerStories() {
   return (
     <section className="w-full py-16">
       <div className="container mx-auto max-w-[1320px] px-6">
-        <h2 className="font-sen text-[35px] font-bold leading-[52.5px] text-scanflow-navy mb-6">
+        <h2 className="font-sen text-[35px] font-bold leading-[52.5px] text-Pibi Tech-navy mb-6">
           Customer Success Stories
         </h2>
 
@@ -27,8 +27,8 @@ export default function CustomerStories() {
               onClick={() => setActiveFilter(filter.id)}
               className={`px-6 py-2 rounded-full text-[20px] font-normal border transition-all ${
                 activeFilter === filter.id
-                  ? "bg-scanflow-blue text-white border-scanflow-blue"
-                  : "bg-transparent text-scanflow-navy border-scanflow-gray-border hover:border-scanflow-blue"
+                  ? "bg-Pibi Tech-blue text-white border-Pibi Tech-blue"
+                  : "bg-transparent text-Pibi Tech-navy border-Pibi Tech-gray-border hover:border-Pibi Tech-blue"
               }`}
             >
               {filter.label}
@@ -37,7 +37,7 @@ export default function CustomerStories() {
         </div>
 
         {/* Placeholder for stories - can be populated with actual content */}
-        <div className="text-center py-12 text-scanflow-gray">
+        <div className="text-center py-12 text-Pibi Tech-gray">
           <p className="text-lg">
             Customer success stories will be displayed here.
           </p>

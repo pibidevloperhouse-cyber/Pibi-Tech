@@ -4,10 +4,12 @@ import { useState } from "react";
 import { Menu, X, ChevronDown, Linkedin, Twitter } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
+  const router = useRouter();
 
   const services = {
     Transform: [
@@ -54,20 +56,23 @@ export default function Navbar() {
 
           <div className="hidden lg:flex items-center gap-8">
             <Link
-              href="#"
+              href="#Products"
               className="text-slate-700 hover:text-primary transition"
             >
               Products
             </Link>
             <Link
-              href="#"
+              href="contact-us"
               className="text-slate-700 hover:text-primary transition"
             >
               Solutions
             </Link>
 
             <div className="relative group">
-              <button className="flex items-center gap-1 text-slate-700 hover:text-primary transition">
+              <button
+                onClick={() => router.push("/contact-us")}
+                className="flex items-center gap-1 text-slate-700 hover:text-primary transition"
+              >
                 Services
                 <ChevronDown className="w-4 h-4 text-primary" />
               </button>
@@ -83,7 +88,7 @@ export default function Navbar() {
                         {items.map((item) => (
                           <li key={item}>
                             <Link
-                              href="#"
+                              href="contact-us"
                               className="text-slate-600 hover:text-primary transition text-sm font-medium"
                             >
                               {item}
@@ -98,19 +103,19 @@ export default function Navbar() {
             </div>
 
             <Link
-              href="#"
+              href="contact-us"
               className="text-slate-700 hover:text-primary transition"
             >
               Who we are
             </Link>
             <Link
-              href="#"
+              href="contact-us"
               className="text-slate-700 hover:text-primary transition"
             >
               Careers
             </Link>
             <Link
-              href="#"
+              href="/contact-us"
               className="text-slate-700 hover:text-primary transition"
             >
               Contact us
@@ -119,13 +124,13 @@ export default function Navbar() {
 
           <div className="hidden lg:flex items-center gap-4">
             <Link
-              href="#"
+              href="contact-us"
               className="text-slate-600 hover:text-primary transition"
             >
               <Linkedin className="w-5 h-5" />
             </Link>
             <Link
-              href="#"
+              href="contact-us"
               className="text-slate-600 hover:text-primary transition"
             >
               <Twitter className="w-5 h-5" />
@@ -143,13 +148,13 @@ export default function Navbar() {
         {isOpen && (
           <div className="lg:hidden pb-6 border-t border-slate-200">
             <Link
-              href="#"
+              href="contact-us"
               className="block py-3 text-slate-700 hover:text-primary transition"
             >
               Products
             </Link>
             <Link
-              href="#"
+              href="contact-us"
               className="block py-3 text-slate-700 hover:text-primary transition"
             >
               Solutions
@@ -178,7 +183,7 @@ export default function Navbar() {
                     {items.map((item) => (
                       <Link
                         key={item}
-                        href="#"
+                        href="contact-us"
                         className="block text-slate-600 hover:text-primary text-sm py-1"
                       >
                         {item}
@@ -190,19 +195,19 @@ export default function Navbar() {
             )}
 
             <Link
-              href="#"
+              href="contact-us"
               className="block py-3 text-slate-700 hover:text-primary transition"
             >
               Who we are
             </Link>
             <Link
-              href="#"
+              href="contact-us"
               className="block py-3 text-slate-700 hover:text-primary transition"
             >
               Careers
             </Link>
             <Link
-              href="#"
+              href="contact-us"
               className="block py-3 text-slate-700 hover:text-primary transition"
             >
               Contact us
@@ -210,13 +215,13 @@ export default function Navbar() {
 
             <div className="flex gap-4 pt-4 border-t border-slate-200">
               <Link
-                href="#"
+                href="contact-us"
                 className="text-slate-600 hover:text-primary transition"
               >
                 <Linkedin className="w-5 h-5" />
               </Link>
               <Link
-                href="#"
+                href="contact-us"
                 className="text-slate-600 hover:text-primary transition"
               >
                 <Twitter className="w-5 h-5" />

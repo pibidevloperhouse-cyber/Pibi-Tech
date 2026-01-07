@@ -8,27 +8,27 @@ export default function MissionVisionOfferings() {
       title: "Intelligent Web Engine (Foundations)",
       description:
         "We design and optimize your website for search engines and AI platforms",
-      link: "#",
+      link: "contact-us",
     },
     {
       id: 2,
       title: "Secure Corporate Brain (Knowledge Layer)",
       description:
         "Enterprise-grade knowledge systems powered by LLMs, SLMs, RAG architecture",
-      link: "#",
+      link: "contact-us",
     },
     {
       id: 3,
       title: "Intelligent Business Process Automation (Execution Layer)",
       description: "End-to-end automation using AI, RPA, LLMs.",
-      link: "#",
+      link: "contact-us",
     },
     {
       id: 4,
       title: "Autonomous Strategic Growth (Proactive Layer)",
       description:
         "AI-powered growth systems that proactively analyze market signals",
-      link: "#",
+      link: "contact-us",
     },
   ];
 

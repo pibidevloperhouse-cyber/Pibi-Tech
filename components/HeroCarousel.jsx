@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 const slides = [
   {
@@ -26,6 +27,7 @@ const slides = [
 export default function HeroCarousel() {
   const [current, setCurrent] = useState(0);
   const [autoPlay, setAutoPlay] = useState(true);
+  const router = useRouter();
 
   useEffect(() => {
     if (!autoPlay) return;
@@ -78,11 +80,17 @@ export default function HeroCarousel() {
         </p>
 
         <div className="mt-10 flex items-center gap-4">
-          <button className="bg-[#0046B8] hover:bg-[#003A96] text-white px-8 py-3 rounded-full font-semibold shadow-lg">
+          <button
+            onClick={() => router.push("/contact-us")}
+            className="bg-[#0046B8] hover:bg-[#003A96] text-white px-8 py-3 rounded-full font-semibold shadow-lg"
+          >
             {slides[current].button1}
           </button>
 
-          <button className="bg-[#ffffff] border border-gray-300 hover:border-gray-400 px-8 py-3 rounded-full font-semibold shadow-md">
+          <button
+            onClick={() => router.push("/contact-us")}
+            className="bg-[#ffffff] border border-gray-300 hover:border-gray-400 px-8 py-3 rounded-full font-semibold shadow-md"
+          >
             {slides[current].button2}
           </button>
         </div>

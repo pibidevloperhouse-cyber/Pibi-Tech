@@ -1,9 +1,11 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 export default function Index() {
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
+  const router = useRouter();
 
   const faqs = [
     "What is Elsai Foundry?",
@@ -36,10 +38,16 @@ export default function Index() {
               intelligent automation with a trusted AI transformation partner.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <button className="bg-blue-600 text-white px-5 py-2.5 rounded font-bold text-[15px] hover:bg-blue-700 transition-colors">
+              <button
+                onClick={() => router.push("/contact-us")}
+                className="bg-blue-600 text-white px-5 py-2.5 rounded font-bold text-[15px] hover:bg-blue-700 transition-colors"
+              >
                 Book a demo
               </button>
-              <button className="border border-blue-600 text-blue-600 px-5 py-2.5 rounded font-bold text-[15px] hover:bg-blue-50 transition-colors">
+              <button
+                onClick={() => router.push("/contact-us")}
+                className="border border-blue-600 text-blue-600 px-5 py-2.5 rounded font-bold text-[15px] hover:bg-blue-50 transition-colors"
+              >
                 Contact us
               </button>
             </div>
@@ -396,7 +404,10 @@ export default function Index() {
                     </li>
                   ))}
                 </ul>
-                <button className="w-full border border-blue-600 text-blue-600 py-2.5 rounded font-bold text-[15px] hover:bg-blue-50 transition-colors">
+                <button
+                  onClick={() => router.push("/contact-us")}
+                  className="w-full border border-blue-600 text-blue-600 py-2.5 rounded font-bold text-[15px] hover:bg-blue-50 transition-colors"
+                >
                   View details
                 </button>
               </div>
@@ -452,7 +463,10 @@ export default function Index() {
                     </li>
                   ))}
                 </ul>
-                <button className="w-full border border-blue-600 text-blue-600 py-2.5 rounded font-bold text-[15px] hover:bg-blue-50 transition-colors">
+                <button
+                  onClick={() => router.push("/contact-us")}
+                  className="w-full border border-blue-600 text-blue-600 py-2.5 rounded font-bold text-[15px] hover:bg-blue-50 transition-colors"
+                >
                   Talk to us
                 </button>
               </div>
@@ -553,7 +567,10 @@ export default function Index() {
               whether you want to build or buy AI capabilities, we'll help you
               transform workflows with precision, compliance, and speed.
             </p>
-            <button className="border border-white text-white px-5 py-2.5 rounded font-bold text-[15px] hover:bg-white/10 transition-colors">
+            <button
+              onClick={() => router.push("/contact-us")}
+              className="border border-white text-white px-5 py-2.5 rounded font-bold text-[15px] hover:bg-white/10 transition-colors"
+            >
               Book a consultation
             </button>
           </div>

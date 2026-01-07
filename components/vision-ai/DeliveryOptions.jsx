@@ -4,7 +4,7 @@ export default function DeliveryProcess() {
       icon: "https://api.builder.io/api/v1/image/assets/TEMP/55f9bc07158fd5f6702e094f64f9c843cf00bf25?width=200",
       title: "Installation",
       description:
-        "Begin With A Testable Framework That Seamlessly Integrates Into Your Existing Workflow. This Initial Setup Allows You To Evaluate How Scanflow Meets Your Specific Requirements Before Moving On To Customization",
+        "Begin With A Testable Framework That Seamlessly Integrates Into Your Existing Workflow. This Initial Setup Allows You To Evaluate How Pibi Tech Meets Your Specific Requirements Before Moving On To Customization",
     },
     {
       icon: "https://api.builder.io/api/v1/image/assets/TEMP/d6acd4ec0ba95f5e4703a81b6414384cf75011ea?width=200",
@@ -16,13 +16,13 @@ export default function DeliveryProcess() {
       icon: "https://api.builder.io/api/v1/image/assets/TEMP/9e554a17debcd0e23def53a45611fd86117440ef?width=200",
       title: "Customization",
       description:
-        "Tailor the solution to fit your specific use cases. Our team configures Scanflow to align with your operational requirements, ensuring the solution is both relevant and effective",
+        "Tailor the solution to fit your specific use cases. Our team configures Pibi Tech to align with your operational requirements, ensuring the solution is both relevant and effective",
     },
     {
       icon: "https://api.builder.io/api/v1/image/assets/TEMP/108851b1fc552666c01532ae35b03826c8f9f150?width=200",
       title: "Implementation",
       description:
-        "Begin with a testable framework that seamlessly integrates into your existing workflow. This initial setup allows you to evaluate how Scanflow meets your specific requirements before moving on to customization",
+        "Begin with a testable framework that seamlessly integrates into your existing workflow. This initial setup allows you to evaluate how Pibi Tech meets your specific requirements before moving on to customization",
     },
     {
       icon: "https://api.builder.io/api/v1/image/assets/TEMP/e65f096f8ad6482d69719c1d72a22a390ca02c1c?width=200",
@@ -41,14 +41,14 @@ export default function DeliveryProcess() {
 
         <div className="relative">
           {/* Vertical Line */}
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-scanflow-navy hidden lg:block" />
+          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-PibiTech-navy hidden lg:block" />
 
           {/* Steps */}
           <div className="space-y-8">
             {steps.map((step, index) => (
               <div key={index} className="relative flex gap-8 lg:pl-16">
                 {/* Dot */}
-                <div className="absolute left-[22px] top-0 w-5 h-5 rounded-full bg-gradient-to-br from-scanflow-blue-darker to-scanflow-blue-light border-3 border-[#F4F7FB] hidden lg:block" />
+                <div className="absolute left-[22px] top-0 w-5 h-5 rounded-full bg-gradient-to-br from-PibiTech-blue-darker to-PibiTech-blue-light border-3 border-[#F4F7FB] hidden lg:block" />
 
                 {/* Card */}
                 <div className="bg-white rounded-[10px] p-6 flex-1">
@@ -57,10 +57,10 @@ export default function DeliveryProcess() {
                     alt={step.title}
                     className="w-[100px] h-[100px] mb-4"
                   />
-                  <h3 className="font-sen text-scanflow-navy-light text-[36px] font-medium leading-[46px] mb-4">
+                  <h3 className="font-sen text-PibiTech-navy-light text-[36px] font-medium leading-[46px] mb-4">
                     {step.title}
                   </h3>
-                  <p className="font-sen text-scanflow-gray text-base font-normal leading-6">
+                  <p className="font-sen text-PibiTech-gray text-base font-normal leading-6">
                     {step.description}
                   </p>
                 </div>

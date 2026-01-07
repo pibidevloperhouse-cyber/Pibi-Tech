@@ -5,24 +5,24 @@ export default function ContactForm() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Left Side - Info */}
           <div>
-            <h2 className="font-sen text-[35px] font-bold leading-[42px] text-scanflow-navy mb-6">
-              Book a Meeting with Scanflow
+            <h2 className="font-sen text-[35px] font-bold leading-[42px] text-PibiTech-navy mb-6">
+              Book a Meeting with Pibi Tech
             </h2>
-            <p className="font-inter text-[18px] font-normal leading-[27px] text-scanflow-gray mb-8">
-              From instant QC checks to live asset tracking, Scanflow gives you
+            <p className="font-inter text-[18px] font-normal leading-[27px] text-PibiTech-gray mb-8">
+              From instant QC checks to live asset tracking, Pibi Tech gives you
               real-time control. Schedule a session to see it in action.
             </p>
             <div className="space-y-4">
               <div className="flex items-center gap-2">
-                <span className="text-scanflow-blue text-xl"></span>
-                <span className="font-sen text-[18px] text-scanflow-navy-light">
+                <span className="text-PibiTech-blue text-xl"></span>
+                <span className="font-sen text-[18px] text-PibiTech-navy-light">
                   (+91) 6384300011
                 </span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-scanflow-blue text-xl"></span>
-                <span className="font-sen text-[18px] text-scanflow-navy-light">
-                  info@Scanflow.ai
+                <span className="text-PibiTech-blue text-xl"></span>
+                <span className="font-sen text-[18px] text-PibiTech-navy-light">
+                  info@PibiTech.ai
                 </span>
               </div>
             </div>
@@ -39,7 +39,7 @@ export default function ContactForm() {
                   <input
                     type="text"
                     placeholder="Enter first name"
-                    className="w-full px-3 py-3 rounded-lg border border-scanflow-gray-border bg-scanflow-bg-lightest font-sen text-sm focus:outline-none focus:border-scanflow-blue"
+                    className="w-full px-3 py-3 rounded-lg border border-PibiTech-gray-border bg-PibiTech-bg-lightest font-sen text-sm focus:outline-none focus:border-PibiTech-blue"
                   />
                 </div>
                 <div>
@@ -49,7 +49,7 @@ export default function ContactForm() {
                   <input
                     type="text"
                     placeholder="Enter last name"
-                    className="w-full px-3 py-3 rounded-lg border border-scanflow-gray-border bg-scanflow-bg-lightest font-sen text-sm focus:outline-none focus:border-scanflow-blue"
+                    className="w-full px-3 py-3 rounded-lg border border-PibiTech-gray-border bg-PibiTech-bg-lightest font-sen text-sm focus:outline-none focus:border-PibiTech-blue"
                   />
                 </div>
               </div>
@@ -61,7 +61,7 @@ export default function ContactForm() {
                 <input
                   type="tel"
                   placeholder="00000 00000"
-                  className="w-full px-3 py-3 rounded-lg border border-scanflow-gray-border bg-scanflow-bg-lightest font-sen text-sm focus:outline-none focus:border-scanflow-blue"
+                  className="w-full px-3 py-3 rounded-lg border border-PibiTech-gray-border bg-PibiTech-bg-lightest font-sen text-sm focus:outline-none focus:border-PibiTech-blue"
                 />
               </div>
 
@@ -72,7 +72,7 @@ export default function ContactForm() {
                 <input
                   type="email"
                   placeholder="gmail, outlook...."
-                  className="w-full px-3 py-3 rounded-lg border border-scanflow-gray-border bg-scanflow-bg-lightest font-sen text-sm focus:outline-none focus:border-scanflow-blue"
+                  className="w-full px-3 py-3 rounded-lg border border-PibiTech-gray-border bg-PibiTech-bg-lightest font-sen text-sm focus:outline-none focus:border-PibiTech-blue"
                 />
               </div>
 
@@ -83,7 +83,7 @@ export default function ContactForm() {
                 <input
                   type="text"
                   placeholder="Type your industry"
-                  className="w-full px-3 py-3 rounded-lg border border-scanflow-gray-border bg-scanflow-bg-lightest font-sen text-sm focus:outline-none focus:border-scanflow-blue"
+                  className="w-full px-3 py-3 rounded-lg border border-PibiTech-gray-border bg-PibiTech-bg-lightest font-sen text-sm focus:outline-none focus:border-PibiTech-blue"
                 />
               </div>
 
@@ -91,7 +91,7 @@ export default function ContactForm() {
                 <label className="block font-inter text-base font-bold text-[#111] mb-2">
                   Country *
                 </label>
-                <select className="w-full px-4 py-3 rounded-lg border border-scanflow-gray-border bg-scanflow-bg-lightest font-sen text-base focus:outline-none focus:border-scanflow-blue">
+                <select className="w-full px-4 py-3 rounded-lg border border-PibiTech-gray-border bg-PibiTech-bg-lightest font-sen text-base focus:outline-none focus:border-PibiTech-blue">
                   <option>Select Country</option>
                   <option>United States</option>
                   <option>India</option>
@@ -106,13 +106,13 @@ export default function ContactForm() {
                 <textarea
                   placeholder="Description"
                   rows={3}
-                  className="w-full px-5 py-4 rounded-lg border border-scanflow-gray-border bg-scanflow-bg-lightest font-sen text-sm focus:outline-none focus:border-scanflow-blue resize-none"
+                  className="w-full px-5 py-4 rounded-lg border border-PibiTech-gray-border bg-PibiTech-bg-lightest font-sen text-sm focus:outline-none focus:border-PibiTech-blue resize-none"
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full py-3 bg-gradient-to-r from-scanflow-blue-dark to-scanflow-blue-medium text-white font-sen text-sm font-bold rounded hover:opacity-90 transition-opacity"
+                className="w-full py-3 bg-gradient-to-r from-PibiTech-blue-dark to-PibiTech-blue-medium text-white font-sen text-sm font-bold rounded hover:opacity-90 transition-opacity"
               >
                 Submit
               </button>

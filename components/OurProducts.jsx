@@ -12,7 +12,7 @@ export default function OurProducts() {
         "AI-driven decision intelligence",
         "Scalable without complexity",
       ],
-      link: "#",
+      link: "contact-us",
     },
     {
       title: "Astro Kids",
@@ -24,12 +24,12 @@ export default function OurProducts() {
         "Vedic astrology + AI",
         "Holistic growth guidance",
       ],
-      link: "#",
+      link: "contact-us",
     },
   ];
 
   return (
-    <section className="section-padding bg-white">
+    <section className="section-padding bg-white" id="Products">
       <div className="container-max">
         <div className="mb-16 w-full">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">

@@ -16,7 +16,7 @@ export default function RecentEngagements() {
       subtitle: "EMS at Largest Asian Airport",
       image:
         "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&h=400",
-      link: "#",
+      link: "contact-us",
     },
     {
       id: 3,

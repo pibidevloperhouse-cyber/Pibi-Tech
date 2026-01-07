@@ -11,9 +11,9 @@ export default function TrustedEnterprises() {
   ];
 
   return (
-    <section className="w-full bg-scanflow-bg-lighter py-24">
+    <section className="w-full bg-PibiTech-bg-lighter py-24">
       <div className="container mx-auto max-w-[1320px] px-6">
-        <h2 className="font-sen text-[35px] font-bold leading-[52.5px] text-scanflow-navy text-center mb-12">
+        <h2 className="font-sen text-[35px] font-bold leading-[52.5px] text-PibiTech-navy text-center mb-12">
           Trusted by Global Enterprises
         </h2>
 

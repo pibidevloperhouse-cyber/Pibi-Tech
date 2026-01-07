@@ -26,18 +26,18 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="#"
+                  href="contact-us"
                   className="text-slate-400 hover:text-primary transition"
                 >
-                  Aether
+                  Profit Engine
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="contact-us"
                   className="text-slate-400 hover:text-primary transition"
                 >
-                  Tachyon
+                  Astro kIds
                 </Link>
               </li>
             </ul>
@@ -48,7 +48,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="#"
+                  href="/vision-ai"
                   className="text-slate-400 hover:text-primary transition"
                 >
                   Vision AI
@@ -56,10 +56,18 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/generative-ai"
                   className="text-slate-400 hover:text-primary transition"
                 >
                   Generative AI
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="contact-us"
+                  className="text-slate-400 hover:text-primary transition"
+                >
+                  Digital Transformations
                 </Link>
               </li>
             </ul>
@@ -70,66 +78,34 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="#"
+                  href="contact-us"
                   className="text-slate-400 hover:text-primary transition"
                 >
-                  Generative AI
+                  Intelligent Web Engine
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="contact-us"
                   className="text-slate-400 hover:text-primary transition"
                 >
-                  AI/ML
+                  Secure Corporate Brain
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="contact-us"
                   className="text-slate-400 hover:text-primary transition"
                 >
-                  Data Engineering
+                  Agentic Process Automation
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="contact-us"
                   className="text-slate-400 hover:text-primary transition"
                 >
-                  Custom Software
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="text-slate-400 hover:text-primary transition"
-                >
-                  Business Intelligence
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="text-slate-400 hover:text-primary transition"
-                >
-                  Quality Engineering
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="text-slate-400 hover:text-primary transition"
-                >
-                  Agile PODS Teams
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="text-slate-400 hover:text-primary transition"
-                >
-                  Talent Augmentation
+                  Autonomous Strategic Growth
                 </Link>
               </li>
             </ul>
@@ -140,19 +116,19 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex flex-wrap gap-6 justify-center md:justify-start">
               <Link
-                href="#"
+                href="contact-us"
                 className="text-slate-400 hover:text-primary transition text-sm"
               >
                 Home
               </Link>
               <Link
-                href="#"
+                href="contact-us"
                 className="text-slate-400 hover:text-primary transition text-sm"
               >
                 Careers
               </Link>
               <Link
-                href="#"
+                href="contact-us"
                 className="text-slate-400 hover:text-primary transition text-sm"
               >
                 Contact us
@@ -161,19 +137,19 @@ export default function Footer() {
 
             <div className="flex gap-4">
               <Link
-                href="#"
+                href="contact-us"
                 className="text-slate-400 hover:text-primary transition"
               >
                 <Linkedin className="w-5 h-5" />
               </Link>
               <Link
-                href="#"
+                href="contact-us"
                 className="text-slate-400 hover:text-primary transition"
               >
                 <Twitter className="w-5 h-5" />
               </Link>
               <Link
-                href="#"
+                href="contact-us"
                 className="text-slate-400 hover:text-primary transition"
               >
                 <MessageCircle className="w-5 h-5" />
@@ -183,8 +159,8 @@ export default function Footer() {
 
           <div className="mt-8 pt-6 border-t border-slate-700 text-center text-slate-500 text-sm">
             <p>
-              &copy; {new Date().getFullYear()} SHARPWIZ Technologies. All
-              rights reserved.
+              &copy; {new Date().getFullYear()} Pibi Technologies. All rights
+              reserved.
             </p>
           </div>
         </div>
