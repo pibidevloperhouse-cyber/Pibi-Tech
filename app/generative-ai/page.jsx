@@ -8,9 +8,9 @@ export default function Index() {
   const router = useRouter();
 
   const faqs = [
-    "What is Elsai Foundry?",
+    "What is Pibi Tech?",
     "How is it different from other AI tools?",
-    "Who is Elsai Foundry built for?",
+    "Who is Pibi Tech built for?",
     "Can I customize the AI agents?",
     "Do you offer managed services?",
     "How fast can we deploy?",
@@ -28,12 +28,12 @@ export default function Index() {
 
         <div className="max-w-[1425px] mx-auto px-6 lg:px-16 py-20 lg:py-28 relative">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-[42px] lg:text-[42px] font-bold leading-[57.5px] text-text-primary mb-6">
+            <h1 className="text-[27px] md:text-[42px] lg:text-[42px] font-bold leading-[1.2] md:leading-[57.5px] text-text-primary mb-6">
               Your AI transformation partner build, automate, and accelerate
               with production ready AI agents
             </h1>
             <p className="text-[17px] leading-[28.75px] text-[#272C30] mb-8 max-w-2xl mx-auto">
-              elsai foundry unifies AI agent design, deployment, and
+              Pibi Tech unifies AI agent design, deployment, and
               governance—empowering enterprises to build, orchestrate, or scale
               intelligent automation with a trusted AI transformation partner.
             </p>
@@ -53,8 +53,8 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="flex justify-center gap-8 mt-12">
-            <div className="bg-white rounded shadow-[0_0_80px_0_rgba(0,0,0,0.06)] border border-[#DADBDD] p-4 w-[173px]">
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-3 w-full place-items-center justify-center mt-12">
+            <div className="bg-white rounded shadow-[0_0_80px_0_rgba(0,0,0,0.06)] border border-[#DADBDD] p-4 h-full w-full">
               <div className="flex items-center gap-2 mb-2">
                 <div className="w-9 h-9 rounded bg-[#F6F3FF] flex items-center justify-center">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -84,7 +84,7 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="bg-white rounded shadow-[0_0_80px_0_rgba(0,0,0,0.06)] border border-[#DADBDD] p-4 w-[173px]">
+            <div className="bg-white rounded shadow-[0_0_80px_0_rgba(0,0,0,0.06)] border border-[#DADBDD] p-4 h-full w-full">
               <div className="flex items-center gap-2 mb-2">
                 <div className="w-9 h-9 rounded bg-[#F4F6FF] flex items-center justify-center">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -105,7 +105,7 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="bg-white rounded shadow-[0_0_80px_0_rgba(0,0,0,0.06)] border border-[#DADBDD] p-4 w-[184px]">
+            <div className="bg-white rounded shadow-[0_0_80px_0_rgba(0,0,0,0.06)] border border-[#DADBDD] p-4">
               <div className="flex items-center gap-2 mb-2">
                 <div className="w-9 h-9 rounded bg-[#F5FAFF] flex items-center justify-center">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -136,11 +136,11 @@ export default function Index() {
           </h2>
 
           <div className="grid md:grid-cols-3 gap-10">
-            <div className="bg-white shadow-[0_8px_24px_0_rgba(149,157,165,0.20)] overflow-hidden rounded">
-              <div className="relative pt-4 bg-white h-64 flex items-center justify-center">
-                <div className="absolute w-[364px] h-[364px] rounded-full bg-[rgba(150,189,255,0.36)] blur-[46px]"></div>
+            <div className="bg-white shadow-[0_8px_24px_0_rgba(149,157,165,0.20)] border border-blue-400 p-2 overflow-hidden rounded">
+              <div className="relative pt-4 bg-white h-max flex items-center justify-center">
+                {/* <div className="absolute w-full h-full bg-[rgba(150,189,255,0.36)] blur-[46px]"></div> */}
                 <div className="relative flex flex-col items-center">
-                  <span className="inline-block bg-gradient-to-r from-[rgba(21,99,228,0.80)] to-[rgba(22,99,229,0.70)] text-white text-[9px] font-bold px-2 py-1 rounded-sm mb-6">
+                  <span className="inline-block bg-linear-to-r from-[rgba(21,99,228,0.80)] to-[rgba(22,99,229,0.70)] text-white text-[9px] font-bold px-2 py-1 rounded-sm mb-6">
                     Healthcare
                   </span>
                   <img
@@ -163,9 +163,9 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="bg-white shadow-[0_8px_24px_0_rgba(149,157,165,0.20)] overflow-hidden rounded">
+            <div className="bg-white shadow-[0_8px_24px_0_rgba(149,157,165,0.20)] overflow-hidden border border-[#C7FCFF] p-2 rounded">
               <div className="relative pt-4 bg-white h-64 flex items-center justify-center">
-                <div className="absolute w-[364px] h-[364px] rounded-full bg-[#C7FCFF] blur-[46px]"></div>
+                <div className="absolute rounded-full bg-[#C7FCFF] blur-[46px]"></div>
                 <div className="relative flex flex-col items-center">
                   <span className="inline-block bg-gradient-to-r from-[rgba(24,210,219,0.80)] to-[rgba(55,234,242,0.70)] text-white text-[9px] font-bold px-2 py-1 rounded-sm mb-6">
                     Financial
@@ -183,16 +183,16 @@ export default function Index() {
                 </h3>
                 <p className="text-[17px] text-text-secondary leading-[22.4px] mb-4">
                   Streamline KYC, AML, and risk management through AI process
-                  automation. Elsai Foundry provides end-to-end regulatory
+                  automation. Pibi Tech provides end-to-end regulatory
                   compliance solutions, real-time analysis, and AI-powered
                   accuracy for high-stakes finance operations.
                 </p>
               </div>
             </div>
 
-            <div className="bg-white shadow-[0_8px_24px_0_rgba(149,157,165,0.20)] overflow-hidden rounded">
+            <div className="bg-white shadow-[0_8px_24px_0_rgba(149,157,165,0.20)] overflow-hidden rounded border border-[rgba(212,198,255,0.60)] p-2">
               <div className="relative pt-4 bg-white h-64 flex items-center justify-center">
-                <div className="absolute w-[364px] h-[364px] rounded-full bg-[rgba(212,198,255,0.60)] blur-[46px]"></div>
+                {/* <div className="absolute w-[364px] h-[364px] rounded-full bg-[rgba(212,198,255,0.60)] blur-[46px]"></div> */}
                 <div className="relative flex flex-col items-center">
                   <span className="inline-block bg-gradient-to-r from-[rgba(69,46,145,0.80)] to-[rgba(69,46,145,0.70)] text-white text-[9px] font-bold px-2 py-1 rounded-sm mb-6">
                     Logistics
@@ -222,7 +222,7 @@ export default function Index() {
 
       <section className="bg-[#000636] shadow-lg py-24 relative overflow-hidden">
         <div className="max-w-[1425px] mx-auto px-6 lg:px-16 relative z-10">
-          <h2 className="text-[35px] font-bold text-[#E4EAFF] text-center mb-16">
+          <h2 className="text-[26px] md:text-[35px] font-bold text-[#E4EAFF] text-center mb-16">
             Delivering real value with intelligent automation
           </h2>
 
@@ -236,7 +236,7 @@ export default function Index() {
               </div>
               <p className="text-[17px] text-[#969BCA] leading-[22.4px]">
                 Accelerate your AI integration from idea to production in days
-                not months. Elsai foundry's unified platform simplifies AI agent
+                not months. Pibi Tech's unified platform simplifies AI agent
                 lifecycle management, allowing enterprises to deploy with 5x
                 faster delivery and zero infrastructure friction.
               </p>
@@ -253,8 +253,7 @@ export default function Index() {
                 Ensure enterprise-grade accuracy, transparency, and
                 regulation-readiness across all workflows. With Responsible AI
                 guardrails, multi-cloud governance, and audit-ready frameworks,
-                Elsai foundry helps enterprises stay compliant across
-                industries.
+                Pibi Tech helps enterprises stay compliant across industries.
               </p>
             </div>
 
@@ -268,9 +267,8 @@ export default function Index() {
               <p className="text-[17px] text-[#969BCA] leading-[22.4px]">
                 Cut operational costs with intelligent automation. Whether you
                 build in-house using our platform or leverage our managed AI
-                service, Elsai foundry ensures predictable savings through
-                efficient model orchestration and intelligent resource
-                allocation.
+                service, Pibi Tech ensures predictable savings through efficient
+                model orchestration and intelligent resource allocation.
               </p>
             </div>
           </div>
@@ -347,7 +345,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="bg-bg-white shadow-lg py-24">
+      {/* <section className="bg-bg-white shadow-lg py-24">
         <div className="max-w-[1425px] mx-auto px-6 lg:px-16">
           <h2 className="text-[42px] font-bold text-text-primary text-center mb-16">
             Platform & solutions
@@ -473,11 +471,11 @@ export default function Index() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="bg-bg-white py-24">
         <div className="max-w-[1425px] mx-auto px-6 lg:px-16">
-          <h2 className="text-[42px] font-bold text-text-primary text-center mb-16">
+          <h2 className="text-[28px] capitalize md:text-[42px] font-bold text-text-primary text-center mb-16">
             Centralized integration hub for AI driven workflows
           </h2>
 
@@ -511,7 +509,7 @@ export default function Index() {
 
       <section className="bg-bg-blue py-24">
         <div className="max-w-[1135px] mx-auto px-6">
-          <h2 className="text-[42px] font-bold text-text-primary text-center mb-16">
+          <h2 className="text-[28px] capitalize md:text-[42px] font-bold text-text-primary text-center mb-16">
             Frequently asked questions
           </h2>
 
@@ -560,7 +558,7 @@ export default function Index() {
 
         <div className="max-w-[1425px] mx-auto px-6 lg:px-16 relative z-10">
           <div className="max-w-2xl ml-auto">
-            <h2 className="text-[42px] font-bold text-[#E4EAFF] mb-6">
+            <h2 className="text-[28px] capitalize md:text-[42px] font-bold text-[#E4EAFF] mb-6">
               Start automating smarter
             </h2>
             <p className="text-[19px] text-[#E4EAFF] leading-[25.2px] mb-10">

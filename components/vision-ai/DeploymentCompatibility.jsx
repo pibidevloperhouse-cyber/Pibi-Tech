@@ -39,7 +39,7 @@ export default function DeploymentFlexibility() {
         </div>
 
         {/* Tab Navigation */}
-        <div className="flex items-center gap-8 mb-12 border-b border-PibiTech-gray">
+        <div className="flex items-center flex-col md:flex-row gap-8 mb-12">
           <button
             onClick={() => setActiveTab("deployment")}
             className={`pb-2 text-[20px] font-normal relative ${

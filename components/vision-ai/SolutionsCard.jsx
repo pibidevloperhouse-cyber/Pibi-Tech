@@ -8,20 +8,19 @@ export default function SolutionCard({
   reverse = false,
 }) {
   return (
-    <section className="w-full bg-PibiTech-bg-lighter py-20">
+    <section className="w-full bg-PibiTech-bg-lighter py-5">
       <div className="container mx-auto max-w-[1320px] px-6">
         <div
-          className={`flex items-center gap-12 ${
+          className={`flex items-center flex-col md:flex-row gap-12 ${
             reverse ? "flex-row-reverse" : ""
           }`}
         >
-          {/* Content Side */}
           <div className="w-full lg:w-1/2">
             {icon}
-            <h2 className="font-inter text-[25px] font-bold leading-[50px] text-PibiTech-navy mb-4">
+            <h2 className="font-inter mt-3 text-[25px] font-bold leading-[1.2] text-PibiTech-navy mb-4">
               {title}
             </h2>
-            <p className="font-inter text-[20px] font-normal leading-[30px] text-PibiTech-gray mb-8">
+            <p className="font-inter text-[20px] font-normal text-PibiTech-gray mb-8">
               {description}
             </p>
             <Link
@@ -32,7 +31,6 @@ export default function SolutionCard({
             </Link>
           </div>
 
-          {/* Image Side */}
           <div className="w-full lg:w-1/2">
             <div className="rounded-2xl overflow-hidden">
               <img

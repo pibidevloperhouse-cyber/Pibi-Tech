@@ -50,7 +50,7 @@ export default function Roadmap() {
                 key={index}
                 className="relative bg-white border-2 border-slate-600 rounded-2xl p-8 hover:shadow-xl transition-all duration-300"
               >
-                <div className="absolute top-0 translate-y-[-50%] left-8 bg-white px-3">
+                <div className="absolute -top-3 translate-y-[-50%] left-8 bg-white px-3">
                   <span className="text-md font-bold text-primary">
                     STEP {item.step}
                   </span>

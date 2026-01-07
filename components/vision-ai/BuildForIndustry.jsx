@@ -69,7 +69,7 @@ export default function BuiltForIndustry() {
         </div>
 
         {/* Industry Cards */}
-        <div className="bg-PibiTech-bg-blue rounded-[10px] shadow-[0_0_10px_rgba(43,132,234,0.15)] p-8">
+        <div className="bg-PibiTech-bg-blue rounded-[10px] shadow-[0_0_10px_rgba(43,132,234,0.15)]">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {industries.map((industry, index) => (
               <div

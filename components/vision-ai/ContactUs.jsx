@@ -8,10 +8,6 @@ export default function ContactForm() {
             <h2 className="font-sen text-[35px] font-bold leading-[42px] text-PibiTech-navy mb-6">
               Book a Meeting with Pibi Tech
             </h2>
-            <p className="font-inter text-[18px] font-normal leading-[27px] text-PibiTech-gray mb-8">
-              From instant QC checks to live asset tracking, Pibi Tech gives you
-              real-time control. Schedule a session to see it in action.
-            </p>
             <div className="space-y-4">
               <div className="flex items-center gap-2">
                 <span className="text-PibiTech-blue text-xl"></span>

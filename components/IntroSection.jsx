@@ -9,7 +9,7 @@ export default function IntroSection() {
   ];
 
   return (
-    <section className="section-padding bg-white">
+    <section className="section-padding bg-white" id="WhoWeAre">
       <div className="container-max">
         <div className="grid grid-cols-1 md:grid-cols-7 gap-8 lg:gap-12 items-center">
           <div className="md:col-span-7 lg:col-span-4">

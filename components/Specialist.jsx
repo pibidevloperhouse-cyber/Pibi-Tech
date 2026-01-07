@@ -29,7 +29,7 @@ export default function Specialist() {
   ];
 
   return (
-    <section className="section-padding bg-white">
+    <section className="section-padding bg-white" id="Services">
       <div className="container-max">
         <div className="max-w-3xl mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">

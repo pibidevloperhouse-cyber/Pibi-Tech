@@ -35,7 +35,7 @@ export default function HeroBanner() {
             }`}
           >
             <span className="text-white text-[19px]"></span>
-            <span className="text-white text-[13px] font-semibold uppercase tracking-[5px]">
+            <span className="text-white text-[10px] md:text-[13px] font-semibold uppercase tracking-[5px]">
               Asset Identification
             </span>
           </button>
@@ -43,10 +43,10 @@ export default function HeroBanner() {
 
         <div className="text-center max-w-[819px] mb-8">
           <h1 className="font-sen text-white mb-4">
-            <div className="text-[65px] font-normal leading-[78px]">
+            <div className="text-[32px] md:text-[65px] font-normal leading-[1.2]">
               Visual Inspection
             </div>
-            <div className="text-[65px] font-bold leading-[78px]">
+            <div className="text-[32px] md:text-[65px] font-bold leading-[1.2]">
               Automated.
             </div>
           </h1>

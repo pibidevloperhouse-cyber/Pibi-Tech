@@ -14,6 +14,9 @@ export default function Index() {
     <div className="min-h-screen bg-white">
       <HeroBanner />
       <TrustedCompanies />
+      <h3 className="text-3xl text-center font-bold bg-clip-text text-transparent bg-brand-gradient mb-4">
+        Our Solutions
+      </h3>
       <SolutionCard
         title={"Visual Inspection"}
         description={
@@ -40,7 +43,7 @@ export default function Index() {
       />
 
       <WhyPibi />
-      <DeliveryProcess />
+      {/* <DeliveryProcess /> */}
       <DeploymentFlexibility />
       <BuiltForIndustry />
       {/* <CustomerStories /> */}

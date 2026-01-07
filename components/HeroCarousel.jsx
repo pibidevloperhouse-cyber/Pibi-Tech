@@ -79,7 +79,7 @@ export default function HeroCarousel() {
           {slides[current].content}
         </p>
 
-        <div className="mt-10 flex items-center gap-4">
+        <div className="mt-10 flex flex-col md:flex-row items-center gap-4">
           <button
             onClick={() => router.push("/contact-us")}
             className="bg-[#0046B8] hover:bg-[#003A96] text-white px-8 py-3 rounded-full font-semibold shadow-lg"

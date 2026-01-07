@@ -50,11 +50,11 @@ export default function OurProducts() {
               className="relative bg-white border border-slate-200 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
             >
               <div>
-                <span className="inline-block text-sm font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full mb-4">
+                <span className="inline-block text-sm font-semibold text-primary bg-primary/10 py-1 rounded-full mb-4">
                   {product.tag}
                 </span>
 
-                <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-brand-gradient mb-4">
                   {product.title}
                 </h3>
 
