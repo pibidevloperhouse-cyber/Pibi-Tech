@@ -27,7 +27,7 @@ export function MainPage() {
         <h1 className="text-5xl md:text-6xl text-white font-extrabold tracking-tight">
           <span className="block mt-2">
             WE{" "}
-            <span className="relative inline-block h-[1.2em] overflow-hidden align-middle">
+            <span className="relative inline-block align-middle">
               <span key={index} className="animate-slide-fade">
                 {texts[index]}{" "}
               </span>

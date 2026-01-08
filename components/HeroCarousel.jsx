@@ -48,7 +48,7 @@ export default function HeroCarousel() {
   };
 
   return (
-    <div className="relative w-full h-[90vh] bg-white overflow-hidden">
+    <div className="relative w-full bg-white overflow-hidden">
       {/* <div
         className="absolute inset-0 opacity-[0.1] bg-linear-to-b from-transparent to-white"
         style={{
