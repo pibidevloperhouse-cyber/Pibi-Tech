@@ -21,7 +21,7 @@ export default function MissionVisionOfferings() {
       id: 3,
       title: "Intelligent Business Process Automation (Execution Layer)",
       description: "End-to-end automation using AI, RPA, LLMs.",
-      link: "contact-us",
+      link: "intelligent-process-automation",
     },
     {
       id: 4,
