@@ -7,10 +7,12 @@ import OurProducts from "@/components/OurProducts";
 import Specialist from "@/components/Specialist";
 import PerformanceGuarantee from "@/components/PerformanceGuarantee";
 import Roadmap from "@/components/RoadMap";
+import { MainPage } from "@/components/MainPage";
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-white">
+      <MainPage />
       <HeroCarousel />
       <IntroSection />
       <MissionVisionOfferings />

@@ -247,3 +247,38 @@
     border-color: rgba(164, 174, 198, 0.2);
   }
 }
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+.animate-slide-fade {
+  animation: slideFade 2s ease-in-out infinite;
+}
+
+@keyframes slideFade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
