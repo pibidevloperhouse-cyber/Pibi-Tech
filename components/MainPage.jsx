@@ -19,12 +19,12 @@ export function MainPage() {
     <section className="relative overflow-hidden bg-[#070a18] text-white">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,#1e40af30,transparent_60%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom,#0ea5e930,transparent_55%)]" />
-
+      {/* 
       <Sparkles className="absolute left-24 top-40 text-blue-400/60" />
       <Plus className="absolute left-40 top-24 text-white/40" />
-      <Bot className="absolute right-40 top-32 text-blue-400/70" />
+      <Bot className="absolute right-40 top-32 text-blue-400/70" /> */}
       <div className="relative mx-auto max-w-7xl px-6 pt-18 pb-7 text-center">
-        <h1 className="text-5xl md:text-6xl text-white font-extrabold tracking-tight">
+        <h1 className="text-4xl md:text-6xl text-white font-extrabold tracking-tight">
           <span className="block mt-2">
             WE{" "}
             <span className="relative inline-block align-middle">
