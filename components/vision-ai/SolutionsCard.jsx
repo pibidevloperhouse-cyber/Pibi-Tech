@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function SolutionCard({
@@ -11,7 +12,7 @@ export default function SolutionCard({
     <section className="w-full bg-PibiTech-bg-lighter py-5">
       <div className="container mx-auto max-w-[1320px] px-6">
         <div
-          className={`flex items-center flex-col md:flex-row gap-12 ${
+          className={`flex items-center flex-col md:flex-row gap-6 ${
             reverse ? "flex-row-reverse" : ""
           }`}
         >
@@ -32,8 +33,9 @@ export default function SolutionCard({
           </div>
 
           <div className="w-full lg:w-1/2">
-            <div className="rounded-2xl overflow-hidden">
-              <img
+            <div className="rounded-2xl relative w-full aspect-video overflow-hidden">
+              <Image
+                fill
                 src={image}
                 alt={title}
                 className="w-full h-auto object-cover"

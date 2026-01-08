@@ -7,7 +7,7 @@ import HeroBanner from "@/components/vision-ai/Hero";
 import SolutionCard from "@/components/vision-ai/SolutionsCard";
 import TrustedCompanies from "@/components/vision-ai/TrustedCompanies";
 import WhyPibi from "@/components/vision-ai/WhyPibi";
-import { Settings } from "lucide-react";
+import { TbEyeSpark } from "react-icons/tb";
 
 export default function Index() {
   return (
@@ -22,7 +22,7 @@ export default function Index() {
         description={
           "Maintain high production standards by detecting defects early and ensuring consistent quality at every stage of manufacturing"
         }
-        icon={<Settings className="w-8 h-8" />}
+        icon={<TbEyeSpark className="w-8 h-8" />}
         image={"/solution1.png"}
       />
       <SolutionCard
