@@ -7,6 +7,7 @@ import HeroBanner from "@/components/vision-ai/Hero";
 import SolutionCard from "@/components/vision-ai/SolutionsCard";
 import TrustedCompanies from "@/components/vision-ai/TrustedCompanies";
 import WhyPibi from "@/components/vision-ai/WhyPibi";
+import { Settings } from "lucide-react";
 import { TbEyeSpark } from "react-icons/tb";
 
 export default function Index() {
