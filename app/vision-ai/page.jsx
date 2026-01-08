@@ -23,7 +23,7 @@ export default function Index() {
           "Maintain high production standards by detecting defects early and ensuring consistent quality at every stage of manufacturing"
         }
         icon={<Settings className="w-8 h-8" />}
-        image={"/vision-ai/solutions/visual-inspection.png"}
+        image={"/solution1.png"}
       />
       <SolutionCard
         title={"Asset Identification"}
@@ -31,7 +31,7 @@ export default function Index() {
           "Automate track-and-trace across industries. Cut down on manual data entry, reduce error, and keep operations moving faster"
         }
         icon={<Settings className="w-8 h-8" />}
-        image={"/vision-ai/solutions/asset-identification.png"}
+        image={"/solution2.png"}
       />
       <SolutionCard
         title={"Industrial Safety"}
@@ -39,7 +39,7 @@ export default function Index() {
           "Identify risks, monitor safety compliance, and prevent workplace hazards with smart AI safety solutions"
         }
         icon={<Settings className="w-8 h-8" />}
-        image={"/vision-ai/solutions/industrial-safety.png"}
+        image={"/solution3.png"}
       />
 
       <WhyPibi />
