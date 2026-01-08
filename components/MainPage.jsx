@@ -24,14 +24,14 @@ export function MainPage() {
       <Plus className="absolute left-40 top-24 text-white/40" />
       <Bot className="absolute right-40 top-32 text-blue-400/70" /> */}
       <div className="relative mx-auto max-w-7xl px-6 pt-18 pb-7 text-center">
-        <h1 className="text-4xl md:text-6xl text-white font-extrabold tracking-tight">
-          <span className="block mt-2">
-            WE{" "}
+        <h1 className="text-4xl md:text-6xl  text-white font-extrabold tracking-tight">
+          <span className="flex flex-col gap-0 md:gap-1 md:flex-row justify-center items-center">
+            We{" "}
             <span className="relative inline-block align-middle">
               <span key={index} className="animate-slide-fade">
-                {texts[index]}{" "}
+                {texts[index]} <br className="block md:hidden" />
               </span>
-              <span className="bg-clip-text text-transparent bg-linear-to-r from-cyan-400 to-blue-500">
+              <span className="bg-clip-text mt-2 md:mt-0 text-transparent bg-linear-to-r from-cyan-400 to-blue-500">
                 {"{AI AGENTS}"}
               </span>
             </span>
@@ -44,7 +44,7 @@ export function MainPage() {
         </p>
 
         <div className="mt-10 flex justify-center">
-          <button className="group inline-flex items-center gap-3 rounded-lg bg-white px-6 py-3 text-lg font-semibold text-[#070a18] transition hover:bg-blue-50">
+          <button className="group inline-flex items-center gap-3 rounded-lg bg-white px-6 py-3 text-sm md:text-lg font-semibold text-[#070a18] transition hover:bg-blue-50">
             Adopt AI and Automation Now
             <span className="flex h-9 w-9 items-center justify-center rounded-md bg-blue-600 text-white transition group-hover:translate-x-1">
               <ArrowRight size={18} />
