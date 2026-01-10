@@ -8,7 +8,7 @@ export default function HeroBanner() {
   const router = useRouter();
 
   return (
-    <section className="relative w-full h-[1200px] max-h-[80vh] overflow-hidden rounded-xl py-10 mt-10">
+    <section className="relative w-full h-300 max-h-[80vh] overflow-hidden rounded-xl py-10 mt-10">
       <div className="absolute max-w-[90vw] bg-brand-gradient h-full mx-auto inset-0 overflow-hidden rounded-xl"></div>
 
       <div className="relative z-10 h-full flex flex-col items-center justify-center px-4">
@@ -41,7 +41,7 @@ export default function HeroBanner() {
           </button>
         </div>
 
-        <div className="text-center max-w-[819px] mb-8">
+        <div className="text-center max-w-204.75 mb-8">
           <h1 className="font-sen text-white mb-4">
             <div className="text-[32px] md:text-[65px] font-normal leading-[1.2]">
               Visual Inspection
@@ -58,7 +58,7 @@ export default function HeroBanner() {
         <div className="flex items-center gap-4">
           <button
             onClick={() => router.push("/contact-us")}
-            className="px-5 py-3 bg-PibiTech-blue text-white text-base font-medium font-sen rounded hover:opacity-90 transition-opacity"
+            className="px-5 py-3 bg-[#248BB3] text-white text-base font-medium font-sen rounded hover:opacity-90 transition-opacity"
           >
             Explore
           </button>

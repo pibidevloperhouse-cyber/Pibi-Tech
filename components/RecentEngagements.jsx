@@ -15,54 +15,70 @@ export default function RecentEngagements() {
       subtitle: "EMS at Largest Asian Airport",
       image:
         "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&h=400",
-      link: "contact-us",
+      link: "/contact-us",
     },
     {
       id: 3,
       title: "Generative AI",
       subtitle: "Personalised Shopping Assistant",
       image: "/generative-ai.png",
-      link: "generative-ai",
+      link: "/generative-ai",
     },
   ];
 
   return (
-    <section className="section-padding bg-blue-50">
-      <div className="container-max">
-        <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent leading-normal bg-brand-gradient mb-12">
-          Our Recent Engagements
-        </h2>
+    <section className="relative section-padding overflow-hidden bg-[url('/network.jpg')] bg-cover bg-center">
+      <div className="relative container-max">
+        <div className="flex flex-col md:flex-row max-w-[90%] gap-5">
+          <h2 className="text-2xl flex-1 md:text-4xl font-bold text-white mb-14">
+            Pi (π) Nary Labs <br /> - Where Industry Innovation Becomes Reality
+          </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <p className="text-white/70 flex-1 text-md">
+            Pi Nary Labs is Pi BI Tech’s innovation hub, helping businesses
+            solve complex industry challenges using emerging technologies. From
+            IoT and Computer Vision to GenAI, AR/VR, and Edge Computing, we
+            enable Industry 5.0 transformation through collaborative R&D,
+            scalable engineering, and cloud-native solutions that drive
+            sustainable business growth.
+          </p>
+        </div>
+
+        <div className="grid mt-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {engagements.map((engagement) => (
             <div
               key={engagement.id}
-              className="card-base overflow-hidden hover:shadow-xl transition-shadow group"
+              className="group relative rounded-2xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_60px_rgba(0,0,0,0.5)]"
             >
-              {/* Image */}
-              <div className="relative h-48 overflow-hidden bg-slate-200">
+              <div className="relative h-56 overflow-hidden">
                 <img
                   src={engagement.image}
                   alt={engagement.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
+
+                {/* <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-transparent" /> */}
               </div>
 
-              {/* Content */}
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-slate-900 mb-2">
+              <div className="p-6 bg-black/60">
+                <h3 className="text-2xl font-semibold text-white mb-2">
                   {engagement.title}
                 </h3>
-                <p className="text-slate-600 text-md mb-4">
+                <p className="text-slate-300 text-sm mb-6">
                   {engagement.subtitle}
                 </p>
+
                 <a
                   href={engagement.link}
-                  className="text-primary hover:text-primary-600 font-semibold flex items-center gap-1 transition"
+                  className="inline-flex items-center text-white gap-2 font-semibold group-hover:gap-3 transition-all"
                 >
                   Learn more
                   <ArrowRight className="w-4 h-4" />
                 </a>
+              </div>
+
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition pointer-events-none">
+                <div className="absolute inset-0 rounded-2xl ring-1 ring-primary/30" />
               </div>
             </div>
           ))}

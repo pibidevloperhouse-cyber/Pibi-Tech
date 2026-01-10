@@ -19,14 +19,9 @@ export default function Index() {
   ];
 
   return (
-    <div className="min-h-screen bg-bg-light">
-      <section className="bg-bg-lighter shadow-lg relative overflow-hidden">
-        <div className="absolute inset-0 opacity-40 bg-bg-lighter">
-          <div className="absolute left-[202px] top-[273px] w-[185px] h-[185px] rounded-full bg-white/0 blur-[16px]"></div>
-          <div className="absolute left-[525px] top-[462px] w-[117px] h-[117px] rounded-full bg-white/0 blur-[6px]"></div>
-        </div>
-
-        <div className="max-w-[1425px] mx-auto px-6 lg:px-16 py-20 lg:py-28 relative">
+    <div className="min-h-screen bg-white">
+      <section className="bg-white relative overflow-hidden">
+        <div className="px-6 lg:px-16 py-20 lg:py-28 relative">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-[27px] md:text-[42px] lg:text-[42px] font-bold leading-[1.2] md:leading-[57.5px] text-text-primary mb-6">
               Your AI transformation partner build, automate, and accelerate
@@ -40,13 +35,13 @@ export default function Index() {
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <button
                 onClick={() => router.push("/contact-us")}
-                className="bg-blue-600 text-white px-5 py-2.5 rounded font-bold text-[15px] hover:bg-blue-700 transition-colors"
+                className="bg-[#248BB3] text-white px-5 py-2.5 rounded font-bold text-[15px] hover:bg-blue-700 transition-colors"
               >
                 Book a demo
               </button>
               <button
                 onClick={() => router.push("/contact-us")}
-                className="border border-blue-600 text-blue-600 px-5 py-2.5 rounded font-bold text-[15px] hover:bg-blue-50 transition-colors"
+                className="border border-[#248BB3] text-[#248BB3] px-5 py-2.5 rounded font-bold text-[15px] hover:bg-blue-50 transition-colors"
               >
                 Contact us
               </button>
@@ -54,7 +49,7 @@ export default function Index() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 w-full max-w-2xl mx-auto items-center mt-12">
-            <div className="bg-white rounded shadow-[0_0_80px_0_rgba(0,0,0,0.06)] border border-[#DADBDD] p-4 h-full">
+            <div className="bg-white p-4 h-full">
               <div className="flex items-center gap-2 mb-2">
                 <div className="w-9 h-9 rounded bg-[#F6F3FF] flex items-center justify-center">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -130,7 +125,7 @@ export default function Index() {
       </section>
 
       <section className="bg-white shadow-lg py-24">
-        <div className="max-w-[1425px] mx-auto px-6 lg:px-16">
+        <div className="px-6 lg:px-16">
           <h2 className="text-[42px] font-bold text-text-primary text-center mb-16">
             AI solutions tailored for your industry
           </h2>
@@ -138,7 +133,7 @@ export default function Index() {
           <div className="grid md:grid-cols-3 gap-10">
             <div className="bg-white shadow-[0_8px_24px_0_rgba(149,157,165,0.20)] border border-blue-400 p-2 overflow-hidden rounded">
               <div className="relative pt-4 bg-white h-max flex items-center justify-center">
-                {/* <div className="absolute w-full h-full bg-[rgba(150,189,255,0.36)] blur-[46px]"></div> */}
+                <div className="absolute w-full h-full bg-[rgba(150,189,255,0.36)] blur-[46px]"></div>
                 <div className="relative flex flex-col items-center">
                   <span className="inline-block bg-linear-to-r from-[rgba(21,99,228,0.80)] to-[rgba(22,99,229,0.70)] text-white text-[9px] font-bold px-2 py-1 rounded-sm mb-6">
                     Healthcare
@@ -163,17 +158,17 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="bg-white shadow-[0_8px_24px_0_rgba(149,157,165,0.20)] overflow-hidden border border-[#C7FCFF] p-2 rounded">
+            <div className="bg-white shadow-[0_8px_24px_0_rgba(149,157,165,0.20)] overflow-hidden border border-[#C7FCFF] p-2 rounded flex flex-col justify-between">
               <div className="relative pt-4 bg-white h-64 flex items-center justify-center">
-                <div className="absolute rounded-full bg-[#C7FCFF] blur-[46px]"></div>
+                <div className="absolute w-full h-full bg-[#C7FCFF]/30 blur-[46px]"></div>
                 <div className="relative flex flex-col items-center">
-                  <span className="inline-block bg-gradient-to-r from-[rgba(24,210,219,0.80)] to-[rgba(55,234,242,0.70)] text-white text-[9px] font-bold px-2 py-1 rounded-sm mb-6">
+                  <span className="inline-block bg-linear-to-r from-[rgba(24,210,219,0.80)] to-[rgba(55,234,242,0.70)] text-white text-[9px] font-bold px-2 py-1 rounded-sm mb-6">
                     Financial
                   </span>
                   <img
                     src="https://api.builder.io/api/v1/image/assets/TEMP/179f1dbd475652c090b362c0060fe2f88e7e1330?width=650"
                     alt="Financial"
-                    className="w-full max-w-[325px] h-[203px] rounded shadow-[0_7px_29px_0_rgba(100,100,111,0.20)]"
+                    className="w-full rounded shadow-[0_7px_29px_0_rgba(100,100,111,0.20)]"
                   />
                 </div>
               </div>
@@ -190,9 +185,9 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="bg-white shadow-[0_8px_24px_0_rgba(149,157,165,0.20)] overflow-hidden rounded border border-[rgba(212,198,255,0.60)] p-2">
+            <div className="bg-white shadow-[0_8px_24px_0_rgba(149,157,165,0.20)] overflow-hidden rounded border border-[rgba(212,198,255,0.60)] p-2 flex flex-col justify-between">
               <div className="relative pt-4 bg-white h-64 flex items-center justify-center">
-                {/* <div className="absolute w-[364px] h-[364px] rounded-full bg-[rgba(212,198,255,0.60)] blur-[46px]"></div> */}
+                <div className="absolute w-[364px] h-[364px] rounded-full bg-[rgba(212,198,255,0.60)] blur-[46px]"></div>
                 <div className="relative flex flex-col items-center">
                   <span className="inline-block bg-gradient-to-r from-[rgba(69,46,145,0.80)] to-[rgba(69,46,145,0.70)] text-white text-[9px] font-bold px-2 py-1 rounded-sm mb-6">
                     Logistics
@@ -229,7 +224,7 @@ export default function Index() {
           <div className="grid md:grid-cols-3 gap-20">
             <div>
               <div className="flex items-start gap-4 mb-6">
-                <div className="w-0.5 h-8 bg-blue-600"></div>
+                <div className="w-0.5 h-8 bg-[#248BB3]"></div>
                 <h3 className="text-[25px] font-semibold text-white">
                   AI acceleration
                 </h3>
@@ -244,7 +239,7 @@ export default function Index() {
 
             <div>
               <div className="flex items-start gap-4 mb-6">
-                <div className="w-0.5 h-8 bg-blue-600"></div>
+                <div className="w-0.5 h-8 bg-[#248BB3]"></div>
                 <h3 className="text-[25px] font-semibold text-white">
                   Compliance & accuracy
                 </h3>
@@ -259,7 +254,7 @@ export default function Index() {
 
             <div>
               <div className="flex items-start gap-4 mb-6">
-                <div className="w-0.5 h-8 bg-blue-600"></div>
+                <div className="w-0.5 h-8 bg-[#248BB3]"></div>
                 <h3 className="text-[25px] font-semibold text-white">
                   Cost reduction
                 </h3>
@@ -404,7 +399,7 @@ export default function Index() {
                 </ul>
                 <button
                   onClick={() => router.push("/contact-us")}
-                  className="w-full border border-blue-600 text-blue-600 py-2.5 rounded font-bold text-[15px] hover:bg-blue-50 transition-colors"
+                  className="w-full border border-[#248BB3] text-[#248BB3] py-2.5 rounded font-bold text-[15px] hover:bg-blue-50 transition-colors"
                 >
                   View details
                 </button>
@@ -463,7 +458,7 @@ export default function Index() {
                 </ul>
                 <button
                   onClick={() => router.push("/contact-us")}
-                  className="w-full border border-blue-600 text-blue-600 py-2.5 rounded font-bold text-[15px] hover:bg-blue-50 transition-colors"
+                  className="w-full border border-[#248BB3] text-[#248BB3] py-2.5 rounded font-bold text-[15px] hover:bg-blue-50 transition-colors"
                 >
                   Talk to us
                 </button>

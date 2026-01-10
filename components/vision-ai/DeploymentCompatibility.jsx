@@ -30,10 +30,10 @@ export default function DeploymentFlexibility() {
     <section className="w-full py-16">
       <div className="container mx-auto max-w-[1320px] px-6">
         <div className="mb-12">
-          <h2 className="font-sen text-[35px] font-bold leading-[52.5px] text-PibiTech-navy mb-2">
+          <h2 className="font-sen text-[35px] font-bold leading-[52.5px] text-[#248BB3] mb-2">
             Deployment Flexibility
           </h2>
-          <h3 className="font-sen text-[35px] font-bold leading-[52.5px] text-PibiTech-navy">
+          <h3 className="font-sen text-[35px] font-bold leading-[52.5px] text-[#248BB3]">
             & Compatibility
           </h3>
         </div>
@@ -43,25 +43,23 @@ export default function DeploymentFlexibility() {
           <button
             onClick={() => setActiveTab("deployment")}
             className={`pb-2 text-[20px] font-normal relative ${
-              activeTab === "deployment" ? "text-PibiTech-navy" : "text-black"
+              activeTab === "deployment" ? "text-[#248BB3]" : "text-black"
             }`}
           >
             Deployment Models
             {activeTab === "deployment" && (
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-PibiTech-blue rounded-t-[10px]" />
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-blue-50 rounded-t-[10px]" />
             )}
           </button>
           <button
             onClick={() => setActiveTab("compatibility")}
             className={`pb-2 text-[20px] font-normal relative ${
-              activeTab === "compatibility"
-                ? "text-PibiTech-navy"
-                : "text-black"
+              activeTab === "compatibility" ? "text-[#248BB3]" : "text-black"
             }`}
           >
             Compatability
             {activeTab === "compatibility" && (
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-PibiTech-blue rounded-t-[10px]" />
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-blue-50 rounded-t-[10px]" />
             )}
           </button>
         </div>
@@ -72,17 +70,17 @@ export default function DeploymentFlexibility() {
             {deploymentModels.map((model, index) => (
               <div
                 key={index}
-                className="bg-white rounded-b-[10px] border-t-[5px] border-PibiTech-blue p-8"
+                className="bg-white rounded-b-[10px] border-t-[5px] border-blue-50 p-8"
               >
                 <img
                   src={model.icon}
                   alt={model.title}
                   className="w-[50px] h-[50px] mb-6"
                 />
-                <h4 className="text-PibiTech-navy text-[20px] font-medium leading-6 mb-4">
+                <h4 className="text-[#248BB3] text-[20px] font-medium leading-6 mb-4">
                   {model.title}
                 </h4>
-                <p className="text-PibiTech-gray text-base font-normal leading-6">
+                <p className="text-gray-400 text-base font-normal leading-6">
                   {model.description}
                 </p>
               </div>
@@ -95,17 +93,17 @@ export default function DeploymentFlexibility() {
             {deploymentModels.map((model, index) => (
               <div
                 key={index}
-                className="bg-white rounded-b-[10px] border-t-[5px] border-PibiTech-blue p-8"
+                className="bg-white rounded-b-[10px] border-t-[5px] border-blue-50 p-8"
               >
                 <img
                   src={model.icon}
                   alt={model.title}
                   className="w-[50px] h-[50px] mb-6"
                 />
-                <h4 className="text-PibiTech-navy text-[20px] font-medium leading-6 mb-4">
+                <h4 className="text-[#248BB3] text-[20px] font-medium leading-6 mb-4">
                   {model.title}
                 </h4>
-                <p className="text-PibiTech-gray text-base font-normal leading-6">
+                <p className="text-gray-400 text-base font-normal leading-6">
                   {model.description}
                 </p>
               </div>

@@ -41,14 +41,14 @@ export default function DeliveryProcess() {
 
         <div className="relative">
           {/* Vertical Line */}
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-PibiTech-navy hidden lg:block" />
+          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-[#248BB3] hidden lg:block" />
 
           {/* Steps */}
           <div className="space-y-8">
             {steps.map((step, index) => (
               <div key={index} className="relative flex gap-8 lg:pl-16">
                 {/* Dot */}
-                <div className="absolute left-[22px] top-0 w-5 h-5 rounded-full bg-gradient-to-br from-PibiTech-blue-darker to-PibiTech-blue-light border-3 border-[#F4F7FB] hidden lg:block" />
+                <div className="absolute left-[22px] top-0 w-5 h-5 rounded-full bg-gradient-to-br from-blue-50-darker to-blue-50-light border-3 border-[#F4F7FB] hidden lg:block" />
 
                 {/* Card */}
                 <div className="bg-white rounded-[10px] p-6 flex-1">
@@ -57,10 +57,10 @@ export default function DeliveryProcess() {
                     alt={step.title}
                     className="w-[100px] h-[100px] mb-4"
                   />
-                  <h3 className="font-sen text-PibiTech-navy-light text-[36px] font-medium leading-[46px] mb-4">
+                  <h3 className="font-sen text-[#248BB3]/80 text-[36px] font-medium leading-[46px] mb-4">
                     {step.title}
                   </h3>
-                  <p className="font-sen text-PibiTech-gray text-base font-normal leading-6">
+                  <p className="font-sen text-gray-400 text-base font-normal leading-6">
                     {step.description}
                   </p>
                 </div>

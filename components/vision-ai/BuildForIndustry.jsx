@@ -27,49 +27,47 @@ export default function BuiltForIndustry() {
 
   return (
     <section className="w-full py-16">
-      <div className="container mx-auto max-w-[1320px] px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-12">
-          <div className="lg:col-span-4">
-            <h2 className="font-sen text-[35px] font-bold leading-[52.5px] text-PibiTech-navy mb-6">
+      <div className="container mx-auto max-w-330 px-6">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-12">
+          <div className="md:col-span-3">
+            <h2 className="font-sen text-[35px] font-bold leading-[52.5px] text-[#248BB3] mb-6">
               Built for Every Industry
             </h2>
-            <p className="font-inter text-[20px] font-normal leading-[30px] text-black">
+            <p className="font-inter text-[20px] font-normal leading-7.5 text-black">
               Pibi Tech empowers teams across sectors to work smarter, trace
               faster, and deliver with confidence
             </p>
           </div>
 
-          <div className="lg:col-span-8">
-            {/* Tab Navigation */}
-            <div className="flex items-center gap-8 mb-8 border-b border-PibiTech-gray">
+          <div className="self-end md:col-span-2 w-full">
+            <div className="flex justify-end items-end w-full gap-8">
               <button
                 onClick={() => setActiveTab("quality")}
                 className={`pb-2 text-[20px] font-normal relative ${
-                  activeTab === "quality" ? "text-PibiTech-navy" : "text-black"
+                  activeTab === "quality" ? "text-[#248BB3]" : "text-black"
                 }`}
               >
                 Quality Control
                 {activeTab === "quality" && (
-                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-PibiTech-blue rounded-t-[10px]" />
+                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-blue-50 rounded-t-[10px]" />
                 )}
               </button>
               <button
                 onClick={() => setActiveTab("asset")}
                 className={`pb-2 text-[20px] font-normal relative ${
-                  activeTab === "asset" ? "text-PibiTech-navy" : "text-black"
+                  activeTab === "asset" ? "text-[#248BB3]" : "text-black"
                 }`}
               >
                 Asset Identification
                 {activeTab === "asset" && (
-                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-PibiTech-blue rounded-t-[10px]" />
+                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-blue-50 rounded-t-[10px]" />
                 )}
               </button>
             </div>
           </div>
         </div>
 
-        {/* Industry Cards */}
-        <div className="bg-PibiTech-bg-blue rounded-[10px] shadow-[0_0_10px_rgba(43,132,234,0.15)]">
+        <div className="blue-50 rounded-[10px] shadow-[0_0_10px_rgba(43,132,234,0.15)]">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {industries.map((industry, index) => (
               <div
@@ -90,7 +88,7 @@ export default function BuiltForIndustry() {
                   </p>
                   <button
                     onClick={() => router.push("/contact-us")}
-                    className="absolute bottom-6 right-6 w-[50px] h-[50px] bg-PibiTech-blue rounded-full flex items-center justify-center hover:opacity-90 transition-opacity"
+                    className="absolute bottom-6 right-6 w-[50px] h-[50px] bg-blue-50 rounded-full flex items-center justify-center hover:opacity-90 transition-opacity"
                   >
                     <svg width="21" height="10" viewBox="0 0 21 10" fill="none">
                       <path

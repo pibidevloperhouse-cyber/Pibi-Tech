@@ -7,7 +7,7 @@ import HeroBanner from "@/components/vision-ai/Hero";
 import SolutionCard from "@/components/vision-ai/SolutionsCard";
 import TrustedCompanies from "@/components/vision-ai/TrustedCompanies";
 import WhyPibi from "@/components/vision-ai/WhyPibi";
-import { Settings } from "lucide-react";
+import { Cog, ShieldCheck } from "lucide-react";
 import { TbEyeSpark } from "react-icons/tb";
 
 export default function Index() {
@@ -23,7 +23,7 @@ export default function Index() {
         description={
           "Maintain high production standards by detecting defects early and ensuring consistent quality at every stage of manufacturing"
         }
-        icon={<TbEyeSpark className="w-8 h-8" />}
+        icon={<TbEyeSpark className="w-10 h-10" />}
         image={"/solution1.png"}
       />
       <SolutionCard
@@ -31,7 +31,7 @@ export default function Index() {
         description={
           "Automate track-and-trace across industries. Cut down on manual data entry, reduce error, and keep operations moving faster"
         }
-        icon={<Settings className="w-8 h-8" />}
+        icon={<Cog className="w-10 h-10" />}
         image={"/solution2.png"}
       />
       <SolutionCard
@@ -39,7 +39,7 @@ export default function Index() {
         description={
           "Identify risks, monitor safety compliance, and prevent workplace hazards with smart AI safety solutions"
         }
-        icon={<Settings className="w-8 h-8" />}
+        icon={<ShieldCheck className="w-10 h-10" />}
         image={"/solution3.png"}
       />
 

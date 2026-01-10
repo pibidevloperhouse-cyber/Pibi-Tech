@@ -5,19 +5,19 @@ export default function ContactForm() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Left Side - Info */}
           <div>
-            <h2 className="font-sen text-[35px] font-bold leading-[42px] text-PibiTech-navy mb-6">
+            <h2 className="font-sen text-[35px] font-bold leading-[42px] text-[#248BB3] mb-6">
               Book a Meeting with Pibi Tech
             </h2>
             <div className="space-y-4">
               <div className="flex items-center gap-2">
-                <span className="text-PibiTech-blue text-xl"></span>
-                <span className="font-sen text-[18px] text-PibiTech-navy-light">
+                <span className="text-blue-50 text-xl"></span>
+                <span className="font-sen text-[18px] text-[#248BB3]/80">
                   (+91) 6384300011
                 </span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-PibiTech-blue text-xl"></span>
-                <span className="font-sen text-[18px] text-PibiTech-navy-light">
+                <span className="text-blue-50 text-xl"></span>
+                <span className="font-sen text-[18px] text-[#248BB3]/80">
                   info@PibiTech.ai
                 </span>
               </div>
@@ -25,7 +25,7 @@ export default function ContactForm() {
           </div>
 
           {/* Right Side - Form */}
-          <div className="bg-white rounded-[20px] border border-[#93B8FF] p-8">
+          <div className="bg-white rounded-4xl border border-[#93B8FF] p-8">
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
@@ -35,7 +35,7 @@ export default function ContactForm() {
                   <input
                     type="text"
                     placeholder="Enter first name"
-                    className="w-full px-3 py-3 rounded-lg border border-PibiTech-gray-border bg-PibiTech-bg-lightest font-sen text-md focus:outline-none focus:border-PibiTech-blue"
+                    className="w-full px-3 py-3 rounded-lg border border-gray-300 bg-blue-50 font-sen text-md focus:outline-none focus:border-blue-50"
                   />
                 </div>
                 <div>
@@ -45,7 +45,7 @@ export default function ContactForm() {
                   <input
                     type="text"
                     placeholder="Enter last name"
-                    className="w-full px-3 py-3 rounded-lg border border-PibiTech-gray-border bg-PibiTech-bg-lightest font-sen text-md focus:outline-none focus:border-PibiTech-blue"
+                    className="w-full px-3 py-3 rounded-lg border border-gray-300 bg-blue-50 font-sen text-md focus:outline-none focus:border-blue-50"
                   />
                 </div>
               </div>
@@ -57,7 +57,7 @@ export default function ContactForm() {
                 <input
                   type="tel"
                   placeholder="00000 00000"
-                  className="w-full px-3 py-3 rounded-lg border border-PibiTech-gray-border bg-PibiTech-bg-lightest font-sen text-md focus:outline-none focus:border-PibiTech-blue"
+                  className="w-full px-3 py-3 rounded-lg border border-gray-300 bg-blue-50 font-sen text-md focus:outline-none focus:border-blue-50"
                 />
               </div>
 
@@ -68,7 +68,7 @@ export default function ContactForm() {
                 <input
                   type="email"
                   placeholder="gmail, outlook...."
-                  className="w-full px-3 py-3 rounded-lg border border-PibiTech-gray-border bg-PibiTech-bg-lightest font-sen text-md focus:outline-none focus:border-PibiTech-blue"
+                  className="w-full px-3 py-3 rounded-lg border border-gray-300 bg-blue-50 font-sen text-md focus:outline-none focus:border-blue-50"
                 />
               </div>
 
@@ -79,7 +79,7 @@ export default function ContactForm() {
                 <input
                   type="text"
                   placeholder="Type your industry"
-                  className="w-full px-3 py-3 rounded-lg border border-PibiTech-gray-border bg-PibiTech-bg-lightest font-sen text-md focus:outline-none focus:border-PibiTech-blue"
+                  className="w-full px-3 py-3 rounded-lg border border-gray-300 bg-blue-50 font-sen text-md focus:outline-none focus:border-blue-50"
                 />
               </div>
 
@@ -87,7 +87,7 @@ export default function ContactForm() {
                 <label className="block font-inter text-base font-bold text-[#111] mb-2">
                   Country *
                 </label>
-                <select className="w-full px-4 py-3 rounded-lg border border-PibiTech-gray-border bg-PibiTech-bg-lightest font-sen text-base focus:outline-none focus:border-PibiTech-blue">
+                <select className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-blue-50 font-sen text-base focus:outline-none focus:border-blue-50">
                   <option>Select Country</option>
                   <option>United States</option>
                   <option>India</option>
@@ -102,7 +102,7 @@ export default function ContactForm() {
                 <textarea
                   placeholder="Description"
                   rows={3}
-                  className="w-full px-5 py-4 rounded-lg border border-PibiTech-gray-border bg-PibiTech-bg-lightest font-sen text-md focus:outline-none focus:border-PibiTech-blue resize-none"
+                  className="w-full px-5 py-4 rounded-lg border border-gray-300 bg-blue-50 font-sen text-md focus:outline-none focus:border-blue-50 resize-none"
                 />
               </div>
 
