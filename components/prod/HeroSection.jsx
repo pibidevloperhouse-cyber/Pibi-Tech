@@ -12,10 +12,10 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40" />
       <div className="container relative z-10 mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex flex-col items-center justify-center text-center space-y-6">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-3xl leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white max-w-3xl leading-tight">
             101 AI Agents for Every Enterprise Function
           </h1>
-          <p className="text-base md:text-lg lg:text-xl text-white/90 max-w-3xl">
+          <p className="text-base md:text-xl lg:text-2xl text-white/90 max-w-3xl">
             Accelerate Operational Efficiency with AI Agents Built to Automate
             Complex Workflows
           </p>

@@ -48,34 +48,25 @@ export default function HeroCarousel() {
   };
 
   return (
-    <div className="relative w-full py-8 bg-white overflow-hidden">
-      {/* <div
-        className="absolute inset-0 opacity-[0.1] bg-linear-to-b from-transparent to-white"
-        style={{
-          backgroundImage: "url('/grid-pattern.png')",
-          backgroundSize: "contain",
-          backgroundRepeat: "repeat",
-        }}
-      ></div> */}
-
+    <div className="relative w-full py-8 bg-white overflow-hidden bg-linear-to-b from-white/90 to-white/90 bg-cover bg-[url('/border.png')] bg-center">
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
-        <p className="text-[#0C1B33] text-lg md:text-xl mb-4">
+        <p className="text-[#0C1B33] text-xl md:text-2xl mb-4">
           {slides[current].slogan}
         </p>
 
         <h1
           className={`${
-            current == 1 ? "text-2xl md:text-4xl" : "text-2xl md:text-5xl"
+            current == 1 ? "text-3xl md:text-5xl" : "text-3xl md:text-6xl"
           } max-w-4xl mx-auto font-normal leading-[1.2] text-[#0C1B33]`}
         >
           {slides[current].title}
         </h1>
 
-        <h2 className="text-2xl md:text-5xl max-w-5xl mx-auto font-normal mt-4 text-[#0046B8]">
+        <h2 className="text-3xl md:text-6xl max-w-5xl mx-auto font-normal mt-4 text-[#0046B8]">
           {slides[current].cta}
         </h2>
 
-        <p className="max-w-3xl text-[#0C1B33]/70 mt-6 text-md md:text-lg">
+        <p className="max-w-3xl text-[#0C1B33]/70 mt-6 text-lg md:text-xl">
           {slides[current].content}
         </p>
 

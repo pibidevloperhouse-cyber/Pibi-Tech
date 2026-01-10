@@ -310,7 +310,7 @@ export default function Index() {
             ].map((item, i) => (
               <div key={i} className="bg-[#070F4C] rounded-lg p-6">
                 <div className="flex items-center gap-4 mb-4">
-                  <span className="text-4xl">{item.icon}</span>
+                  <span className="text-5xl">{item.icon}</span>
                   <div className="text-[42px] font-bold text-white">
                     {item.stat}
                   </div>
@@ -498,7 +498,7 @@ export default function Index() {
                 key={i}
                 className="bg-white rounded shadow-[0_8px_24px_0_rgba(149,157,165,0.20)] p-4 h-[68px] flex items-center justify-center"
               >
-                <span className="text-sm font-semibold text-gray-800">
+                <span className="text-md font-semibold text-gray-800">
                   {logo}
                 </span>
               </div>

@@ -27,9 +27,9 @@ export default function RecentEngagements() {
   ];
 
   return (
-    <section className="section-padding bg-slate-50">
+    <section className="section-padding bg-blue-50">
       <div className="container-max">
-        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-12">
+        <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent leading-normal bg-brand-gradient mb-12">
           Our Recent Engagements
         </h2>
 
@@ -50,10 +50,10 @@ export default function RecentEngagements() {
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">
+                <h3 className="text-2xl font-bold text-slate-900 mb-2">
                   {engagement.title}
                 </h3>
-                <p className="text-slate-600 text-sm mb-4">
+                <p className="text-slate-600 text-md mb-4">
                   {engagement.subtitle}
                 </p>
                 <a

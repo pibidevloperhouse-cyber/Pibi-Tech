@@ -7,7 +7,7 @@ export function ExploreSection() {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           <div className="space-y-6">
             <div className="space-y-4">
-              <p className="text-base md:text-lg text-gray-900 leading-relaxed">
+              <p className="text-base md:text-xl text-gray-900 leading-relaxed">
                 Businesses today don't simply need generic AI, they need AI
                 agents that are tailor made for a specific purpose and can do
                 actual work, solve real world problems, and provide a measurable
@@ -15,7 +15,7 @@ export function ExploreSection() {
               </p>
             </div>
             <div className="space-y-4">
-              <p className="text-base md:text-lg text-gray-900 leading-relaxed">
+              <p className="text-base md:text-xl text-gray-900 leading-relaxed">
                 Accelirate's 101 AI Agents is your go to resource for seeing
                 exactly how agentic AI can be applied in different function
                 areas across industries. AI Agents work autonomously to
@@ -38,17 +38,17 @@ export function ExploreSection() {
             <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60" />
             <div className="relative z-10 p-8 md:p-12 flex flex-col justify-between h-full min-h-[400px] md:min-h-[450px]">
               <div className="space-y-4">
-                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
                   Explore. Choose. Launch.
                 </h2>
-                <p className="text-lg md:text-xl lg:text-2xl text-white leading-relaxed max-w-lg">
+                <p className="text-xl md:text-2xl lg:text-3xl text-white leading-relaxed max-w-lg">
                   Browse our list of 101 AI Agents, pick the ones that fit your
                   business best, and team up with Accelirate to build, launch,
                   and grow your smart AI workforce in just 5 weeks.
                 </p>
               </div>
               <div className="mt-8">
-                <h3 className="text-xl md:text-2xl font-bold text-white mb-4">
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
                   Want to see how it works?
                 </h3>
                 <button className="group flex items-center gap-4 bg-white text-[#473BF0] font-medium px-4 pr-0 rounded transition-all hover:shadow-lg">

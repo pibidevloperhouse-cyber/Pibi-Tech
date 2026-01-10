@@ -1,4 +1,4 @@
-import { Geist, Plus_Jakarta_Sans } from "next/font/google";
+import { Geist, Figtree } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -8,7 +8,7 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-const plusJakartaSans = Plus_Jakarta_Sans({
+const plusJakartaSans = Figtree({
   variable: "--font-plus-jakarta-sans",
   subsets: ["latin"],
 });

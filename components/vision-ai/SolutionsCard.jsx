@@ -10,7 +10,7 @@ export default function SolutionCard({
 }) {
   return (
     <section className="w-full bg-PibiTech-bg-lighter py-5">
-      <div className="container mx-auto max-w-[1320px] px-6">
+      <div className="container mx-auto max-w-330 px-6">
         <div
           className={`flex items-center flex-col md:flex-row gap-6 ${
             reverse ? "flex-row-reverse" : ""

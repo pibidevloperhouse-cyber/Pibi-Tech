@@ -23,7 +23,7 @@ export default function WhyChooseUs() {
           </div>
 
           <div>
-            <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-2 leading-tight">
+            <h2 className="text-5xl lg:text-6xl font-bold text-slate-900 mb-2 leading-tight">
               <span className="text-primary">S</span>
               <span className="text-slate-900">TRATEGIC</span>
               <span className="text-slate-900"> | </span>

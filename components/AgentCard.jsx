@@ -9,10 +9,10 @@ export function AgentCard({ icon, title, description, className }) {
       )}
     >
       <div className="mb-6">{icon}</div>
-      <h3 className="text-base md:text-lg font-medium text-gray-900 mb-3 leading-snug">
+      <h3 className="text-base md:text-xl font-medium text-gray-900 mb-3 leading-snug">
         {title}
       </h3>
-      <p className="text-sm md:text-base text-gray-600 leading-relaxed">
+      <p className="text-md md:text-base text-gray-600 leading-relaxed">
         {description}
       </p>
     </div>

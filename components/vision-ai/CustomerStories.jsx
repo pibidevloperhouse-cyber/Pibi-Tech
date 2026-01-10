@@ -38,7 +38,7 @@ export default function CustomerStories() {
 
         {/* Placeholder for stories - can be populated with actual content */}
         <div className="text-center py-12 text-Pibi Tech-gray">
-          <p className="text-lg">
+          <p className="text-xl">
             Customer success stories will be displayed here.
           </p>
         </div>

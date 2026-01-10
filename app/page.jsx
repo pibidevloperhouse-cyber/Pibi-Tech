@@ -13,7 +13,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-white">
       <MainPage />
-      <HeroCarousel />
+      {/* <HeroCarousel /> */}
       <IntroSection />
       <MissionVisionOfferings />
       {/* <WhyChooseUs /> */}

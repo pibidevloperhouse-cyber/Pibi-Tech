@@ -29,15 +29,15 @@ export default function OurProducts() {
   ];
 
   return (
-    <section className="section-padding bg-white" id="Products">
+    <section className="section-padding bg-blue-50" id="Products">
       <div className="container-max">
         <div className="mb-16 w-full">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center">
             <span className="bg-clip-text text-transparent text-center bg-brand-gradient">
               Our Products
             </span>
           </h2>
-          <p className="text-slate-700 text-lg text-center leading-relaxed">
+          <p className="text-slate-700 text-xl text-center leading-relaxed">
             Purpose-built AI products designed to drive measurable business
             outcomes and meaningful human impact.
           </p>
@@ -50,11 +50,11 @@ export default function OurProducts() {
               className="relative bg-white border border-slate-200 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
             >
               <div>
-                <span className="inline-block text-sm font-semibold text-primary bg-primary/10 py-1 rounded-full mb-4">
+                <span className="inline-block text-md font-semibold text-primary bg-primary/10 py-1 rounded-full mb-4">
                   {product.tag}
                 </span>
 
-                <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-brand-gradient mb-4">
+                <h3 className="text-3xl font-bold bg-clip-text text-transparent bg-brand-gradient mb-4">
                   {product.title}
                 </h3>
 

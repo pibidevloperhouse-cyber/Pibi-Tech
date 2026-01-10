@@ -117,19 +117,19 @@ export default function Footer() {
             <div className="flex flex-wrap gap-6 justify-center md:justify-start">
               <Link
                 href="contact-us"
-                className="text-slate-400 hover:text-primary transition text-sm"
+                className="text-slate-400 hover:text-primary transition text-md"
               >
                 Home
               </Link>
               <Link
                 href="contact-us"
-                className="text-slate-400 hover:text-primary transition text-sm"
+                className="text-slate-400 hover:text-primary transition text-md"
               >
                 Careers
               </Link>
               <Link
                 href="contact-us"
-                className="text-slate-400 hover:text-primary transition text-sm"
+                className="text-slate-400 hover:text-primary transition text-md"
               >
                 Contact us
               </Link>
@@ -157,7 +157,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="mt-8 pt-6 border-t border-slate-700 text-center text-slate-500 text-sm">
+          <div className="mt-8 pt-6 border-t border-slate-700 text-center text-slate-500 text-md">
             <p>
               &copy; {new Date().getFullYear()} Pibi Technologies. All rights
               reserved.

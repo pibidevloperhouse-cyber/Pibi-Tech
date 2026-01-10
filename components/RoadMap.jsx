@@ -29,12 +29,12 @@ export default function Roadmap() {
     <section className="section-padding bg-white">
       <div className="container-max">
         <div className="max-w-3xl mb-20">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="bg-clip-text text-transparent bg-brand-gradient">
               Implementation Roadmap
             </span>
           </h2>
-          <p className="text-slate-700 text-lg leading-relaxed">
+          <p className="text-slate-700 text-xl leading-relaxed">
             A 100% customer-success-centric delivery model powered by DevOps,
             Agile, and ITIL methodologies.
           </p>
@@ -51,7 +51,7 @@ export default function Roadmap() {
                 className="relative bg-white border-2 border-slate-600 rounded-2xl p-8 hover:shadow-xl transition-all duration-300"
               >
                 <div className="absolute -top-3 md:top-0 translate-y-[-50%] left-8 bg-white px-3">
-                  <span className="text-md font-bold text-primary">
+                  <span className="text-lg font-bold text-primary">
                     STEP {item.step}
                   </span>
                 </div>
@@ -60,7 +60,7 @@ export default function Roadmap() {
                   <Icon className="w-7 h-7 text-primary" />
                 </div>
 
-                <h3 className="text-xl font-bold text-slate-900 mb-4">
+                <h3 className="text-2xl font-bold text-slate-900 mb-4">
                   {item.title}
                 </h3>
 

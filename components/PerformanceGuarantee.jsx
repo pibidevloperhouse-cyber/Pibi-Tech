@@ -29,15 +29,15 @@ export default function PerformanceGuarantee() {
   ];
 
   return (
-    <section className="section-padding bg-slate-50">
+    <section className="section-padding bg-blue-50">
       <div className="container-max">
         <div className="max-w-3xl mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="bg-clip-text text-transparent bg-brand-gradient">
               Our Performance Guarantee
             </span>
           </h2>
-          <p className="text-slate-700 text-lg leading-relaxed">
+          <p className="text-slate-700 text-xl leading-relaxed">
             Measurable outcomes we commit to — not aspirational promises.
           </p>
         </div>
@@ -55,19 +55,19 @@ export default function PerformanceGuarantee() {
                 </div>
 
                 <div className="mb-2">
-                  <span className="text-4xl font-bold text-slate-900">
+                  <span className="text-5xl font-bold text-slate-900">
                     {item.value}
                   </span>
-                  <span className="ml-2 text-xl font-semibold text-primary">
+                  <span className="ml-2 text-2xl font-semibold text-primary">
                     {item.unit}
                   </span>
                 </div>
 
-                <h3 className="text-lg font-bold text-slate-900 mb-3">
+                <h3 className="text-xl font-bold text-slate-900 mb-3">
                   {item.title}
                 </h3>
 
-                <p className="text-slate-600 text-sm leading-relaxed">
+                <p className="text-slate-600 text-md leading-relaxed">
                   {item.description}
                 </p>
               </div>
