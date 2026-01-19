@@ -8,6 +8,7 @@ import Specialist from "@/components/Specialist";
 import PerformanceGuarantee from "@/components/PerformanceGuarantee";
 import Roadmap from "@/components/RoadMap";
 import { MainPage } from "@/components/MainPage";
+import TechInovation from "@/components/TechInovation";
 
 export default function HomePage() {
   return (
@@ -18,6 +19,7 @@ export default function HomePage() {
       <MissionVisionOfferings />
       {/* <WhyChooseUs /> */}
       <OurProducts />
+      <TechInovation />
       <Specialist />
       <PerformanceGuarantee />
       <Roadmap />

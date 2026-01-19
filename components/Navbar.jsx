@@ -39,7 +39,7 @@ export default function Navbar() {
               Products
             </Link>
             <Link
-              href="/#Solutions"
+              href="/#Agents"
               className="text-slate-700 hover:text-primary transition"
             >
               Solutions
