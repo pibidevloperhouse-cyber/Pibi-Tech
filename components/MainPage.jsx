@@ -1,12 +1,14 @@
 "use client";
 
-import { ArrowRight, Bot, Sparkles, Plus } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import Slider from "./Slider";
+import { useRouter } from "next/navigation";
 
 export function MainPage() {
   const texts = ["Build", "Code with", "Maintain", "Test with", "Operate"];
   const [index, setIndex] = useState(0);
+  const router = useRouter();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -44,7 +46,10 @@ export function MainPage() {
         </p>
 
         <div className="mt-10 flex justify-center">
-          <button className="group inline-flex items-center gap-3 rounded-lg bg-white px-6 py-3 text-md md:text-xl font-semibold text-[#070a18] transition hover:bg-blue-50">
+          <button
+            onClick={() => router.push("/ai-agents")}
+            className="group inline-flex items-center gap-3 rounded-lg bg-white px-6 py-3 text-md md:text-xl font-semibold text-[#070a18] transition hover:bg-blue-50"
+          >
             Adopt AI and Automation Now
             <span className="flex h-9 w-9 items-center justify-center rounded-md bg-blue-600 text-white transition group-hover:translate-x-1">
               <ArrowRight size={18} />
