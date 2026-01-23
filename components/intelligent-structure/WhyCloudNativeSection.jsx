@@ -1,21 +1,18 @@
 export default function WhyCloudNativeSection() {
   return (
     <section className="py-12 md:py-20 bg-white">
-      <div className="max-w-[1200px] mx-auto px-4">
-        {/* Header */}
+      <div className="max-w-[90%] mx-auto px-4">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-4xl md:text-[67px] font-bold leading-tight tracking-[-1.5px] text-navy-dark mb-6">
             Why Cloud Native Agents Matter
           </h2>
-          <p className="text-lg md:text-[25px] font-medium leading-relaxed text-slate-600 max-w-[672px] mx-auto">
+          <p className="text-lg md:text-[25px] font-medium leading-relaxed text-slate-600 max-w-2xl mx-auto">
             Unlock unprecedented speed and flexibility with cloud-native
             technologies
           </p>
         </div>
 
-        {/* Three Cards */}
         <div className="grid md:grid-cols-3 gap-8">
-          {/* Card 1: Data Sovereignty */}
           <div className="group p-8 md:p-9 border-2 border-navy-dark rounded bg-white hover:shadow-xl transition-shadow">
             <div className="p-4 w-[66px] h-[66px] rounded-lg border border-slate-200 bg-white shadow-sm mb-8">
               <svg
@@ -52,7 +49,6 @@ export default function WhyCloudNativeSection() {
             </p>
           </div>
 
-          {/* Card 2: Low Latency */}
           <div className="group p-8 md:p-9 border-2 border-navy-dark rounded bg-white hover:shadow-xl transition-shadow">
             <div className="p-4 w-[66px] h-[66px] rounded-lg border border-slate-200 bg-white shadow-sm mb-8">
               <svg
@@ -82,7 +78,6 @@ export default function WhyCloudNativeSection() {
             </p>
           </div>
 
-          {/* Card 3: Scalability */}
           <div className="group p-8 md:p-9 border-2 border-navy-dark rounded bg-white hover:shadow-xl transition-shadow">
             <div className="p-4 w-[66px] h-[66px] rounded-lg border border-slate-200 bg-white shadow-sm mb-8">
               <svg
