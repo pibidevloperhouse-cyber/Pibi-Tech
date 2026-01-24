@@ -143,7 +143,7 @@ export default function WhatWeOfferSection() {
             </div>
           </div>
 
-          <div className="w-full h-full relative flex flex-col justify-center items-center rounded-2xl border border-[#283039] bg-[#1C242E] shadow-2xl overflow-hidden">
+          <div className="w-full h-full relative flex flex-col py-5 justify-center items-center rounded-2xl border border-[#283039] bg-[#1C242E] shadow-2xl overflow-hidden">
             <div className="relative text-white w-full flex flex-col mb-5">
               {/* <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
                 <defs>

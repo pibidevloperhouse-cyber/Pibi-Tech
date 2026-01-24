@@ -8,7 +8,14 @@ import React from "react";
 const intelligenceStructure = () => {
   return (
     <div>
-      <HeroSection />
+      <HeroSection
+        title={
+          "Scale your Enterprise <br /> Workflow with <br />Cloud-Native Agents"
+        }
+        content={
+          "Secure, evaluated and observable on-premises AI Agents for your enterprise."
+        }
+      />
       <InfrastructureSection />
       <WhatWeOfferSection />
       <WhyCloudNativeSection />

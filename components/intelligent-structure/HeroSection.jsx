@@ -1,10 +1,7 @@
-export default function HeroSection() {
+export default function HeroSection({ title, content }) {
   return (
     <section className="relative w-full overflow-hidden min-h-[80vh] flex justify-center items-center">
       <div className="absolute inset-0">
-        {/* <div className="absolute inset-0 bg-black/50"></div> */}
-        {/* <div className="absolute inset-0 bg-navy/90 mix-blend-multiply"></div> */}
-        {/* <div className="absolute inset-0 bg-black/40"></div> */}
         <img
           src="/background.png"
           alt="Background"
@@ -14,27 +11,25 @@ export default function HeroSection() {
 
       <div className="relative z-10 w-full px-4 h-full flex flex-col text-center items-center justify-center">
         <h1 className="space-y-0 mb-8">
-          <div className="text-4xl md:text-[69px] font-bold leading-tight md:leading-[1.2] tracking-[-1.8px] text-white">
-            Scale your Enterprise
-          </div>
-          <div className="text-4xl md:text-[69px] font-bold leading-tight md:leading-[1.2] tracking-[-1.8px] text-white">
-            Workflow with
-          </div>
-          <div className="text-4xl md:text-[69px] font-bold leading-tight md:leading-[1.2] tracking-[-1.8px] text-white">
-            Cloud-Native Agents
-          </div>
+          {title.split("<br />").map((line, index) => (
+            <div
+              key={index}
+              className="text-4xl md:text-[69px] font-bold leading-tight md:leading-[1.2] tracking-[-1.8px] text-white"
+            >
+              {line}
+            </div>
+          ))}
         </h1>
 
         <p className="text-lg md:text-xl font-light leading-relaxed text-slate-100 mb-12 max-w-2xl">
-          Secure, evaluated and observable on-premises AI Agents for your
-          enterprise.
+          {content}
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-6 justify-center md:justify-start">
-          <button className="px-10 py-4 bg-orange-400 text-white font-bold text-[17px] leading-7 shadow-lg hover:bg-orange-500 transition-colors">
+        <div className="flex flex-col sm:flex-row w-full max-w-2xl gap-6 justify-center md:justify-start">
+          <button className="px-10 py-4 bg-orange-400 flex-1 text-white font-bold text-[17px] leading-7 shadow-lg hover:bg-orange-500 transition-colors">
             Book a Discovery Call
           </button>
-          <button className="px-8 py-4 bg-slate-600 text-white font-bold text-[17px] leading-7 shadow-lg hover:bg-slate-700 transition-colors inline-flex items-center gap-2">
+          <button className="px-8 py-4 flex-1 text-center w-full inline-flex justify-center items-center bg-slate-600 text-white font-bold text-[17px] leading-7 shadow-lg hover:bg-slate-700 transition-colors gap-2">
             Learn More
             <svg
               width="20"

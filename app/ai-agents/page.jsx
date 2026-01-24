@@ -5,6 +5,7 @@ import { TbClick } from "react-icons/tb";
 import { PiCodesandboxLogoThin } from "react-icons/pi";
 import { BsDatabaseFillCheck } from "react-icons/bs";
 import { useEffect, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
 
 const testimonials = [
   {
@@ -44,6 +45,7 @@ export default function Index() {
 
   const [activeIndex, setActiveIndex] = useState(0);
   const [itemsPerView, setItemsPerView] = useState(2);
+  const router = useRouter();
 
   useEffect(() => {
     const container = scrollRef.current;
@@ -101,7 +103,7 @@ export default function Index() {
     <div className="min-h-screen bg-white">
       <section className="relative min-h-screen flex justify-center items-center bg-[#000052]">
         {/* <div className="absolute inset-0 bg-[#000052]/60"></div> */}
-        <div className="flex flex-col md:flex-row justify-between w-screen mx-auto px-16 overflow-hidden">
+        <div className="flex flex-col md:flex-row justify-between w-screen mx-auto px-8 md:px-16 overflow-hidden">
           <div className="text-white">
             <div className="">
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[76px] font-bold leading-tight md:leading-[1.1] tracking-[-2px] text-white mb-6 md:mb-8">
@@ -129,7 +131,7 @@ export default function Index() {
         </div>
       </section>
       <div className="bg-cover bg-[url('/border.png')] bg-center">
-        <section className="relative py-12 md:py-20 overflow-hidden">
+        <section className="relative py-12 md:py-20 px-5 overflow-hidden">
           <div
             className="absolute inset-0 opacity-[0.04]"
             // style={{
@@ -204,8 +206,11 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="border-2 border-[#000052] bg-white p-8 flex flex-col justify-between group hover:shadow-lg transition-shadow">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-3 w-full">
+              <div
+                onClick={() => router.push("/agentic-ai")}
+                className="border-2 border-[#000052] bg-white p-8 flex flex-col justify-between group hover:shadow-lg transition-shadow"
+              >
                 <div>
                   <div className="flex items-start justify-between mb-8">
                     <div className="border border-slate-300 rounded-lg flex items-center justify-center shadow-sm bg-white p-4">
@@ -266,7 +271,10 @@ export default function Index() {
                 </div>
               </div>
 
-              <div className="border-2 border-[#000052] bg-[#248BB3] text-white p-8 flex flex-col justify-between group hover:shadow-lg transition-shadow">
+              <div
+                onClick={() => router.push("/intelligent-infrastructure")}
+                className="border-2 cursor-pointer border-[#000052] bg-[#248BB3] text-white p-8 flex flex-col justify-between group hover:shadow-lg transition-shadow"
+              >
                 <div>
                   <div className="flex items-start justify-between mb-8">
                     <div className="text-black border border-slate-300 rounded-lg flex items-center justify-center shadow-sm bg-white p-4">
@@ -505,7 +513,7 @@ export default function Index() {
               ].map((stat, i) => (
                 <div
                   key={i}
-                  className={`min-w-[33%] border ${stat.color} bg-[#050540] p-8 flex flex-col`}
+                  className={`min-w-[90%] md:min-w-[33%] border ${stat.color} bg-[#050540] p-8 flex flex-col`}
                 >
                   <div className="flex items-start justify-between mb-8">
                     <div
@@ -527,14 +535,17 @@ export default function Index() {
           </div>
 
           <div className="mt-16 pt-16 border-t border-white/20">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div className="grid grid-cols-1 w-full md:grid-cols-4 gap-12">
               {[
                 { num: "01", title: "Consultation" },
                 { num: "02", title: "Strategy Plan" },
                 { num: "03", title: "Execution" },
                 { num: "04", title: "Optimization" },
               ].map((step) => (
-                <div key={step.num} className="flex flex-col gap-4">
+                <div
+                  key={step.num}
+                  className="flex items-center justify-center flex-col gap-4"
+                >
                   <div className="text-[44px] font-bold text-indigo-200 text-shadow">
                     {step.num}
                   </div>

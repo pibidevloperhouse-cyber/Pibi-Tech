@@ -14,7 +14,7 @@ export default function WhyCloudNativeSection() {
 
         <div className="grid md:grid-cols-3 gap-8">
           <div className="group p-8 md:p-9 border-2 border-navy-dark rounded bg-white hover:shadow-xl transition-shadow">
-            <div className="p-4 w-[66px] h-[66px] rounded-lg border border-slate-200 bg-white shadow-sm mb-8">
+            <div className="p-4 w-16.5 h-16.5 rounded-lg border border-slate-200 bg-white shadow-sm mb-8">
               <svg
                 width="32"
                 height="32"
@@ -43,14 +43,14 @@ export default function WhyCloudNativeSection() {
               Data Sovereignty
             </h3>
 
-            <p className="text-lg md:text-[22px] font-medium leading-[29px] text-slate-600">
+            <p className="text-lg md:text-[22px] font-medium leading-7.25 text-slate-600">
               We protect your data ensuring strict compliance with GDPR, HIPAA
               and SOC2
             </p>
           </div>
 
           <div className="group p-8 md:p-9 border-2 border-navy-dark rounded bg-white hover:shadow-xl transition-shadow">
-            <div className="p-4 w-[66px] h-[66px] rounded-lg border border-slate-200 bg-white shadow-sm mb-8">
+            <div className="p-4 w-16.5 h-16.5 rounded-lg border border-slate-200 bg-white shadow-sm mb-8">
               <svg
                 width="32"
                 height="32"
@@ -72,14 +72,14 @@ export default function WhyCloudNativeSection() {
               Low Latency
             </h3>
 
-            <p className="text-lg md:text-[22px] font-medium leading-[29px] text-slate-600">
+            <p className="text-lg md:text-[22px] font-medium leading-7.25 text-slate-600">
               By running agents where your applications run, you improve
               response times, and cut costs.
             </p>
           </div>
 
           <div className="group p-8 md:p-9 border-2 border-navy-dark rounded bg-white hover:shadow-xl transition-shadow">
-            <div className="p-4 w-[66px] h-[66px] rounded-lg border border-slate-200 bg-white shadow-sm mb-8">
+            <div className="p-4 w-16.5 h-16.5 rounded-lg border border-slate-200 bg-white shadow-sm mb-8">
               <svg
                 width="32"
                 height="32"
@@ -178,7 +178,7 @@ export default function WhyCloudNativeSection() {
               Scalability
             </h3>
 
-            <p className="text-lg md:text-[22px] font-medium leading-[29px] text-slate-600">
+            <p className="text-lg md:text-[22px] font-medium leading-7.25 text-slate-600">
               Containerize and distribute AI workloads efficiently across any
               infrastructure
             </p>

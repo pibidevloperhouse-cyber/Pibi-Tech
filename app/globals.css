@@ -284,3 +284,7 @@
     transform: translateX(-50%);
   }
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
