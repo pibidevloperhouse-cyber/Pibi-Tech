@@ -20,12 +20,12 @@ export default function HomePage() {
       <MissionVisionOfferings />
       {/* <WhyChooseUs /> */}
       <OurProducts />
-      <TechInovation />
+      <AgentsDetails />
+      {/* <TechInovation /> */}
       <Specialist />
       <PerformanceGuarantee />
       <Roadmap />
-      {/* <RecentEngagements /> */}
-      <AgentsDetails />
+      <RecentEngagements />
     </div>
   );
 }
