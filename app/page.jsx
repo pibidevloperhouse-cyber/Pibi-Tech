@@ -9,6 +9,7 @@ import PerformanceGuarantee from "@/components/PerformanceGuarantee";
 import Roadmap from "@/components/RoadMap";
 import { MainPage } from "@/components/MainPage";
 import TechInovation from "@/components/TechInovation";
+import AgentsDetails from "@/components/AgentsDetails";
 
 export default function HomePage() {
   return (
@@ -23,7 +24,8 @@ export default function HomePage() {
       <Specialist />
       <PerformanceGuarantee />
       <Roadmap />
-      <RecentEngagements />
+      {/* <RecentEngagements /> */}
+      <AgentsDetails />
     </div>
   );
 }
