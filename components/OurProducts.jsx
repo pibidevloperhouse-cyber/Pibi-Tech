@@ -21,7 +21,7 @@ export default function OurProducts() {
       tag: "AI + Vedic Intelligence",
       description:
         "Every child is born with a unique cosmic blueprint. By blending 5,000-year-old Vedic wisdom with modern AI, Astro Kids empowers parents to nurture their child’s mental, emotional, and physical well-being — holistically, confidently, and joyfully.",
-      link: "contact-us",
+      link: "https://www.astrokids.ai/",
     },
   ];
 
