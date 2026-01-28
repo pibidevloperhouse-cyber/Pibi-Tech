@@ -1,6 +1,6 @@
 "use client";
 
-import { Binoculars, Cog, Telescope, UserStar } from "lucide-react";
+import { ArrowRight, Binoculars, Cog, Telescope, UserStar } from "lucide-react";
 import Image from "next/image";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -8,6 +8,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import { useRouter } from "next/navigation";
 
 const cards = [
   {
@@ -78,8 +79,12 @@ const Card = ({ title, description, bg, Icon }) => (
 );
 
 export default function IntroSection() {
+  const router = useRouter();
   return (
-    <section className="section-padding bg-blue-50" id="WhoWeAre">
+    <section
+      className="section-padding flex flex-col justify-center items-center bg-blue-50"
+      id="WhoWeAre"
+    >
       <div className="max-w-[90%] mx-auto px-4 sm:px-6 lg:px-8 mt-10">
         <div className="block md:hidden">
           <Swiper
@@ -103,6 +108,13 @@ export default function IntroSection() {
           ))}
         </div>
       </div>
+      <button
+        className={`flex mt-8 px-4 py-2 rounded-lg mx-auto items-center gap-2 text-sm font-bold uppercase tracking-[1.4px] text-white bg-[#1f6fb2] hover:opacity-80 cursor-pointer`}
+        onClick={() => router.push("/about-us")}
+      >
+        Read Our Story
+        <ArrowRight className="w-5 h-5" />
+      </button>
     </section>
   );
 }
