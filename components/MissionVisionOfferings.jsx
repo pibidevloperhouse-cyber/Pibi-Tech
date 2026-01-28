@@ -111,7 +111,7 @@ const OfferingCard = ({ offering }) => (
 
 export default function MissionVisionOfferings() {
   return (
-    <section className="section-padding bg-white" id="Solutions">
+    <section className="section-padding bg-white" id="Services">
       <div className="max-w-[90%] mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl md:text-5xl font-bold mb-10">
           <span className="bg-clip-text text-transparent bg-brand-gradient">

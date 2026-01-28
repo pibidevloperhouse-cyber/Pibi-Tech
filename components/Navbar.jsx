@@ -39,18 +39,17 @@ export default function Navbar() {
               Products
             </Link>
             <Link
-              href="/#Agents"
-              className="text-slate-700 hover:text-primary transition"
-            >
-              Solutions
-            </Link>
-            <Link
               href="/#Services"
               className="text-slate-700 hover:text-primary transition"
             >
               Services
             </Link>
-
+            <Link
+              href="/#Solutions"
+              className="text-slate-700 hover:text-primary transition"
+            >
+              Solutions
+            </Link>
             <Link
               href="/#WhoWeAre"
               className="text-slate-700 hover:text-primary transition"
@@ -103,20 +102,21 @@ export default function Navbar() {
             >
               Products
             </Link>
+
+            <Link
+              href="/#Services"
+              onClick={handleNavClick}
+              className="block py-3 text-slate-700 hover:text-primary transition"
+            >
+              Services
+            </Link>
+
             <Link
               href="/#Solutions"
               onClick={handleNavClick}
               className="block py-3 text-slate-700 hover:text-primary transition"
             >
               Solutions
-            </Link>
-
-            <Link
-              href="/#Services"
-              onClick={handleNavClick}
-              className="w-full text-left py-3 text-slate-700 hover:text-primary transition flex items-center justify-between"
-            >
-              Services
             </Link>
 
             <Link

@@ -140,7 +140,7 @@ const AgentsDetails = () => {
   );
 
   return (
-    <section className="relative py-8 overflow-hidden">
+    <section className="relative py-8 overflow-hidden" id="Solutions">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 mb-12 md:mb-20 pb-8 border-b border-slate-300">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[68px] font-bold leading-tight md:leading-[0.8] tracking-[-1.8px] text-[#000052]">
