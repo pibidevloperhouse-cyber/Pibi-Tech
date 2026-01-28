@@ -55,7 +55,7 @@ export default function PerformanceGuarantee() {
                 </div>
 
                 <div className="mb-2">
-                  <span className="text-5xl font-bold text-slate-900">
+                  <span className="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-brand-gradient">
                     {item.value}
                   </span>
                   <span className="ml-2 text-2xl font-semibold text-primary">

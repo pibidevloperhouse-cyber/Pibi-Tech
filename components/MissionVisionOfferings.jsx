@@ -75,7 +75,7 @@ const offerings = [
 
 const OfferingCard = ({ offering }) => (
   <div
-    className={`${offering.color} rounded-xl relative aspect-5/6 p-6 border border-slate-200 h-full flex flex-col justify-between`}
+    className={`${offering.color} rounded-xl relative p-6 border border-slate-200 h-full flex flex-col justify-between`}
   >
     <div className="absolute -top-5 -right-5 rotate-12 opacity-20">
       <div className="w-32 aspect-square relative">
@@ -119,26 +119,29 @@ export default function MissionVisionOfferings() {
           </span>
         </h2>
 
-        <div className="block md:hidden">
+        <div>
           <Swiper
             pagination={{ clickable: true }}
             spaceBetween={20}
             slidesPerView={1}
             modules={[Pagination, Autoplay]}
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+              },
+              768: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+              },
+            }}
             autoplay={{ delay: 4000, disableOnInteraction: false }}
           >
             {offerings.map((offering) => (
-              <SwiperSlide key={offering.id}>
+              <SwiperSlide className="py-10 h-full" key={offering.id}>
                 <OfferingCard offering={offering} />
               </SwiperSlide>
             ))}
           </Swiper>
-        </div>
-
-        <div className="hidden md:grid grid-cols-4 gap-6">
-          {offerings.map((offering) => (
-            <OfferingCard key={offering.id} offering={offering} />
-          ))}
         </div>
       </div>
     </section>

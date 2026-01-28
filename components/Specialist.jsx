@@ -95,7 +95,7 @@ export default function Specialist() {
             slidesPerView={1}
           >
             {specialties.map((item, index) => (
-              <SwiperSlide key={index}>
+              <SwiperSlide className="py-10 h-full" key={index}>
                 <Card item={item} />
               </SwiperSlide>
             ))}

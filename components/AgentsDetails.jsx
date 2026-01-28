@@ -163,7 +163,7 @@ const AgentsDetails = () => {
             slidesPerView={1}
           >
             {cards.map((card) => (
-              <SwiperSlide key={card.id}>
+              <SwiperSlide className="py-10 h-full" key={card.id}>
                 <Card card={card} />
               </SwiperSlide>
             ))}

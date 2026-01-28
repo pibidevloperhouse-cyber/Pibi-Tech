@@ -90,7 +90,7 @@ export default function IntroSection() {
             autoplay={{ delay: 4000, disableOnInteraction: false }}
           >
             {cards.map((card, index) => (
-              <SwiperSlide key={index}>
+              <SwiperSlide className="py-10 h-full" key={index}>
                 <Card {...card} />
               </SwiperSlide>
             ))}

@@ -25,7 +25,7 @@ export default function HomePage() {
       <Specialist />
       <PerformanceGuarantee />
       <Roadmap />
-      <RecentEngagements />
+      {/* <RecentEngagements /> */}
     </div>
   );
 }
