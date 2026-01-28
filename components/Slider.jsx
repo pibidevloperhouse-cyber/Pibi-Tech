@@ -19,7 +19,7 @@ const Slider = () => {
               alt="Partner 1"
               width={200}
               height={200}
-              className="md:mr-6 mr-0 w-28 md:w-32 mx-4 object-fit grayscale hover:grayscale-0 transition-all duration-300"
+              className="md:mr-6 mr-0 w-28 md:w-32 mx-4 object-fit invert brightness-0 contrast-100 transition-all duration-300"
             />
           </div>
         ))}

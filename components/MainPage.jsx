@@ -18,7 +18,7 @@ export function MainPage() {
   }, []);
 
   return (
-    <section className="relative overflow-hidden bg-[#070a18] text-white">
+    <section className="relative overflow-hidden bg-[#041352] text-white">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,#1e40af30,transparent_60%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom,#0ea5e930,transparent_55%)]" />
       {/* 
