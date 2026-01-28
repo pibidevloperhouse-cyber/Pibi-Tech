@@ -34,9 +34,9 @@ export default function GlobalLocations() {
   return (
     <section className="bg-[#2f4576] py-8">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-5">
+        <div className="grid gap-6 grid-cols-2 lg:grid-cols-5">
           {locations.map((loc, i) => (
-            <div key={i} className="space-y-2">
+            <div key={i} className="space-y-2 w-full">
               <div className="relative w-16 aspect-square invert contrast-100 brightness-0">
                 <Image
                   src={loc.icon}
