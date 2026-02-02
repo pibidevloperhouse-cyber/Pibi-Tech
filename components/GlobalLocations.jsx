@@ -49,13 +49,13 @@ export default function GlobalLocations() {
                 />
               </div>
 
-              <h3 className="text-lg font-semibold text-white">
+              <h3 className="text-lg font-semibold text-white text-center">
                 {loc.country}
               </h3>
 
               <div className="text-sm leading-relaxed opacity-90">
                 {loc.address.map((line, idx) => (
-                  <p key={idx} className="text-white">
+                  <p key={idx} className="text-white text-center">
                     {line}
                   </p>
                 ))}
