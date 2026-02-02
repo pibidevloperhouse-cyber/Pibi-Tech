@@ -16,7 +16,7 @@ export default function Specialist() {
       description:
         "Streamlined clinical workflows and intelligent patient management processes designed for accuracy, compliance, and care continuity.",
       icon: HeartPulse,
-      color: "bg-[#8A348D]",
+      color: "bg-[#4FC6E0]",
     },
     {
       title: "Manufacturing",

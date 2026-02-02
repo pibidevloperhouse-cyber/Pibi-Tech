@@ -20,7 +20,7 @@ const cards = [
         competitive advantages through agentic orchestration.
       </>
     ),
-    bg: "#8A348C",
+    bg: "#4FC6E0",
     Icon: UserStar,
   },
   {

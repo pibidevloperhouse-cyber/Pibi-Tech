@@ -24,7 +24,7 @@ const offerings = [
       "An AI-powered growth driven website that works as a 24/7 sales and qualification system that attracts, qualifies, and converts visitors into revenue opportunities — not just a digital brochure.",
     link: "contact-us",
     icon: Brain,
-    color: "bg-[#8A348D]",
+    color: "bg-[#4FC6E0]",
   },
   {
     id: 2,
@@ -60,7 +60,7 @@ const offerings = [
       "A resilient, secure cloud foundation that supports business continuity, scale, and operational efficiency.",
     link: "contact-us",
     icon: Brain,
-    color: "bg-[#8A348D]",
+    color: "bg-[##4FC6E0]",
   },
   {
     id: 6,

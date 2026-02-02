@@ -36,7 +36,10 @@ export default function GlobalLocations() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid gap-6 grid-cols-2 lg:grid-cols-5">
           {locations.map((loc, i) => (
-            <div key={i} className="space-y-2 w-full">
+            <div
+              key={i}
+              className="space-y-2 w-full flex flex-col items-center md:items-start"
+            >
               <div className="relative w-16 aspect-square invert contrast-100 brightness-0">
                 <Image
                   src={loc.icon}
