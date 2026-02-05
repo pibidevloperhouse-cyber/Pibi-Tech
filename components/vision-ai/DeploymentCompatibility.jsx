@@ -30,10 +30,10 @@ export default function DeploymentFlexibility() {
     <section className="w-full py-16">
       <div className="container mx-auto max-w-[1320px] px-6">
         <div className="mb-12">
-          <h2 className="font-sen text-[35px] font-bold leading-[52.5px] text-[#248BB3] mb-2">
+          <h2 className="text-[35px] font-bold leading-[52.5px] text-[#248BB3] mb-2">
             Deployment Flexibility
           </h2>
-          <h3 className="font-sen text-[35px] font-bold leading-[52.5px] text-[#248BB3]">
+          <h3 className="text-[35px] font-bold leading-[52.5px] text-[#248BB3]">
             & Compatibility
           </h3>
         </div>

@@ -42,7 +42,7 @@ export default function HeroBanner() {
         </div>
 
         <div className="text-center max-w-204.75 mb-8">
-          <h1 className="font-sen text-white mb-4">
+          <h1 className="text-white mb-4">
             <div className="text-[32px] md:text-[65px] font-normal leading-[1.2]">
               Visual Inspection
             </div>
@@ -50,7 +50,7 @@ export default function HeroBanner() {
               Automated.
             </div>
           </h1>
-          <p className="font-sen text-[#292e35] text-[25px] font-normal leading-[37.5px]">
+          <p className="text-[#292e35] text-[25px] font-normal leading-[37.5px]">
             Ensure product meets standards during every stage of manufacturing
           </p>
         </div>
@@ -58,13 +58,13 @@ export default function HeroBanner() {
         <div className="flex items-center gap-4">
           <button
             onClick={() => router.push("/contact-us")}
-            className="px-5 py-3 bg-[#248BB3] text-white text-base font-medium font-sen rounded hover:opacity-90 transition-opacity"
+            className="px-5 py-3 bg-[#248BB3] text-white text-base font-medium rounded hover:opacity-90 transition-opacity"
           >
             Explore
           </button>
           <button
             onClick={() => router.push("/contact-us")}
-            className="px-6 py-3 border-2 border-white text-white text-base font-medium font-sen rounded hover:bg-white/10 transition-all"
+            className="px-6 py-3 border-2 border-white text-white text-base font-medium rounded hover:bg-white/10 transition-all"
           >
             Request Demo
           </button>

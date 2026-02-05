@@ -13,7 +13,7 @@ export default function TrustedEnterprises() {
   return (
     <section className="w-full blue-50 py-24">
       <div className="container mx-auto max-w-[1320px] px-6">
-        <h2 className="font-sen text-[35px] font-bold leading-[52.5px] text-[#248BB3] text-center mb-12">
+        <h2 className="text-[35px] font-bold leading-[52.5px] text-[#248BB3] text-center mb-12">
           Trusted by Global Enterprises
         </h2>
 

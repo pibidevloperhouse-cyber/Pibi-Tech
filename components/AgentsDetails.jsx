@@ -5,9 +5,11 @@ import { useRouter } from "next/navigation";
 import React from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Autoplay, Controller, Pagination } from "swiper/modules";
 
 import "swiper/css";
+import "swiper/css/controller";
+import "swiper/css/autoplay";
 import "swiper/css/pagination";
 
 const AgentsDetails = () => {
@@ -52,12 +54,72 @@ const AgentsDetails = () => {
       onClick: undefined,
       variant: "light",
     },
+    {
+      id: 4,
+      number: "04",
+      title: "Business Intelligence",
+      description:
+        "We design modern BI systems that turn raw data into clear insights, enabling faster decisions, performance tracking, and revenue visibility across the organization.",
+      tags: [
+        "Data Modeling",
+        "Analytics Dashboards",
+        "KPI Frameworks",
+        "Self-Service BI",
+      ],
+      onClick: undefined,
+      variant: "blue",
+    },
+    {
+      id: 5,
+      number: "05",
+      title: "AI Knowledge Base",
+      description:
+        "We build intelligent, searchable knowledge systems that centralize enterprise information and power accurate answers, automation, and decision support.",
+      tags: [
+        "Knowledge Graphs",
+        "Semantic Search",
+        "Vector Databases",
+        "Enterprise RAG",
+      ],
+      onClick: undefined,
+      variant: "light",
+    },
+    {
+      id: 6,
+      number: "06",
+      title: "Data Engineering",
+      description:
+        "We architect scalable data pipelines and platforms that ensure reliable, high-quality data flows for analytics, AI, and business applications.",
+      tags: [
+        "Data Pipelines",
+        "ETL / ELT",
+        "Streaming Data",
+        "Data Warehousing",
+      ],
+      onClick: undefined,
+      variant: "blue",
+    },
+    {
+      id: 7,
+      number: "07",
+      title: "Intelligent Web Engine",
+      description:
+        "We build an AI-powered web intelligence layer that understands visitor intent, personalizes engagement in real time, and converts traffic into qualified pipeline and revenue outcomes.",
+      tags: [
+        "Intent Intelligence",
+        "Behavioral Context",
+        "Dynamic Personalization",
+        "Conversion Skills",
+      ],
+      onClick: undefined,
+      variant: "light",
+    },
   ];
 
   const Card = ({ card }) => (
     <div
       onClick={card.onClick}
-      className={`border-2 border-[#000052] p-8 flex flex-col justify-between group hover:shadow-lg transition-shadow cursor-pointer
+      className={`border-2 border-[#000052] min-h-150 p-8 flex flex-col justify-between group hover:shadow-lg transition-shadow cursor-pointer
         ${card.variant === "blue" ? "bg-[#248BB3] text-white" : "bg-white"}
       `}
     >
@@ -155,12 +217,25 @@ const AgentsDetails = () => {
           </p>
         </div>
 
-        <div className="block md:hidden px-3">
+        <div className="block px-3 h-full">
           <Swiper
-            modules={[Pagination]}
+            modules={[Pagination, Autoplay, Controller]}
             pagination={{ clickable: true }}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            loop={true}
             spaceBetween={20}
             slidesPerView={1}
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              640: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+              },
+            }}
+            className="h-max"
           >
             {cards.map((card) => (
               <SwiperSlide className="py-10 h-full" key={card.id}>
@@ -168,12 +243,6 @@ const AgentsDetails = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-        </div>
-
-        <div className="hidden md:grid grid-cols-3 gap-8 px-3">
-          {cards.map((card) => (
-            <Card key={card.id} card={card} />
-          ))}
         </div>
       </div>
     </section>

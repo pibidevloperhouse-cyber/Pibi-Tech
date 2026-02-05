@@ -35,7 +35,7 @@ export default function DeliveryProcess() {
   return (
     <section className="w-full py-16">
       <div className="container mx-auto max-w-[1320px] px-6">
-        <h2 className="font-inter text-[34px] font-semibold leading-[42px] text-[#1E3A5F] mb-12">
+        <h2 className="text-[34px] font-semibold leading-[42px] text-[#1E3A5F] mb-12">
           Delivery Process
         </h2>
 
@@ -57,10 +57,10 @@ export default function DeliveryProcess() {
                     alt={step.title}
                     className="w-[100px] h-[100px] mb-4"
                   />
-                  <h3 className="font-sen text-[#248BB3]/80 text-[36px] font-medium leading-[46px] mb-4">
+                  <h3 className="text-[#248BB3]/80 text-[36px] font-medium leading-[46px] mb-4">
                     {step.title}
                   </h3>
-                  <p className="font-sen text-gray-400 text-base font-normal leading-6">
+                  <p className="text-gray-400 text-base font-normal leading-6">
                     {step.description}
                   </p>
                 </div>

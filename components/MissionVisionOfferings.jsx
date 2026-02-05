@@ -60,7 +60,7 @@ const offerings = [
       "A resilient, secure cloud foundation that supports business continuity, scale, and operational efficiency.",
     link: "contact-us",
     icon: Brain,
-    color: "bg-[##4FC6E0]",
+    color: "bg-[#4FC6E0]",
   },
   {
     id: 6,
@@ -75,7 +75,7 @@ const offerings = [
 
 const OfferingCard = ({ offering }) => (
   <div
-    className={`${offering.color} rounded-xl relative p-6 border border-slate-200 h-full flex flex-col justify-between`}
+    className={`${offering.color} rounded-xl md:min-h-100 relative p-6 border border-slate-200 h-full flex flex-col justify-between`}
   >
     <div className="absolute -top-5 -right-5 rotate-12 opacity-20">
       <div className="w-32 aspect-square relative">

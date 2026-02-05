@@ -26,10 +26,10 @@ export default function WhyPibi() {
   return (
     <section className="w-full bg-linear-to-r from-blue-900 to-blue-800 py-16">
       <div className="container mx-auto max-w-[1320px] px-6">
-        <h3 className="font-inter text-[34px] font-bold leading-[42px] text-white mb-3">
+        <h3 className="text-[34px] font-bold leading-[42px] text-white mb-3">
           Why Pibi Tech ?
         </h3>
-        <h2 className="font-inter text-[34px] font-bold leading-[42px] text-white mb-12">
+        <h2 className="text-[34px] font-bold leading-[42px] text-white mb-12">
           Business Outcomes That Drive Transformation
         </h2>
 

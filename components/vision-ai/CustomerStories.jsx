@@ -15,7 +15,7 @@ export default function CustomerStories() {
   return (
     <section className="w-full py-16">
       <div className="container mx-auto max-w-[1320px] px-6">
-        <h2 className="font-sen text-[35px] font-bold leading-[52.5px] text-Pibi Tech-navy mb-6">
+        <h2 className="text-[35px] font-bold leading-[52.5px] text-Pibi Tech-navy mb-6">
           Customer Success Stories
         </h2>
 
