@@ -19,7 +19,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/a11y";
-import WorldMap from "@/components/WorldMap";
+// import WorldMap from "@/components/WorldMap";
 
 const offerings = [
   {
