@@ -2,16 +2,84 @@
 
 import GlobalLocations from "@/components/GlobalLocations";
 import RecentEngagements from "@/components/RecentEngagements";
-import { ArrowRight, Linkedin } from "lucide-react";
+import {
+  ArrowRight,
+  Brain,
+  BriefcaseBusiness,
+  CalendarSync,
+  FolderLock,
+  Linkedin,
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { Autoplay, Pagination } from "swiper/modules";
+import { A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-const ApproachCard = ({ approach }) => (
+import "swiper/css";
+import "swiper/css/autoplay";
+import "swiper/css/a11y";
+
+const offerings = [
+  {
+    id: 1,
+    title: "Agentic Website Development",
+    description:
+      "An AI-powered growth driven website that works as a 24/7 sales and qualification system that attracts, qualifies, and converts visitors into revenue opportunities — not just a digital brochure.",
+    link: "contact-us",
+    icon: Brain,
+    color: "bg-[#4FC6E0]",
+  },
+  {
+    id: 2,
+    title: "Product Development & Engineering",
+    description:
+      "A full-stack product engineering partnership to take your idea from concept to design, build, and scale products that are reliable, adaptable, and market fit.",
+    link: "contact-us",
+    icon: FolderLock,
+    color: "bg-[#0066A4]",
+  },
+  {
+    id: 3,
+    title: "Enterprise Agentic AI Development",
+    description:
+      "Autonomous AI agents that replace repetitive work, accelerate decisions, and reduce operational costs  and drive measurable efficiency gains.",
+    link: "intelligent-process-automation",
+    icon: BriefcaseBusiness,
+    color: "bg-[#02B2E3]",
+  },
+  {
+    id: 4,
+    title: "Web, Mobile & SaaS Application Development",
+    description:
+      "Robust digital applications engineered for performance, security, and continuous business growth.",
+    link: "contact-us",
+    icon: CalendarSync,
+    color: "bg-[#484393]",
+  },
+  {
+    id: 5,
+    title: "Enterprise Infrastructure & Cloud Ops",
+    description:
+      "A resilient, secure cloud foundation that supports business continuity, scale, and operational efficiency.",
+    link: "contact-us",
+    icon: Brain,
+    color: "bg-[#4FC6E0]",
+  },
+  {
+    id: 6,
+    title: "Growth Marketing & Revenue Generation",
+    description:
+      "A technology-driven growth system that consistently generates qualified leads and converts them into predictable revenue.",
+    link: "contact-us",
+    icon: FolderLock,
+    color: "bg-[#0066A4]",
+  },
+];
+
+const OfferingCard = ({ offering }) => (
   <div
-    className={`${approach?.color} w-full aspect-square rounded-xl relative p-6 border border-slate-200 h-full flex flex-col justify-center items-center`}
+    className={`${offering.color} rounded-xl md:min-h-100 relative p-6 border border-slate-200 h-full flex flex-col justify-between`}
   >
     <div className="absolute -top-5 -right-5 rotate-12 opacity-20">
       <div className="w-32 aspect-square relative">
@@ -24,39 +92,28 @@ const ApproachCard = ({ approach }) => (
       </div>
     </div>
 
-    <div>
-      <h4 className="text-3xl text-center font-bold text-white mb-3">
-        {approach?.title}
-      </h4>
+    <div className="flex items-center justify-center border w-max p-4 text-white border-white rounded-full mb-5">
+      <offering.icon className="w-10 h-10" />
     </div>
+
+    <div>
+      <h4 className="text-xl font-bold text-white mb-3">{offering.title}</h4>
+      <p className="text-white/80 leading-relaxed mb-6">
+        {offering.description}
+      </p>
+    </div>
+
+    <Link
+      href={offering.link}
+      className="inline-flex items-center gap-2 text-white font-semibold hover:gap-3 transition-all"
+    >
+      Know more
+      <ArrowRight className="w-4 h-4" />
+    </Link>
   </div>
 );
 
 const AboutUs = () => {
-  const approachs = [
-    {
-      id: 1,
-      title: "DevOps",
-      description:
-        "An AI-powered growth driven website that works as a 24/7 sales and qualification system that attracts, qualifies, and converts visitors into revenue opportunities — not just a digital brochure.",
-      color: "bg-[#8A348D]",
-    },
-    {
-      id: 2,
-      title: "Product Development & Engineering",
-      description:
-        "A full-stack product engineering partnership to take your idea from concept to design, build, and scale products that are reliable, adaptable, and market fit.",
-      color: "bg-[#0066A4]",
-    },
-    {
-      id: 3,
-      title: "Enterprise Agentic AI Development",
-      description:
-        "Autonomous AI agents that replace repetitive work, accelerate decisions, and reduce operational costs  and drive measurable efficiency gains.",
-      color: "bg-[#02B2E3]",
-    },
-  ];
-
   const teams = [
     {
       name: "Siranjeevi Ramdoss                                                                                                                                                                 ",
@@ -81,23 +138,26 @@ const AboutUs = () => {
           alt="Team Celebration"
           fill
           priority
-          src="/about-us.jpg"
+          src="/about-us.jpeg"
           className="object-cover"
         />
 
         <div className="absolute inset-0 bg-black/55" />
 
         <div className="relative z-10 mx-auto flex h-full max-w-7xl items-center px-6">
-          <div className="grid w-full grid-cols-1 lg:grid-cols-2 gap-10">
-            <div className="text-white">
+          <div className="grid w-full grid-cols-1 lg:grid-cols-3 gap-10">
+            <div className="text-white col-span-2">
               <h1 className="text-4xl md:text-5xl xl:text-6xl font-light leading-tight">
-                Joy through <br />
-                <span className="font-normal">Gratitude!</span>
+                About Us
               </h1>
 
-              <p className="mt-6 max-w-xl text-lg text-white/90">
-                Thanks to all our Startup and Enterprise clients for partnering
-                us in their digital transformation journey to better human life
+              <p className="mt-6 max-w-4xl text-xl text-white font-semibold">
+                Pi Bi Tech is a global AI and digital technology company
+                specializing in AI Solutions, Agentic process automation,
+                product development, and enterprise digital transformation. We
+                help businesses automate workflows, enhance operational
+                efficiency, and build intelligent systems that support
+                sustainable growth.
               </p>
 
               <button className="mt-10 inline-flex items-center gap-2 rounded-full bg-blue-600 px-8 py-3 text-white text-base font-medium hover:bg-blue-700 transition">
@@ -119,7 +179,46 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-      <section className="relative py-8 overflow-hidden">
+      <section className="relative py-8">
+        <div className="flex flex-col md:flex-row justify-center max-w-7xl mx-auto px-4 sm:px-6 items-center gap-8 pb-8 ">
+          <div className="flex-1">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#000052]">
+              How we Do
+            </h2>
+
+            <p className="max-w-full mt-6 text-lg md:text-xl font-medium text-slate-700">
+              <span className="font-semibold">PI-BI Technologies</span> is a
+              leading provider of AI transformation solutions that craft unique
+              competitive advantages through agentic orchestration. We
+              re-engineer your business to become
+              <span className="font-semibold"> future-ready </span>
+              with
+              <span className="font-semibold"> 5x growth</span>.
+            </p>
+          </div>
+          <div className="flex-1 w-full overflow-hidden relative">
+            <Swiper
+              className="w-full relative"
+              spaceBetween={20}
+              modules={[Autoplay, A11y]}
+              loop={true}
+              breakpoints={{
+                640: {
+                  slidesPerView: 2,
+                },
+              }}
+              autoplay={{ delay: 4000, disableOnInteraction: false }}
+            >
+              {offerings.map((offering) => (
+                <SwiperSlide className="py-10 h-full" key={offering.id}>
+                  <OfferingCard offering={offering} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
+      </section>
+      {/* <section className="relative py-8 overflow-hidden">
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 mb-12 md:mb-20 pb-8 border-b border-slate-300">
             <h2 className="text-2xl flex-[35%] sm:text-3xl md:text-4xl font-bold leading-tight tracking-[-1.8px] text-[#000052]">
@@ -164,7 +263,7 @@ const AboutUs = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="py-12 md:py-16 px-5 bg-blue-50">
         <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
           <div className="mb-16">

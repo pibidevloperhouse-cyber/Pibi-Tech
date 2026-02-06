@@ -79,7 +79,6 @@ const Card = ({ title, description, bg, Icon }) => (
 );
 
 export default function IntroSection() {
-  const router = useRouter();
   return (
     <section
       className="section-padding flex flex-col justify-center items-center bg-blue-50"
@@ -108,13 +107,6 @@ export default function IntroSection() {
           ))}
         </div>
       </div>
-      <button
-        className={`flex mt-8 px-4 py-2 rounded-lg mx-auto items-center gap-2 text-sm font-bold uppercase tracking-[1.4px] text-white bg-[#1f6fb2] hover:opacity-80 cursor-pointer`}
-        onClick={() => router.push("/about-us")}
-      >
-        Read Our Story
-        <ArrowRight className="w-5 h-5" />
-      </button>
     </section>
   );
 }
