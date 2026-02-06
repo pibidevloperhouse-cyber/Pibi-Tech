@@ -2,7 +2,7 @@
 
 import { ArrowRight } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -21,6 +21,48 @@ export default function OurProducts() {
       tag: "AI + Vedic Intelligence",
       description:
         "Every child is born with a unique cosmic blueprint. By blending 5,000-year-old Vedic wisdom with modern AI, Astro Kids empowers parents to nurture their child’s mental, emotional, and physical well-being — holistically, confidently, and joyfully.",
+      link: "https://www.astrokids.ai/",
+    },
+    {
+      title: "Compliance Guard",
+      tag: "GST Compliance Verification",
+      description:
+        "Verify GST. Avoid Penalties. Automatically verify GST filings and detect mismatches in real time.Reduce compliance risk and avoid penalties with minimal manual effort.",
+      link: "https://www.astrokids.ai/",
+    },
+    {
+      title: "Brand Trust+",
+      tag: "Intelligent Brand Authority",
+      description:
+        "Know How Your Brand Is Seen. Monitor how your brand is represented across digital channels.Identify trust gaps early and protect long-term brand credibility.",
+      link: "https://www.astrokids.ai/",
+    },
+    {
+      title: "DealFlow",
+      tag: "Quote & CPQ",
+      description:
+        "Create Accurate Quotes, Faster.Create accurate quotes using intelligent pricing and product rules.Shorten deal cycles and reduce errors across sales teams.",
+      link: "https://www.astrokids.ai/",
+    },
+    {
+      title: "PriceSense",
+      tag: "AI Pricing Intelligence",
+      description:
+        "Price with Confidence.Analyze demand, competition, and performance signals. Optimize pricing decisions to improve margins and win rates.",
+      link: "https://www.astrokids.ai/",
+    },
+    {
+      title: "SharpTarget",
+      tag: "ICP Intelligence",
+      description:
+        "Focus on the Right Customers.Identify customers that best match your ideal profile. Focus sales and marketing efforts where conversion is highest.",
+      link: "https://www.astrokids.ai/",
+    },
+    {
+      title: "Smart Engage",
+      tag: "Intelligent Auto-Mail & Triggers",
+      description:
+        "Automate Timely Communication.Automate emails and actions based on real-time customer events. Ensure timely follow-ups without manual coordination.",
       link: "https://www.astrokids.ai/",
     },
   ];
@@ -52,7 +94,7 @@ export default function OurProducts() {
   );
 
   return (
-    <section className="section-padding bg-blue-50" id="Products">
+    <section className="py-12 bg-blue-50" id="Products">
       <div className="container-max">
         <div className="mb-16 w-full">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center">
@@ -66,12 +108,24 @@ export default function OurProducts() {
           </p>
         </div>
 
-        <div className="block sm:hidden">
+        <div className="block">
           <Swiper
-            modules={[Pagination]}
+            modules={[Pagination, Autoplay]}
             pagination={{ clickable: true }}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
             spaceBetween={20}
             slidesPerView={1}
+            loop={true}
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+              },
+            }}
           >
             {products.map((product, index) => (
               <SwiperSlide className="py-10 h-full" key={index}>
@@ -79,12 +133,6 @@ export default function OurProducts() {
               </SwiperSlide>
             ))}
           </Swiper>
-        </div>
-
-        <div className="hidden sm:grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {products.map((product, index) => (
-            <Card key={index} product={product} />
-          ))}
         </div>
       </div>
     </section>

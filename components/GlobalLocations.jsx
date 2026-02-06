@@ -1,67 +1,114 @@
 import Image from "next/image";
 
-const locations = [
+const globalOffices = [
   {
     country: "USA",
     icon: "/usa.png",
-    address: ["2911 AW Grimes Blvd Ste 610,"],
-    phone: "+1 512 903 7998",
-  },
-  {
-    country: "United Arab Emirates",
-    icon: "/uae.png",
-    address: ["Stanmore"],
-    phone: "+44 7704 902347",
+    address: ["Texas 78660"],
   },
   {
     country: "Canada",
     icon: "/canada.png",
-    address: ["1855 Accelerator Program"],
-  },
-  {
-    country: "Madurai, India",
-    icon: "/madurai.png",
-    address: ["Bi Bi Kulam, Madurai"],
+    address: ["Ontario L1N 4W2"],
   },
   {
     country: "Germany",
     icon: "/germany.png",
-    address: ["Königsbergerstr. 19, 41812,"],
+    address: ["Königsbergerstr. 19, 41812"],
+  },
+  {
+    country: "United Arab Emirates",
+    icon: "/uae.png",
+    address: ["Abu Dhabi, Khalifa City, St. 00971"],
+  },
+];
+
+const indiaOffices = [
+  {
+    city: "Chennai",
+    icon: "/madurai.png",
+    address: ["Tharamani, Chennai - 600 113"],
+  },
+  {
+    city: "Coimbatore",
+    icon: "/madurai.png",
+    address: ["Peelamedu, Coimbatore - 641004"],
+  },
+  {
+    city: "Madurai",
+    icon: "/madurai.png",
+    address: ["Bi Bi Kulam, Madurai - 625002"],
   },
 ];
 
 export default function GlobalLocations() {
   return (
-    <section className="bg-[#2f4576] py-8">
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="grid gap-6 grid-cols-2 lg:grid-cols-5">
-          {locations.map((loc, i) => (
-            <div
-              key={i}
-              className="space-y-2 w-full flex flex-col items-center md:items-start"
-            >
-              <div className="relative w-16 aspect-square invert contrast-100 brightness-0">
-                <Image
-                  src={loc.icon}
-                  alt={loc.country}
-                  fill
-                  className="invert contrast-100 brightness-0 transistion-colors"
-                />
-              </div>
+    <section className="bg-[#2f4576] py-12">
+      <div className="mx-auto max-w-7xl px-6 space-y-14">
+        <div>
+          <h2 className="mb-8 text-3xl font-bold text-white text-center">
+            Global Offices
+          </h2>
 
-              <h3 className="text-lg font-semibold text-white text-center">
-                {loc.country}
-              </h3>
+          <div className="grid gap-8 grid-cols-2 md:grid-cols-4">
+            {globalOffices.map((loc, i) => (
+              <div
+                key={i}
+                className="flex flex-col items-center text-center space-y-3"
+              >
+                <div className="relative w-16 aspect-square invert brightness-0">
+                  <Image
+                    src={loc.icon}
+                    alt={loc.country}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
 
-              <div className="text-sm leading-relaxed opacity-90">
+                <h3 className="text-lg font-semibold text-white">
+                  {loc.country}
+                </h3>
+
                 {loc.address.map((line, idx) => (
-                  <p key={idx} className="text-white text-center">
+                  <p key={idx} className="text-sm text-white/90">
                     {line}
                   </p>
                 ))}
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+        </div>
+
+        <div>
+          <h2 className="mb-8 text-3xl font-bold text-white text-center">
+            India Offices
+          </h2>
+
+          <div className="grid gap-8 grid-cols-1 sm:grid-cols-3">
+            {indiaOffices.map((loc, i) => (
+              <div
+                key={i}
+                className="flex flex-col items-center text-center space-y-3"
+              >
+                <div className="relative w-16 aspect-square invert brightness-0">
+                  <Image
+                    src={loc.icon}
+                    alt={loc.city}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+
+                <h3 className="text-lg font-semibold text-white">{loc.city}</h3>
+
+                {loc.address.map((line, idx) => (
+                  <p key={idx} className="text-sm text-white/90">
+                    {line}
+                  </p>
+                ))}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
