@@ -18,7 +18,7 @@ export default function HomePage() {
       <MainPage />
       {/* <HeroCarousel /> */}
       {/* <IntroSection /> */}
-      <section className="relative py-8 overflow-hidden">
+      <section className="relative py-8 border shadow-lg border-[#1f6fb2] max-w-7xl mx-auto rounded-xl overflow-hidden">
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex flex-col md:flex-row justify-start items-start gap-8 pb-8 ">
             <h2 className="text-2xl flex-[35%] sm:text-3xl md:text-4xl font-bold leading-tight tracking-[-1.8px] text-[#000052]">

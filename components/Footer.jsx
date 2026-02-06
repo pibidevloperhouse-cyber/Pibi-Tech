@@ -51,7 +51,7 @@ export default function Footer() {
                   href="/vision-ai"
                   className="text-slate-400 hover:text-primary transition"
                 >
-                  Vision AI
+                  Agentic AI
                 </Link>
               </li>
               <li>
@@ -59,7 +59,7 @@ export default function Footer() {
                   href="/generative-ai"
                   className="text-slate-400 hover:text-primary transition"
                 >
-                  Generative AI
+                  Business Intelligence
                 </Link>
               </li>
               <li>
@@ -67,7 +67,31 @@ export default function Footer() {
                   href="contact-us"
                   className="text-slate-400 hover:text-primary transition"
                 >
-                  Digital Transformations
+                  AI Knowledge Base
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="contact-us"
+                  className="text-slate-400 hover:text-primary transition"
+                >
+                  Intelligent Web Engine
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="contact-us"
+                  className="text-slate-400 hover:text-primary transition"
+                >
+                  Data Engineering
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="contact-us"
+                  className="text-slate-400 hover:text-primary transition"
+                >
+                  Cloud Ops
                 </Link>
               </li>
             </ul>

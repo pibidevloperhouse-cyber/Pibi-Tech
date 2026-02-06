@@ -1,30 +1,33 @@
 export default function ContactForm() {
   return (
     <section className="w-full py-16">
-      <div className="container mx-auto max-w-[1320px] px-6">
+      <div className="container mx-auto max-w-7xl px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Left Side - Info */}
           <div>
-            <h2 className=" text-[35px] font-bold leading-[42px] text-[#248BB3] mb-6">
-              Book a Meeting with Pibi Tech
+            <h2 className="text-[35px] font-bold leading-10.5 text-[#248BB3] mb-6">
+              Let’s Build Intelligent Systems for Your Business
             </h2>
+            <p className="text-md md:text-lg font-medium my-2">
+              Share your challenges with us. Our team will help you design,
+              deploy, and scale AI and Agentic AI solutions that fit your
+              enterprise goals.
+            </p>
             <div className="space-y-4">
               <div className="flex items-center gap-2">
                 <span className="text-blue-50 text-xl"></span>
                 <span className=" text-[18px] text-[#248BB3]/80">
-                  (+91) 6384300011
+                  (+91) 9597867340
                 </span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-blue-50 text-xl"></span>
                 <span className=" text-[18px] text-[#248BB3]/80">
-                  info@PibiTech.ai
+                  business@pibitech.com
                 </span>
               </div>
             </div>
           </div>
 
-          {/* Right Side - Form */}
           <div className="bg-white rounded-4xl border border-[#93B8FF] p-8">
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

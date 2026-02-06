@@ -13,17 +13,18 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { A11y, Autoplay } from "swiper/modules";
+import { A11y, Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/a11y";
+import WorldMap from "@/components/WorldMap";
 
 const offerings = [
   {
     id: 1,
-    title: "Agentic Website Development",
+    title: "Multi Lingual Website Development",
     description:
       "An AI-powered growth driven website that works as a 24/7 sales and qualification system that attracts, qualifies, and converts visitors into revenue opportunities — not just a digital brochure.",
     link: "contact-us",
@@ -41,7 +42,7 @@ const offerings = [
   },
   {
     id: 3,
-    title: "Enterprise Agentic AI Development",
+    title: "AI & Agentic Process Automation",
     description:
       "Autonomous AI agents that replace repetitive work, accelerate decisions, and reduce operational costs  and drive measurable efficiency gains.",
     link: "intelligent-process-automation",
@@ -50,7 +51,7 @@ const offerings = [
   },
   {
     id: 4,
-    title: "Web, Mobile & SaaS Application Development",
+    title: "Application Development",
     description:
       "Robust digital applications engineered for performance, security, and continuous business growth.",
     link: "contact-us",
@@ -68,7 +69,7 @@ const offerings = [
   },
   {
     id: 6,
-    title: "Growth Marketing & Revenue Generation",
+    title: "MarTech & Growth Hacking",
     description:
       "A technology-driven growth system that consistently generates qualified leads and converts them into predictable revenue.",
     link: "contact-us",
@@ -77,41 +78,44 @@ const offerings = [
   },
 ];
 
-const OfferingCard = ({ offering }) => (
-  <div
-    className={`${offering.color} rounded-xl md:min-h-100 relative p-6 border border-slate-200 h-full flex flex-col justify-between`}
-  >
-    <div className="absolute -top-5 -right-5 rotate-12 opacity-20">
-      <div className="w-32 aspect-square relative">
-        <Image
-          src="/pi.png"
-          alt="PI-BI Technologies"
-          fill
-          className="object-contain"
-        />
-      </div>
-    </div>
-
-    <div className="flex items-center justify-center border w-max p-4 text-white border-white rounded-full mb-5">
-      <offering.icon className="w-10 h-10" />
-    </div>
-
-    <div>
-      <h4 className="text-xl font-bold text-white mb-3">{offering.title}</h4>
-      <p className="text-white/80 leading-relaxed mb-6">
-        {offering.description}
-      </p>
-    </div>
-
-    <Link
-      href={offering.link}
-      className="inline-flex items-center gap-2 text-white font-semibold hover:gap-3 transition-all"
+const OfferingCard = ({ offering }) =>
+  offering && (
+    <div
+      className={`${offering?.color} rounded-xl md:min-h-100 relative p-6 border border-slate-200 h-full flex flex-col justify-between`}
     >
-      Know more
-      <ArrowRight className="w-4 h-4" />
-    </Link>
-  </div>
-);
+      <div className="absolute -top-5 -right-5 rotate-12 opacity-20">
+        <div className="w-32 aspect-square relative">
+          <Image
+            src="/pi.png"
+            alt="PI-BI Technologies"
+            fill
+            className="object-contain"
+          />
+        </div>
+      </div>
+
+      <div className="flex items-center justify-center border w-max p-4 text-white border-white rounded-full mb-5">
+        <offering.icon className="w-10 h-10" />
+      </div>
+
+      <div>
+        <h4 className="text-xl font-bold text-white mb-3">{offering.title}</h4>
+        <p className="text-white/80 leading-relaxed mb-6">
+          {offering.description}
+        </p>
+      </div>
+
+      {offering.link && (
+        <Link
+          href={offering.link}
+          className="inline-flex items-center gap-2 text-white font-semibold hover:gap-3 transition-all"
+        >
+          Know more
+          <ArrowRight className="w-4 h-4" />
+        </Link>
+      )}
+    </div>
+  );
 
 const AboutUs = () => {
   const teams = [
@@ -131,9 +135,60 @@ const AboutUs = () => {
     },
   ];
 
+  const approaches = [
+    {
+      id: 1,
+      title: "Product Concept in 3 Days",
+      description:
+        "We collaborate with key stakeholders to define the problem, scope, objectives, and success criteria—ensuring shared understanding and clear direction from the start.",
+      icon: Brain,
+      color: "bg-[#4FC6E0]",
+    },
+    {
+      id: 2,
+      title: "Prototype & Validation in 3 Weeks",
+      description:
+        "We design and develop a working prototype to validate usability, technical feasibility, and business viability—minimizing risk before full-scale development.",
+      icon: FolderLock,
+      color: "bg-[#0066A4]",
+    },
+    {
+      id: 3,
+      title: "MVP in Production in 3 Months",
+      description:
+        "We deliver a production-ready MVP built for performance, security, and scalability—allowing teams to launch quickly and gather real-world insights.",
+      icon: BriefcaseBusiness,
+      color: "bg-[#02B2E3]",
+    },
+    {
+      id: 4,
+      title: "DevOps",
+      description:
+        "Automated CI/CD pipelines that enable faster AI deployments, continuous monitoring, and reliable performance at scale.",
+      icon: CalendarSync,
+      color: "bg-[#484393]",
+    },
+    {
+      id: 5,
+      title: "ITIL",
+      description:
+        "Structured service management that ensures reliability, governance, and enterprise-grade operational excellence.",
+      icon: Brain,
+      color: "bg-[#4FC6E0]",
+    },
+    {
+      id: 6,
+      title: "Agile",
+      description:
+        "Iterative development that enables rapid learning, continuous improvement, and faster value delivery.",
+      icon: FolderLock,
+      color: "bg-[#0066A4]",
+    },
+  ];
+
   return (
     <div>
-      <section className="relative min-h-[60vh] flex flex-col items-center justify-center w-full overflow-hidden">
+      <section className="relative flex flex-col items-center justify-center w-full overflow-hidden">
         <Image
           alt="Team Celebration"
           fill
@@ -187,13 +242,24 @@ const AboutUs = () => {
             </h2>
 
             <p className="max-w-full mt-6 text-lg md:text-xl font-medium text-slate-700">
-              <span className="font-semibold">PI-BI Technologies</span> is a
-              leading provider of AI transformation solutions that craft unique
-              competitive advantages through agentic orchestration. We
-              re-engineer your business to become
-              <span className="font-semibold"> future-ready </span>
+              <span className="font-semibold text-[#1f6fb2]">
+                PI-BI Technologies
+              </span>{" "}
+              is a leading provider of{" "}
+              <span className="font-semibold text-[#1f6fb2]">
+                AI transformation solutions
+              </span>{" "}
+              that craft unique competitive advantages through agentic
+              orchestration.
+            </p>
+            <p className="max-w-full mt-6 text-lg md:text-xl font-medium text-slate-700">
+              We re-engineer your business to become
+              <span className="font-semibold text-[#1f6fb2]">
+                {" "}
+                future-ready{" "}
+              </span>
               with
-              <span className="font-semibold"> 5x growth</span>.
+              <span className="font-semibold text-[#1f6fb2]"> 5x growth</span>.
             </p>
           </div>
           <div className="flex-1 w-full overflow-hidden relative">
@@ -218,6 +284,49 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
+      <section className="relative py-8 overflow-hidden" id="Solutions">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 mb-12 md:mb-20 pb-8 border-b border-slate-300">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight md:leading-[0.8] text-[#000052]">
+              Our Approach
+            </h2>
+
+            <p className="max-w-full md:max-w-2xl text-base md:text-lg font-medium text-slate-700 leading-relaxed md:leading-[1.1]">
+              We engineer the digital backbone of modern enterprises with
+              precision and foresight.
+            </p>
+          </div>
+
+          <div className="block px-3 h-full">
+            <Swiper
+              modules={[Pagination, Autoplay]}
+              pagination={{ clickable: true }}
+              autoplay={{ delay: 3000, disableOnInteraction: false }}
+              loop={true}
+              spaceBetween={20}
+              slidesPerView={1}
+              breakpoints={{
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                640: {
+                  slidesPerView: 3,
+                  spaceBetween: 40,
+                },
+              }}
+              className="h-max"
+            >
+              {approaches.map((item) => (
+                <SwiperSlide className="py-10 h-full" key={item.id}>
+                  <OfferingCard offering={item} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
+      </section>
+
       {/* <section className="relative py-8 overflow-hidden">
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 mb-12 md:mb-20 pb-8 border-b border-slate-300">
@@ -324,6 +433,7 @@ const AboutUs = () => {
         </div>
       </section>
 
+      {/* <WorldMap /> */}
       <RecentEngagements />
       <GlobalLocations />
     </div>

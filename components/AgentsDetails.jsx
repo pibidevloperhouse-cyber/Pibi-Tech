@@ -51,7 +51,7 @@ const AgentsDetails = () => {
       description:
         "We design, and operate AWS, Azure, and GCP so your teams can ship faster with well-architected cloud foundations.",
       tags: ["Cloud Native", "DevOps", "Kubernetes"],
-      onClick: undefined,
+      onClick: () => router.push("/contact-us"),
       variant: "light",
     },
     {
@@ -66,7 +66,7 @@ const AgentsDetails = () => {
         "KPI Frameworks",
         "Self-Service BI",
       ],
-      onClick: undefined,
+      onClick: () => router.push("/contact-us"),
       variant: "blue",
     },
     {
@@ -81,7 +81,7 @@ const AgentsDetails = () => {
         "Vector Databases",
         "Enterprise RAG",
       ],
-      onClick: undefined,
+      onClick: () => router.push("/contact-us"),
       variant: "light",
     },
     {
@@ -96,7 +96,7 @@ const AgentsDetails = () => {
         "Streaming Data",
         "Data Warehousing",
       ],
-      onClick: undefined,
+      onClick: () => router.push("/contact-us"),
       variant: "blue",
     },
     {
@@ -111,7 +111,7 @@ const AgentsDetails = () => {
         "Dynamic Personalization",
         "Conversion Skills",
       ],
-      onClick: undefined,
+      onClick: () => router.push("/contact-us"),
       variant: "light",
     },
   ];

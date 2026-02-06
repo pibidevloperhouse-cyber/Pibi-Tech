@@ -5,7 +5,7 @@ export function AgentCard({ icon, title, description, className }) {
     <div
       className={cn(
         "rounded-lg border bg-white p-8 shadow-sm transition-all hover:shadow-md",
-        className
+        className,
       )}
     >
       <div className="mb-6">{icon}</div>

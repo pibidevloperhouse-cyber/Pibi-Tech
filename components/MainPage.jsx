@@ -34,7 +34,7 @@ export function MainPage() {
       subtitle:
         "Design modern BI systems that transform raw data into clear insights, enabling faster decisions, measurable performance, and revenue visibility.",
       cta: "Explore BI Solutions",
-      link: "/business-intelligence",
+      link: "/contact-us",
       hashtag: "#InsightToImpact",
     },
     {
@@ -44,7 +44,7 @@ export function MainPage() {
       subtitle:
         "Build agent-driven websites that understand intent, adapt in real time, automate interactions, and continuously optimize engagement and conversions.",
       cta: "Build Smarter Websites",
-      link: "/agentic-web",
+      link: "/contact-us",
       hashtag: "#AgenticWeb",
     },
     {
@@ -54,7 +54,7 @@ export function MainPage() {
       subtitle:
         "Centralize information with AI-powered knowledge systems that deliver accurate answers, automate workflows, and support confident decisions.",
       cta: "Build AI Knowledge Base",
-      link: "/ai-knowledge-base",
+      link: "/contact-us",
       hashtag: "#KnowledgeWithAI",
     },
     {
@@ -64,7 +64,7 @@ export function MainPage() {
       subtitle:
         "Architect scalable, reliable data pipelines that power analytics, AI initiatives, and mission-critical business applications.",
       cta: "Modernize Data Platforms",
-      link: "/data-engineering",
+      link: "/contact-us",
       hashtag: "#DataBuiltRight",
     },
   ];

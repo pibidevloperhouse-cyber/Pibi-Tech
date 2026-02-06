@@ -19,7 +19,7 @@ import "swiper/css/pagination";
 const offerings = [
   {
     id: 1,
-    title: "Agentic Website Development",
+    title: "Multi Lingual Website Development",
     description:
       "An AI-powered growth driven website that works as a 24/7 sales and qualification system that attracts, qualifies, and converts visitors into revenue opportunities — not just a digital brochure.",
     link: "contact-us",
@@ -37,7 +37,7 @@ const offerings = [
   },
   {
     id: 3,
-    title: "Enterprise Agentic AI Development",
+    title: "AI & Agentic Process Automation",
     description:
       "Autonomous AI agents that replace repetitive work, accelerate decisions, and reduce operational costs  and drive measurable efficiency gains.",
     link: "intelligent-process-automation",
@@ -46,7 +46,7 @@ const offerings = [
   },
   {
     id: 4,
-    title: "Web, Mobile & SaaS Application Development",
+    title: "Application Development",
     description:
       "Robust digital applications engineered for performance, security, and continuous business growth.",
     link: "contact-us",
@@ -64,7 +64,7 @@ const offerings = [
   },
   {
     id: 6,
-    title: "Growth Marketing & Revenue Generation",
+    title: "MarTech & Growth Hacking",
     description:
       "A technology-driven growth system that consistently generates qualified leads and converts them into predictable revenue.",
     link: "contact-us",
