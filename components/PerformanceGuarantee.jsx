@@ -50,15 +50,15 @@ export default function PerformanceGuarantee() {
                 key={index}
                 className="bg-white border border-slate-200 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 text-center"
               >
-                <div className="mx-auto w-14 h-14 flex items-center justify-center rounded-xl bg-primary/10 mb-6">
-                  <Icon className="w-7 h-7 text-primary" />
+                <div className="mx-auto w-14 h-14 flex items-center justify-center rounded-xl bg-[#248BB3]/10 mb-6">
+                  <Icon className="w-7 h-7 text-[#248BB3]" />
                 </div>
 
                 <div className="mb-2">
                   <span className="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-brand-gradient">
                     {item.value}
                   </span>
-                  <span className="ml-2 text-2xl font-semibold text-primary">
+                  <span className="ml-2 text-2xl font-semibold text-[#248BB3]">
                     {item.unit}
                   </span>
                 </div>

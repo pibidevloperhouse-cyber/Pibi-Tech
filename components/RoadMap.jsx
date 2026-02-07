@@ -51,13 +51,13 @@ export default function Roadmap() {
                 className="relative bg-white border-2 border-slate-600 rounded-2xl p-8 hover:shadow-xl transition-all duration-300"
               >
                 <div className="absolute top-0 translate-y-[-50%] left-8 bg-white px-3">
-                  <span className="text-lg font-bold text-primary">
+                  <span className="text-lg font-bold text-[#248BB3]">
                     STEP {item.step}
                   </span>
                 </div>
 
-                <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-primary/10 mb-6">
-                  <Icon className="w-7 h-7 text-primary" />
+                <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-[#248BB3]/10 mb-6">
+                  <Icon className="w-7 h-7 text-[#248BB3]" />
                 </div>
 
                 <h3 className="text-2xl font-bold text-slate-900 mb-4">
