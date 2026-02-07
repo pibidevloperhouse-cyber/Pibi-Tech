@@ -38,7 +38,7 @@ export default function Index() {
       >
         <div className="max-w-7xl mx-auto w-full py-20 lg:py-24">
           <h1 className="text-white text-4xl sm:text-5xl lg:text-[36px] font-semibold leading-tight tracking-tight mb-8 max-w-3xl">
-            Pibi Tech — AI-Powered Month-End Close Assistant
+            Pibi Tech AI-Powered Month-End Close Assistant
           </h1>
           <button className="bg-white text-[#248BB3] hover:bg-gray-100 font-semibold px-4 py-3 h-auto text-[15px] tracking-wide">
             Book a Demo
@@ -56,7 +56,7 @@ export default function Index() {
               </h2>
               <p className="text-gray-700 text-base leading-relaxed">
                 Pibi Tech is an AI-powered assistant designed to streamline and
-                automate your book closing process — delivering faster, more
+                automate your book closing process delivering faster, more
                 accurate financial results with deep ERP intelligence.
               </p>
             </div>
@@ -215,7 +215,7 @@ export default function Index() {
                       </>
                     )}
                     {feature.description.includes(
-                      "Detect missing journals"
+                      "Detect missing journals",
                     ) && (
                       <>
                         <span className="font-bold">
@@ -223,12 +223,12 @@ export default function Index() {
                         </span>
                         {feature.description.replace(
                           "Detect missing journals",
-                          ""
+                          "",
                         )}
                       </>
                     )}
                     {feature.description.includes(
-                      "Reconcile subledgers to the general ledger"
+                      "Reconcile subledgers to the general ledger",
                     ) && (
                       <>
                         <span className="font-bold">
@@ -236,7 +236,7 @@ export default function Index() {
                         </span>
                         {feature.description.replace(
                           "Reconcile subledgers to the general ledger",
-                          ""
+                          "",
                         )}
                       </>
                     )}
@@ -245,12 +245,12 @@ export default function Index() {
                         <span className="font-bold">Track close progress</span>
                         {feature.description.replace(
                           "Track close progress",
-                          ""
+                          "",
                         )}
                       </>
                     )}
                     {feature.description.includes(
-                      "Query ERP data conversationally"
+                      "Query ERP data conversationally",
                     ) && (
                       <>
                         <span className="font-bold">
@@ -258,12 +258,12 @@ export default function Index() {
                         </span>
                         {feature.description.replace(
                           "Query ERP data conversationally",
-                          ""
+                          "",
                         )}
                       </>
                     )}
                     {feature.description.includes(
-                      "Continuously improve accuracy"
+                      "Continuously improve accuracy",
                     ) && (
                       <>
                         <span className="font-bold">
@@ -271,7 +271,7 @@ export default function Index() {
                         </span>
                         {feature.description.replace(
                           "Continuously improve accuracy",
-                          ""
+                          "",
                         )}
                       </>
                     )}
@@ -282,7 +282,7 @@ export default function Index() {
           </div>
 
           <p className="text-white text-base leading-relaxed">
-            Pibi Tech learns from each cycle — helping teams close faster, with
+            Pibi Tech learns from each cycle helping teams close faster, with
             fewer errors and higher confidence.
           </p>
         </div>
@@ -306,7 +306,7 @@ export default function Index() {
                 icon: "https://api.builder.io/api/v1/image/assets/TEMP/520cd9ad0187898674359931a66f5d65fbb85270?width=120",
                 title: "AI Close Dashboard",
                 description:
-                  "Displays the current close progress (e.g., 97% complete), expected vs. posted journals, pending invoices, and key variances — all at a glance.",
+                  "Displays the current close progress (e.g., 97% complete), expected vs. posted journals, pending invoices, and key variances  all at a glance.",
               },
               {
                 icon: "https://api.builder.io/api/v1/image/assets/TEMP/1c06e71ab39f14a02ea62c313437f7cb75278634?width=120",
@@ -324,13 +324,13 @@ export default function Index() {
                 icon: "https://api.builder.io/api/v1/image/assets/TEMP/a923be2ad09ed773da5d410cebb8a51edcb7e29b?width=120",
                 title: "Conversational Querying",
                 description:
-                  'Use natural-language prompts like "Show unposted journals for August" or "List invoices without VAT" — and Pibi Tech instantly retrieves results.',
+                  'Use natural-language prompts like "Show unposted journals for August" or "List invoices without VAT"  and Pibi Tech instantly retrieves results.',
               },
               {
                 icon: "https://api.builder.io/api/v1/image/assets/TEMP/26746ae557c1d0aa329127b241f48b49967e65e7?width=120",
                 title: "Anomaly Review & Continuous Learning",
                 description:
-                  "Anomalies such as missing exchange rates or unusual posting patterns are explained in natural language. Users can resolve, ignore, or teach the AI to recognize acceptable exceptions — making Pibi Tech smarter with every close.",
+                  "Anomalies such as missing exchange rates or unusual posting patterns are explained in natural language. Users can resolve, ignore, or teach the AI to recognize acceptable exceptions  making Pibi Tech smarter with every close.",
               },
             ].map((step, idx) => (
               <div key={idx} className="bg-blue-50 p-6 space-y-6">
@@ -356,7 +356,7 @@ export default function Index() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
             <div className="space-y-8">
               <h2 className="text-[#248BB3] text-4xl sm:text-5xl lg:text-[36px] font-semibold leading-tight tracking-tight">
-                See Pibi Tech in Action —<br />
+                See Pibi Tech in Action <br />
                 Book a Demo
               </h2>
               <div className="w-full max-w-md">

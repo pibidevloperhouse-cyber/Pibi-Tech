@@ -171,7 +171,7 @@ export default function Index() {
                 Inconsistent Publishing
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                A few posts here and there—enough to feel guilty, not enough to
+                A few posts here and thereenough to feel guilty, not enough to
                 rank. Google rewards consistency, not sporadic efforts.
               </p>
             </div>

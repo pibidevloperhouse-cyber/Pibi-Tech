@@ -19,14 +19,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/a11y";
-// import WorldMap from "@/components/WorldMap";
+import { LocationMap } from "@/components/LocationMap";
 
 const offerings = [
   {
     id: 1,
     title: "Multi Lingual Website Development",
     description:
-      "An AI-powered growth driven website that works as a 24/7 sales and qualification system that attracts, qualifies, and converts visitors into revenue opportunities — not just a digital brochure.",
+      "An AI-powered growth driven website that works as a 24/7 sales and qualification system that attracts, qualifies, and converts visitors into revenue opportunities  not just a digital brochure.",
     link: "contact-us",
     icon: Brain,
     color: "bg-[#4FC6E0]",
@@ -78,10 +78,10 @@ const offerings = [
   },
 ];
 
-const OfferingCard = ({ offering }) =>
+const OfferingCard = ({ offering, size = true }) =>
   offering && (
     <div
-      className={`${offering?.color} rounded-xl md:min-h-100 relative p-6 border border-slate-200 h-full flex flex-col justify-between`}
+      className={`${offering?.color} rounded-xl ${size ? "md:min-h-100" : "md:min-h-80"} relative p-6 border border-slate-200 h-full flex flex-col justify-between`}
     >
       <div className="absolute -top-5 -right-5 rotate-12 opacity-20">
         <div className="w-32 aspect-square relative">
@@ -124,7 +124,7 @@ const AboutUs = () => {
       role: "Founder & CEO",
       linkedinUrl: "Full Deployment",
       description:
-        "Complete production deployment in 6–8 weeks — compared to the 3–4 month industry average.",
+        "Complete production deployment in 6–8 weeks  compared to the 3–4 month industry average.",
     },
     {
       name: "Palani Kumar Murugesan",
@@ -140,7 +140,7 @@ const AboutUs = () => {
       id: 1,
       title: "Product Concept in 3 Days",
       description:
-        "We collaborate with key stakeholders to define the problem, scope, objectives, and success criteria—ensuring shared understanding and clear direction from the start.",
+        "We collaborate with key stakeholders to define the problem, scope, objectives, and success criteriaensuring shared understanding and clear direction from the start.",
       icon: Brain,
       color: "bg-[#4FC6E0]",
     },
@@ -148,7 +148,7 @@ const AboutUs = () => {
       id: 2,
       title: "Prototype & Validation in 3 Weeks",
       description:
-        "We design and develop a working prototype to validate usability, technical feasibility, and business viability—minimizing risk before full-scale development.",
+        "We design and develop a working prototype to validate usability, technical feasibility, and business viabilityminimizing risk before full-scale development.",
       icon: FolderLock,
       color: "bg-[#0066A4]",
     },
@@ -156,7 +156,7 @@ const AboutUs = () => {
       id: 3,
       title: "MVP in Production in 3 Months",
       description:
-        "We deliver a production-ready MVP built for performance, security, and scalability—allowing teams to launch quickly and gather real-world insights.",
+        "We deliver a production-ready MVP built for performance, security, and scalabilityallowing teams to launch quickly and gather real-world insights.",
       icon: BriefcaseBusiness,
       color: "bg-[#02B2E3]",
     },
@@ -188,7 +188,7 @@ const AboutUs = () => {
 
   return (
     <div>
-      <section className="relative flex flex-col items-center justify-center w-full overflow-hidden">
+      <section className="relative flex flex-col items-center py-20 justify-center w-full overflow-hidden">
         <Image
           alt="Team Celebration"
           fill
@@ -319,7 +319,7 @@ const AboutUs = () => {
             >
               {approaches.map((item) => (
                 <SwiperSlide className="py-10 h-full" key={item.id}>
-                  <OfferingCard offering={item} />
+                  <OfferingCard offering={item} size={false} />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -433,8 +433,12 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* <WorldMap /> */}
       <RecentEngagements />
+      <section className="bg-blue-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 lg:px-8">
+          <LocationMap />
+        </div>
+      </section>
       <GlobalLocations />
     </div>
   );

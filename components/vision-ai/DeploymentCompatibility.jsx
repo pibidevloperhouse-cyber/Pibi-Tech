@@ -22,7 +22,7 @@ export default function DeploymentFlexibility() {
       icon: "https://api.builder.io/api/v1/image/assets/TEMP/be9315b88d6e351eab218e9dbaf5fdb475f72efb?width=100",
       title: "Offline",
       description:
-        "Operates in low-connectivity environments—syncs data later. Ensures continuous operation regardless of network status.",
+        "Operates in low-connectivity environmentssyncs data later. Ensures continuous operation regardless of network status.",
     },
   ];
 

@@ -80,11 +80,11 @@ export function MainPage() {
     <section className="relative overflow-hidden text-white">
       <Swiper
         modules={[Autoplay, Pagination, A11y, Keyboard]}
-        autoplay={{
-          delay: 4000,
-          disableOnInteraction: false,
-          waitForTransition: true,
-        }}
+        // autoplay={{
+        //   delay: 4000,
+        //   disableOnInteraction: false,
+        //   waitForTransition: true,
+        // }}
         enabled={true}
         navigation={{
           nextEl: ".swiper-button-next",
@@ -93,9 +93,9 @@ export function MainPage() {
         loop={true}
         className="relative bg-white"
       >
-        <SwiperSlide key="1" className="bg-[#041352]">
+        <SwiperSlide key="1" className="bg-white">
           <div className="relative mx-auto max-w-7xl px-6 pt-18 pb-7 text-center">
-            <h1 className="text-5xl md:text-7xl text-white font-extrabold tracking-tight">
+            <h1 className="text-5xl md:text-7xl text-[#1f6fb2] font-extrabold tracking-tight">
               <span className="flex flex-col gap-0 md:gap-1 md:flex-row justify-center items-center">
                 We{"  "}
                 <span className="relative inline-block ml-2 md:ml-2 align-middle">
@@ -109,7 +109,7 @@ export function MainPage() {
               </span>
             </h1>
 
-            <p className="mx-auto mt-6 max-w-2xl text-xl text-white/70">
+            <p className="mx-auto mt-6 max-w-2xl text-xl text-black/70">
               Self-operating systems that connect your tools, automate
               decisions, and keep your business moving without constant manual
               work.
@@ -118,17 +118,17 @@ export function MainPage() {
             <div className="mt-10 flex justify-center">
               <button
                 onClick={() => router.push("/ai-agents")}
-                className="group inline-flex items-center gap-3 cursor-pointer rounded-lg bg-white px-6 py-3 text-md md:text-xl font-semibold text-[#070a18] transition hover:bg-blue-50"
+                className="group inline-flex items-center gap-3 cursor-pointer rounded-lg bg-[#1f6fb2] px-6 py-3 text-md md:text-xl font-semibold text-white transition hover:bg-[#1f6fb2]/90"
               >
                 Adopt AI and Automation Now
-                <span className="flex h-9 w-9 items-center justify-center rounded-md bg-blue-600 text-white transition group-hover:translate-x-1">
+                <span className="flex h-9 w-9 items-center justify-center rounded-md bg-white text-[#1f6fb2] transition group-hover:translate-x-1">
                   <ArrowRight size={18} />
                 </span>
               </button>
             </div>
 
             <div className="mt-20">
-              <p className="mb-8 text-xl text-white">
+              <p className="mb-8 text-xl text-black/70">
                 Trusted by Global Enterprises and Business Leaders
               </p>
 

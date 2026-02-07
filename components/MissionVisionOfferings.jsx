@@ -21,7 +21,7 @@ const offerings = [
     id: 1,
     title: "Multi Lingual Website Development",
     description:
-      "An AI-powered growth driven website that works as a 24/7 sales and qualification system that attracts, qualifies, and converts visitors into revenue opportunities — not just a digital brochure.",
+      "An AI-powered growth driven website that works as a 24/7 sales and qualification system that attracts, qualifies, and converts visitors into revenue opportunities  not just a digital brochure.",
     link: "contact-us",
     icon: Brain,
     color: "bg-[#4FC6E0]",

@@ -7,7 +7,7 @@ export default function PerformanceGuarantee() {
       unit: "Weeks",
       title: "Full Deployment",
       description:
-        "Complete production deployment in 6–8 weeks — compared to the 3–4 month industry average.",
+        "Complete production deployment in 6–8 weeks  compared to the 3–4 month industry average.",
       icon: Clock,
     },
     {
@@ -38,7 +38,7 @@ export default function PerformanceGuarantee() {
             </span>
           </h2>
           <p className="text-slate-700 text-xl leading-relaxed">
-            Measurable outcomes we commit to — not aspirational promises.
+            Measurable outcomes we commit to not aspirational promises.
           </p>
         </div>
 

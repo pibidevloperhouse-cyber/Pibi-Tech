@@ -29,7 +29,7 @@ export default function Index() {
             </h1>
             <p className="text-[17px] leading-[28.75px] text-[#272C30] mb-8 max-w-2xl mx-auto">
               Pibi Tech unifies AI agent design, deployment, and
-              governance—empowering enterprises to build, orchestrate, or scale
+              governanceempowering enterprises to build, orchestrate, or scale
               intelligent automation with a trusted AI transformation partner.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -152,7 +152,7 @@ export default function Index() {
                 <p className="text-[17px] text-text-secondary leading-[22.4px] mb-4">
                   Revolutionize patient workflows and administrative efficiency.
                   Deploy pre-built AI agents for patient verification, insurance
-                  validation, and data management — fully HIPAA-compliant and
+                  validation, and data management fully HIPAA-compliant and
                   ready to integrate with hospital systems.
                 </p>
               </div>

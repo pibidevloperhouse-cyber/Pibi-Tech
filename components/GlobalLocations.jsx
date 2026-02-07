@@ -31,7 +31,7 @@ const indiaOffices = [
   },
   {
     city: "Coimbatore",
-    icon: "/madurai.png",
+    icon: "/coimbatore.png",
     address: ["Peelamedu, Coimbatore - 641004"],
   },
   {

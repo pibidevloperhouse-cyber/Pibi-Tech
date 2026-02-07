@@ -17,8 +17,68 @@ const AgentsDetails = () => {
 
   const cards = [
     {
-      id: 1,
+      id: 4,
       number: "01",
+      title: "Business Intelligence",
+      description:
+        "We design modern BI systems that turn raw data into clear insights, enabling faster decisions, performance tracking, and revenue visibility across the organization.",
+      tags: [
+        "Data Modeling",
+        "Analytics Dashboards",
+        "KPI Frameworks",
+        "Self-Service BI",
+      ],
+      onClick: () => router.push("/contact-us"),
+      variant: "blue",
+    },
+    {
+      id: 5,
+      number: "02",
+      title: "AI Knowledge Base",
+      description:
+        "We build intelligent, searchable knowledge systems that centralize enterprise information and power accurate answers, automation, and decision support.",
+      tags: [
+        "Knowledge Graphs",
+        "Semantic Search",
+        "Vector Databases",
+        "Enterprise RAG",
+      ],
+      onClick: () => router.push("/contact-us"),
+      variant: "light",
+    },
+    {
+      id: 6,
+      number: "03",
+      title: "Data Engineering",
+      description:
+        "We architect scalable data pipelines and platforms that ensure reliable, high-quality data flows for analytics, AI, and business applications.",
+      tags: [
+        "Data Pipelines",
+        "ETL / ELT",
+        "Streaming Data",
+        "Data Warehousing",
+      ],
+      onClick: () => router.push("/contact-us"),
+      variant: "blue",
+    },
+    {
+      id: 7,
+      number: "04",
+      title: "Intelligent Web Engine",
+      description:
+        "We build an AI-powered web intelligence layer that understands visitor intent, personalizes engagement in real time, and converts traffic into qualified pipeline and revenue outcomes.",
+      tags: [
+        "Intent Intelligence",
+        "Behavioral Context",
+        "Dynamic Personalization",
+        "Conversion Skills",
+      ],
+      onClick: () => router.push("/contact-us"),
+      variant: "light",
+    },
+    {
+      id: 1,
+      number: "05",
       title: "Agentic AI",
       description:
         "We help you build and modernize your AI Stack so AI agents can plug in seamlessly and deliver real business impact.",
@@ -36,7 +96,7 @@ const AgentsDetails = () => {
     },
     {
       id: 2,
-      number: "02",
+      number: "06",
       title: "Intelligent Infrastructure",
       description:
         "We build infrastructure that thinks, combining agentic AI and cloud ops into systems that adapt, learn, and scale.",
@@ -46,71 +106,11 @@ const AgentsDetails = () => {
     },
     {
       id: 3,
-      number: "03",
+      number: "07",
       title: "Cloud Ops",
       description:
         "We design, and operate AWS, Azure, and GCP so your teams can ship faster with well-architected cloud foundations.",
       tags: ["Cloud Native", "DevOps", "Kubernetes"],
-      onClick: () => router.push("/contact-us"),
-      variant: "light",
-    },
-    {
-      id: 4,
-      number: "04",
-      title: "Business Intelligence",
-      description:
-        "We design modern BI systems that turn raw data into clear insights, enabling faster decisions, performance tracking, and revenue visibility across the organization.",
-      tags: [
-        "Data Modeling",
-        "Analytics Dashboards",
-        "KPI Frameworks",
-        "Self-Service BI",
-      ],
-      onClick: () => router.push("/contact-us"),
-      variant: "blue",
-    },
-    {
-      id: 5,
-      number: "05",
-      title: "AI Knowledge Base",
-      description:
-        "We build intelligent, searchable knowledge systems that centralize enterprise information and power accurate answers, automation, and decision support.",
-      tags: [
-        "Knowledge Graphs",
-        "Semantic Search",
-        "Vector Databases",
-        "Enterprise RAG",
-      ],
-      onClick: () => router.push("/contact-us"),
-      variant: "light",
-    },
-    {
-      id: 6,
-      number: "06",
-      title: "Data Engineering",
-      description:
-        "We architect scalable data pipelines and platforms that ensure reliable, high-quality data flows for analytics, AI, and business applications.",
-      tags: [
-        "Data Pipelines",
-        "ETL / ELT",
-        "Streaming Data",
-        "Data Warehousing",
-      ],
-      onClick: () => router.push("/contact-us"),
-      variant: "blue",
-    },
-    {
-      id: 7,
-      number: "07",
-      title: "Intelligent Web Engine",
-      description:
-        "We build an AI-powered web intelligence layer that understands visitor intent, personalizes engagement in real time, and converts traffic into qualified pipeline and revenue outcomes.",
-      tags: [
-        "Intent Intelligence",
-        "Behavioral Context",
-        "Dynamic Personalization",
-        "Conversion Skills",
-      ],
       onClick: () => router.push("/contact-us"),
       variant: "light",
     },

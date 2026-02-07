@@ -37,7 +37,7 @@ const testimonials = [
   {
     name: "Michael Brown",
     role: "Founder, DataNest",
-    text: "Reliable, scalable, and secure — exactly what we needed...",
+    text: "Reliable, scalable, and secure  exactly what we needed...",
   },
 ];
 

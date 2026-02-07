@@ -13,14 +13,14 @@ export default function OurProducts() {
       title: "Profit Engine",
       tag: "Enterprise AI Platform",
       description:
-        "A unified AI-powered platform that connects growth, management, and operations into one intelligent system. Profit Engine helps businesses scale faster, close better deals, and stay consistently profitable — without operational complexity.",
+        "A unified AI-powered platform that connects growth, management, and operations into one intelligent system. Profit Engine helps businesses scale faster, close better deals, and stay consistently profitable  without operational complexity.",
       link: "contact-us",
     },
     {
       title: "Astro Kids",
       tag: "AI + Vedic Intelligence",
       description:
-        "Every child is born with a unique cosmic blueprint. By blending 5,000-year-old Vedic wisdom with modern AI, Astro Kids empowers parents to nurture their child’s mental, emotional, and physical well-being — holistically, confidently, and joyfully.",
+        "Every child is born with a unique cosmic blueprint. By blending 5,000-year-old Vedic wisdom with modern AI, Astro Kids empowers parents to nurture their child’s mental, emotional, and physical well-being  holistically, confidently, and joyfully.",
       link: "https://www.astrokids.ai/",
     },
     {
