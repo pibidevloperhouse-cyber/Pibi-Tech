@@ -11,6 +11,7 @@ import "swiper/css";
 import "swiper/css/controller";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
+import Image from "next/image";
 
 const AgentsDetails = () => {
   const router = useRouter();
@@ -125,16 +126,13 @@ const AgentsDetails = () => {
     >
       <div>
         <div className="flex items-start justify-between mb-8">
-          <div
-            className={`border rounded-lg flex items-center justify-center shadow-sm p-4
-              ${
-                card.variant === "blue"
-                  ? "bg-white text-black border-white/30"
-                  : "bg-white border-slate-300"
-              }
-            `}
-          >
-            <div className="w-6 h-6 bg-current opacity-30 rounded" />
+          <div className={`relative w-12 h-12`}>
+            <Image
+              src="/pi.png"
+              alt="PI-BI Technologies"
+              fill
+              className={`object-contain ${card.variant === "blue" ? "" : "invert"}`}
+            />
           </div>
 
           <span

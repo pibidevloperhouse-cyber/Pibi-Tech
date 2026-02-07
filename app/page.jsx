@@ -10,6 +10,7 @@ import AgentsDetails from "@/components/AgentsDetails";
 import GlobalLocations from "@/components/GlobalLocations";
 import { useRouter } from "next/navigation";
 import { ArrowRight } from "lucide-react";
+import CTASection from "@/components/CTASection";
 
 export default function HomePage() {
   const router = useRouter();
@@ -58,6 +59,7 @@ export default function HomePage() {
       <PerformanceGuarantee />
       <Roadmap />
       <GlobalLocations />
+      <CTASection />
       {/* <RecentEngagements /> */}
     </div>
   );
