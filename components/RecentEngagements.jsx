@@ -4,25 +4,26 @@ export default function RecentEngagements() {
   const engagements = [
     {
       id: 1,
-      title: "Vision AI",
-      subtitle: "Industry 5.0 for Enterprises",
+      title: "Enterprise Digital Transformation Technologies",
+      subtitle: "Foundation technologies that modernize operations and systems",
       image: "/vision-ai.png",
-      link: "/vision-ai",
+      link: "/contact-us",
     },
     {
       id: 2,
-      title: "Digital Transformation",
-      subtitle: "EMS at Largest Asian Airport",
+      title: "Deep Tech & Emerging Technologies",
+      subtitle: "Advanced technologies that create competitive differentiation",
       image:
         "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&h=400",
       link: "/contact-us",
     },
     {
       id: 3,
-      title: "Generative AI",
-      subtitle: "Personalised Shopping Assistant",
+      title: "User Experience, AI & Automation",
+      subtitle:
+        "Technologies that directly impact users, processes, and outcomes",
       image: "/generative-ai.png",
-      link: "/generative-ai",
+      link: "/contact-us",
     },
   ];
 

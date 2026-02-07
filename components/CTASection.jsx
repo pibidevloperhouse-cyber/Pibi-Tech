@@ -14,7 +14,7 @@ export default function CTASection() {
 
         <div className="mt-8">
           <Link
-            href="/contact"
+            href="/contact-us"
             className="inline-flex items-center gap-2 rounded-xl bg-white px-8 py-4 text-base font-semibold text-slate-900 transition-all duration-300 hover:bg-slate-200 hover:scale-105"
           >
             Talk to Product Experts

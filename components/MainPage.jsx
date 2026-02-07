@@ -1,16 +1,21 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import Slider from "./Slider";
 import { useRouter } from "next/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { A11y, Autoplay, Keyboard, Pagination } from "swiper/modules";
+import {
+  A11y,
+  Autoplay,
+  Keyboard,
+  Navigation,
+  Pagination,
+} from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
-import "swiper/css/keyboard";
 import "swiper/css/a11y";
 
 export function MainPage() {
@@ -78,15 +83,50 @@ export function MainPage() {
 
   return (
     <section className="relative overflow-hidden text-white">
+      <div
+        className="swiper-button-prev"
+        style={{
+          position: "absolute",
+          top: "5%",
+          left: "16px",
+          transform: "translateY(-50%)",
+          zIndex: 20,
+          width: "50px",
+          height: "50px",
+          cursor: "pointer",
+        }}
+      >
+        <ChevronLeft size={25} color="black" />
+      </div>
+
+      <div
+        className="swiper-button-next"
+        style={{
+          position: "absolute",
+          top: "5%",
+          right: "16px",
+          transform: "translateY(-50%)",
+          zIndex: 20,
+          width: "50px",
+          height: "50px",
+          cursor: "pointer",
+        }}
+      >
+        <ChevronRight size={25} color="black" />
+      </div>
       <Swiper
-        modules={[Autoplay, Pagination, A11y, Keyboard]}
-        // autoplay={{
-        //   delay: 4000,
-        //   disableOnInteraction: false,
-        //   waitForTransition: true,
-        // }}
+        modules={[Autoplay, A11y, Keyboard, Navigation, Pagination]}
+        autoplay={{
+          delay: 4000,
+          disableOnInteraction: false,
+          waitForTransition: true,
+        }}
+        pagination={{ clickable: true, type: "progressbar" }}
+        a11y={{ enabled: true }}
+        keyboard={{ enabled: true }}
         enabled={true}
         navigation={{
+          enabled: true,
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         }}

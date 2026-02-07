@@ -84,7 +84,7 @@ export default function GlobalLocations() {
             India Offices
           </h2>
 
-          <div className="grid gap-8 grid-cols-1 sm:grid-cols-3">
+          <div className="grid gap-8 grid-cols-2 sm:grid-cols-3">
             {indiaOffices.map((loc, i) => (
               <div
                 key={i}

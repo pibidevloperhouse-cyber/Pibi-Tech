@@ -33,7 +33,7 @@ export default function Specialist() {
       color: "bg-[#02B2E3]",
     },
     {
-      title: "GCC Markets",
+      title: "GCC",
       description:
         "Localized intelligence systems designed to navigate regional regulations, supply chains, and market dynamics with confidence.",
       icon: Globe2,
