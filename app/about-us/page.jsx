@@ -234,7 +234,7 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-      <section className="relative py-8">
+      <section className="relative">
         <div className="flex flex-col md:flex-row justify-center max-w-7xl mx-auto px-4 sm:px-6 items-center gap-8 pb-8 ">
           <div className="flex-1">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#000052]">
@@ -435,8 +435,33 @@ const AboutUs = () => {
 
       <RecentEngagements />
       <section className="bg-blue-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 lg:px-8 flex flex-col gap-8">
+          <h2 className="text-2xl sm:text-3xl text-center md:text-4xl font-bold text-[#000052]">
+            Where are we?
+          </h2>
           <LocationMap />
+          <div className="flex flex-col md:flex-row justify-between items-start gap-8 pb-8">
+            <div className="flex-1 ">
+              <p className="text-base md:text-lg font-medium text-slate-700 leading-relaxed md:leading-[1.1]">
+                We have successfully delivered enterprise-grade AI solutions
+                across the USA, Asia, the Middle East & GCC, Europe, and
+                Australia, serving diverse industries with measurable business
+                impact.
+              </p>
+              <button
+                className="mt-4 px-4 py-2 bg-[#000052] text-white rounded-md hover:bg-[#000040] transition"
+                onClick={() => router.push("/contact-us")}
+              >
+                Contact Us
+              </button>
+            </div>
+            <p className="flex-1 pl-2 md:border-l-2 border-slate-400 text-base md:text-lg font-normal text-slate-500">
+              We deliver AI, Agentic AI, and digital strategy technologies
+              across Manufacturing, Healthcare, Retail, and Global Capability
+              Centers (GCCs), helping organizations transform operations with
+              data-driven and autonomous capabilities.
+            </p>
+          </div>
         </div>
       </section>
       <GlobalLocations />

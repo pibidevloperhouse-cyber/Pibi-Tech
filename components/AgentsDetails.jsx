@@ -30,7 +30,7 @@ const AgentsDetails = () => {
         "Self-Service BI",
       ],
       onClick: () => router.push("/contact-us"),
-      variant: "blue",
+      variant: "light",
     },
     {
       id: 5,
@@ -45,7 +45,7 @@ const AgentsDetails = () => {
         "Enterprise RAG",
       ],
       onClick: () => router.push("/contact-us"),
-      variant: "light",
+      variant: "blue",
     },
     {
       id: 6,
@@ -60,7 +60,7 @@ const AgentsDetails = () => {
         "Data Warehousing",
       ],
       onClick: () => router.push("/contact-us"),
-      variant: "blue",
+      variant: "light",
     },
     {
       id: 7,
@@ -75,7 +75,7 @@ const AgentsDetails = () => {
         "Conversion Skills",
       ],
       onClick: () => router.push("/contact-us"),
-      variant: "light",
+      variant: "blue",
     },
     {
       id: 1,
