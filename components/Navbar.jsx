@@ -51,16 +51,10 @@ export default function Navbar() {
               Solutions
             </Link>
             <Link
-              href="/#WhoWeAre"
+              href="/about-us"
               className="text-slate-700 hover:text-primary transition"
             >
               Who we are
-            </Link>
-            <Link
-              href="/#Careers"
-              className="text-slate-700 hover:text-primary transition"
-            >
-              Careers
             </Link>
             <Link
               href="/contact-us"
@@ -120,18 +114,11 @@ export default function Navbar() {
             </Link>
 
             <Link
-              href="/#WhoWeAre"
+              href="/about-us"
               onClick={handleNavClick}
               className="block py-3 text-slate-700 hover:text-primary transition"
             >
               Who we are
-            </Link>
-            <Link
-              href="/#Careers"
-              onClick={handleNavClick}
-              className="block py-3 text-slate-700 hover:text-primary transition"
-            >
-              Careers
             </Link>
             <Link
               href="/contact-us"

@@ -134,7 +134,7 @@ export function MainPage() {
         className="relative bg-white"
       >
         <SwiperSlide key="1" className="bg-white">
-          <div className="relative mx-auto max-w-7xl px-6 pt-18 pb-7 text-center">
+          <div className="relative mx-auto max-w-7xl px-6 pt-18 text-center">
             <h1 className="text-5xl md:text-7xl text-[#1f6fb2] font-extrabold tracking-tight">
               <span className="flex flex-col gap-0 md:gap-1 md:flex-row justify-center items-center">
                 We{"  "}
@@ -171,22 +171,20 @@ export function MainPage() {
               <p className="mb-8 text-xl text-black/70">
                 Trusted by Global Enterprises and Business Leaders
               </p>
-
-              <Slider />
             </div>
           </div>
         </SwiperSlide>
         {slides.slice(1).map((slide) => (
           <SwiperSlide key={slide.key}>
-            <div className="mx-auto max-w-7xl text-center md:text-start px-6 pt-24 pb-20">
+            <div className="mx-auto max-w-7xl text-center md:text-start px-6 pt-24">
               <div className="md:col-span-3">
                 {slide.eyebrow && (
-                  <p className="mb-4 text-[#1f6fb2] text-2xl uppercase tracking-wide">
+                  <p className="mb-4 text-[#1f6fb2] text-2xl font-medium uppercase tracking-wide">
                     {slide.eyebrow}
                   </p>
                 )}
 
-                <h1 className="text-3xl text-black md:text-5xl max-w-4xl font-extrabold leading-tight">
+                <h1 className="text-3xl text-black md:text-5xl max-w-4xl font-semibold leading-tight">
                   {slide.title}
                 </h1>
                 <div className="mt-10 flex items-center gap-6">
@@ -209,11 +207,11 @@ export function MainPage() {
                   {slide.hashtag}
                 </p>
               </div>
-              <div></div>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
+      <Slider />
     </section>
   );
 }

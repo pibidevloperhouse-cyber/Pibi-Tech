@@ -26,7 +26,7 @@ const globalOffices = [
 const indiaOffices = [
   {
     city: "Chennai",
-    icon: "/madurai.png",
+    icon: "/chennai.png",
     address: ["Tharamani, Chennai - 600 113"],
   },
   {
@@ -95,7 +95,7 @@ export default function GlobalLocations() {
                     src={loc.icon}
                     alt={loc.city}
                     fill
-                    className="object-contain"
+                    className={`object-contain ${loc.city === "Chennai" ? "brightness-0" : ""}`}
                   />
                 </div>
 

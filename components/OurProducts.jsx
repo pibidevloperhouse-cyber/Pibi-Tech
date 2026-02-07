@@ -28,42 +28,42 @@ export default function OurProducts() {
       tag: "GST Compliance Verification",
       description:
         "Verify GST. Avoid Penalties. Automatically verify GST filings and detect mismatches in real time.Reduce compliance risk and avoid penalties with minimal manual effort.",
-      link: "https://www.astrokids.ai/",
+      link: "contact-us",
     },
     {
       title: "Brand Trust+",
       tag: "Intelligent Brand Authority",
       description:
         "Know How Your Brand Is Seen. Monitor how your brand is represented across digital channels.Identify trust gaps early and protect long-term brand credibility.",
-      link: "https://www.astrokids.ai/",
+      link: "contact-us",
     },
     {
       title: "DealFlow",
       tag: "Quote & CPQ",
       description:
         "Create Accurate Quotes, Faster.Create accurate quotes using intelligent pricing and product rules.Shorten deal cycles and reduce errors across sales teams.",
-      link: "https://www.astrokids.ai/",
+      link: "contact-us",
     },
     {
       title: "PriceSense",
       tag: "AI Pricing Intelligence",
       description:
         "Price with Confidence.Analyze demand, competition, and performance signals. Optimize pricing decisions to improve margins and win rates.",
-      link: "https://www.astrokids.ai/",
+      link: "contact-us",
     },
     {
       title: "SharpTarget",
       tag: "ICP Intelligence",
       description:
         "Focus on the Right Customers.Identify customers that best match your ideal profile. Focus sales and marketing efforts where conversion is highest.",
-      link: "https://www.astrokids.ai/",
+      link: "contact-us",
     },
     {
       title: "Smart Engage",
       tag: "Intelligent Auto-Mail & Triggers",
       description:
         "Automate Timely Communication.Automate emails and actions based on real-time customer events. Ensure timely follow-ups without manual coordination.",
-      link: "https://www.astrokids.ai/",
+      link: "contact-us",
     },
   ];
 

@@ -236,7 +236,7 @@ const AboutUs = () => {
         </div>
       </section>
       <section className="relative">
-        <div className="flex flex-col md:flex-row justify-center max-w-7xl mx-auto px-4 sm:px-6 items-center gap-8 pb-8 ">
+        <div className="flex flex-col md:flex-row justify-center max-w-7xl mx-auto px-4 sm:px-6 items-center gap-8 pt-6 pb-4">
           <div className="flex-1">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#000052]">
               How we Do
@@ -285,7 +285,7 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-      <section className="relative py-8 overflow-hidden" id="Solutions">
+      <section className="relative overflow-hidden" id="Solutions">
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 mb-12 md:mb-20 pb-8 border-b border-slate-300">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight md:leading-[0.8] text-[#000052]">
