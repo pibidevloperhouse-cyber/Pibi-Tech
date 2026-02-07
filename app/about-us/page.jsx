@@ -122,14 +122,15 @@ const AboutUs = () => {
     {
       name: "Siranjeevi Ramdoss                                                                                                                                                                 ",
       role: "Founder & CEO",
-      linkedinUrl: "Full Deployment",
+      linkedinUrl: "https://www.linkedin.com/in/siranjeevi-automation/",
       description:
         "Complete production deployment in 6–8 weeks  compared to the 3–4 month industry average.",
     },
     {
       name: "Palani Kumar Murugesan",
       role: "CT0",
-      linkedinUrl: "Administrative Effort",
+      linkedinUrl:
+        "https://www.linkedin.com/in/palani-kumar-murugesan-5b2824b9/",
       description:
         "Significant reduction in administrative workload for our leading enterprise and healthcare providers.",
     },
@@ -398,7 +399,7 @@ const AboutUs = () => {
                 >
                   <div className="relative mx-auto mb-4 h-28 w-28">
                     <Image
-                      src={"/pi.png"}
+                      src={`/team${index + 1}.jpeg`}
                       alt={item?.name}
                       fill
                       className="rounded-full object-cover border-4 border-white shadow-md"
@@ -415,8 +416,6 @@ const AboutUs = () => {
 
                   <Link
                     href={item.linkedinUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="mt-3 inline-flex items-center justify-center gap-2 text-slate-500 hover:text-[#0A66C2] transition"
                   >
                     <Linkedin className="h-5 w-5" />

@@ -105,7 +105,7 @@ export default function Footer() {
                   href="contact-us"
                   className="text-slate-400 hover:text-primary transition"
                 >
-                  Intelligent Web Engine
+                  Multi Lingual Website Development
                 </Link>
               </li>
               <li>
@@ -113,7 +113,7 @@ export default function Footer() {
                   href="contact-us"
                   className="text-slate-400 hover:text-primary transition"
                 >
-                  Secure Corporate Brain
+                  Product Development & Engineering
                 </Link>
               </li>
               <li>
@@ -121,7 +121,7 @@ export default function Footer() {
                   href="contact-us"
                   className="text-slate-400 hover:text-primary transition"
                 >
-                  Agentic Process Automation
+                  AI & Agentic Process Automation
                 </Link>
               </li>
               <li>
@@ -129,7 +129,15 @@ export default function Footer() {
                   href="contact-us"
                   className="text-slate-400 hover:text-primary transition"
                 >
-                  Autonomous Strategic Growth
+                  Application Development
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="contact-us"
+                  className="text-slate-400 hover:text-primary transition"
+                >
+                  MarTech & Growth Hacking
                 </Link>
               </li>
             </ul>
