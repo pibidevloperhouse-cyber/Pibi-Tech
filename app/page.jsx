@@ -58,8 +58,8 @@ export default function HomePage() {
       <Specialist />
       <PerformanceGuarantee />
       <Roadmap />
-      <GlobalLocations />
       <CTASection />
+      <GlobalLocations />
       {/* <RecentEngagements /> */}
     </div>
   );
