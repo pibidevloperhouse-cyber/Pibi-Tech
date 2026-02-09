@@ -26,7 +26,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="contact-us"
+                  href="/contact-us"
                   className="text-slate-400 hover:text-primary transition"
                 >
                   Profit Engine
@@ -34,7 +34,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="contact-us"
+                  href="/contact-us"
                   className="text-slate-400 hover:text-primary transition"
                 >
                   Astro kIds
@@ -48,7 +48,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/vision-ai"
+                  href="/contact-us"
                   className="text-slate-400 hover:text-primary transition"
                 >
                   Agentic AI
@@ -56,7 +56,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/generative-ai"
+                  href="/contact-us"
                   className="text-slate-400 hover:text-primary transition"
                 >
                   Business Intelligence
@@ -64,7 +64,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="contact-us"
+                  href="/contact-us"
                   className="text-slate-400 hover:text-primary transition"
                 >
                   AI Knowledge Base
@@ -72,7 +72,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="contact-us"
+                  href="/contact-us"
                   className="text-slate-400 hover:text-primary transition"
                 >
                   Intelligent Web Engine
@@ -80,7 +80,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="contact-us"
+                  href="/contact-us"
                   className="text-slate-400 hover:text-primary transition"
                 >
                   Data Engineering
@@ -88,7 +88,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="contact-us"
+                  href="/contact-us"
                   className="text-slate-400 hover:text-primary transition"
                 >
                   Cloud Ops
@@ -102,7 +102,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="contact-us"
+                  href="/contact-us"
                   className="text-slate-400 hover:text-primary transition"
                 >
                   Multi Lingual Website Development
@@ -110,7 +110,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="contact-us"
+                  href="/contact-us"
                   className="text-slate-400 hover:text-primary transition"
                 >
                   Product Development & Engineering
@@ -118,7 +118,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="contact-us"
+                  href="/contact-us"
                   className="text-slate-400 hover:text-primary transition"
                 >
                   AI & Agentic Process Automation
@@ -126,7 +126,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="contact-us"
+                  href="/contact-us"
                   className="text-slate-400 hover:text-primary transition"
                 >
                   Application Development
@@ -134,7 +134,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="contact-us"
+                  href="/contact-us"
                   className="text-slate-400 hover:text-primary transition"
                 >
                   MarTech & Growth Hacking
@@ -148,19 +148,19 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex flex-wrap gap-6 justify-center md:justify-start">
               <Link
-                href="contact-us"
+                href="/contact-us"
                 className="text-slate-400 hover:text-primary transition text-md"
               >
                 Home
               </Link>
               <Link
-                href="contact-us"
+                href="/contact-us"
                 className="text-slate-400 hover:text-primary transition text-md"
               >
                 Careers
               </Link>
               <Link
-                href="contact-us"
+                href="/contact-us"
                 className="text-slate-400 hover:text-primary transition text-md"
               >
                 Contact us
@@ -169,19 +169,19 @@ export default function Footer() {
 
             <div className="flex gap-4">
               <Link
-                href="contact-us"
+                href="/contact-us"
                 className="text-slate-400 hover:text-primary transition"
               >
                 <Linkedin className="w-5 h-5" />
               </Link>
               <Link
-                href="contact-us"
+                href="/contact-us"
                 className="text-slate-400 hover:text-primary transition"
               >
                 <Twitter className="w-5 h-5" />
               </Link>
               <Link
-                href="contact-us"
+                href="/contact-us"
                 className="text-slate-400 hover:text-primary transition"
               >
                 <MessageCircle className="w-5 h-5" />
