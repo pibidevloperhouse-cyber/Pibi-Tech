@@ -33,6 +33,16 @@ export function MainPage() {
       hashtag: "",
     },
     {
+      key: "enterprise-website-development",
+      eyebrow: "Enterprise Website Development",
+      title: "Web Experiences Powered by Intelligent Agents",
+      subtitle:
+        "Build agent-driven websites that understand intent, adapt in real time, automate interactions, and continuously optimize engagement and conversions.",
+      cta: "Build Smarter Websites",
+      link: "/enterprise-website-development",
+      hashtag: "#EnterpriseWeb",
+    },
+    {
       key: "bi",
       eyebrow: "Business Intelligence",
       title: "Turning Business Data into Decisive Intelligence",
@@ -41,16 +51,6 @@ export function MainPage() {
       cta: "Explore BI Solutions",
       link: "/contact-us",
       hashtag: "#InsightToImpact",
-    },
-    {
-      key: "agentic-web",
-      eyebrow: "Agentic Website Development",
-      title: "Web Experiences Powered by Intelligent Agents",
-      subtitle:
-        "Build agent-driven websites that understand intent, adapt in real time, automate interactions, and continuously optimize engagement and conversions.",
-      cta: "Build Smarter Websites",
-      link: "/contact-us",
-      hashtag: "#AgenticWeb",
     },
     {
       key: "knowledge",
@@ -133,6 +133,40 @@ export function MainPage() {
         loop={true}
         className="relative bg-white"
       >
+        <SwiperSlide key={slides[1].key}>
+          <div className="mx-auto max-w-7xl text-center md:text-start px-6 pt-24">
+            <div className="md:col-span-3">
+              {slides[1].eyebrow && (
+                <p className="mb-4 text-[#1f6fb2] text-2xl font-medium uppercase tracking-wide">
+                  {slides[1].eyebrow}
+                </p>
+              )}
+
+              <h1 className="text-3xl text-black md:text-5xl max-w-4xl font-semibold leading-tight">
+                {slides[1].title}
+              </h1>
+              <div className="mt-10 flex items-center gap-6">
+                <button
+                  onClick={() => router.push(slides[1].link)}
+                  className="group inline-flex items-center max-sm:mx-auto gap-3 rounded-lg bg-[#1f6fb2] px-6 py-3 text-lg font-semibold text-white transition hover:bg-[#1f6fb2]/90"
+                >
+                  {slides[1].cta}
+                  <span className="flex h-9 w-9 items-center justify-center rounded-md bg-white text-[#1f6fb2] transition group-hover:translate-x-1">
+                    <ArrowRight size={18} />
+                  </span>
+                </button>
+              </div>
+
+              <p className="mt-6 max-w-xl text-xl text-black/70">
+                {slides[1].subtitle}
+              </p>
+
+              <p className="mt-10 text-[#1f6fb2] w-full text-center md:text-end text-2xl">
+                {slides[1].hashtag}
+              </p>
+            </div>
+          </div>
+        </SwiperSlide>
         <SwiperSlide key="1" className="bg-white">
           <div className="relative mx-auto max-w-7xl px-6 pt-18 text-center">
             <h1 className="text-5xl md:text-7xl text-[#1f6fb2] font-extrabold tracking-tight">
@@ -174,7 +208,7 @@ export function MainPage() {
             </div>
           </div>
         </SwiperSlide>
-        {slides.slice(1).map((slide) => (
+        {slides.slice(2).map((slide) => (
           <SwiperSlide key={slide.key}>
             <div className="mx-auto max-w-7xl text-center md:text-start px-6 pt-24">
               <div className="md:col-span-3">

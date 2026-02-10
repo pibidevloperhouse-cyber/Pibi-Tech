@@ -151,7 +151,7 @@ const EnterpriseWebsiteDevelopment = () => {
             architecture.
           </p>
 
-          <div className="mt-10 flex justify-center gap-6 flex-col md:flex-row">
+          <div className="mt-10 flex justify-center items-center gap-6 flex-col md:flex-row">
             <button
               onClick={() => router.push("/contact-us")}
               className="group inline-flex items-center gap-3 cursor-pointer rounded-lg bg-[#1f6fb2] px-6 py-3 text-md md:text-xl font-semibold text-white transition hover:bg-[#1f6fb2]/90"
@@ -273,7 +273,7 @@ const EnterpriseWebsiteDevelopment = () => {
             application that delivers real business results.
           </p>
 
-          <div className="mt-8 flex flex-col md:flex-row justify-center items-center gap-6">
+          <div className="mt-8 flex flex-col md:flex-row justify-center gap-6">
             <Link
               href="/contact-us"
               className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-8 py-4 text-base font-semibold text-slate-900 transition-all duration-300 text-center w-full hover:bg-slate-200 hover:scale-105"
