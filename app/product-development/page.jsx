@@ -16,73 +16,89 @@ import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import ModernTechStack from "@/components/ModernTechStack";
 import Image from "next/image";
-import LegacyPainPoints from "@/components/LegacyPainPoints";
-import NextJsAdvantage from "@/components/NextJsAdvantage";
-import OurProcess from "@/components/OurProcess";
+import TechnologyStack from "@/components/TechnologyStack";
+import DigitalTransformation from "@/components/DigitalTransformation";
+import ProvenMethodologyRoadmap from "@/components/ProvenMethodologyRoadmap";
 import Link from "next/link";
+import EnterpriseWhyChooseUs from "@/components/EnterpriseWhyChooseUs";
+import IndustriesWeServe from "@/components/IndustriesWeServe";
+import ProductDevelopmentBenefits from "@/components/ProductDevelopmentBenefits";
 
-const EnterpriseWebsiteDevelopment = () => {
-  const texts = ["AEM", "Sitecore", "Drupal", "Any CMS"];
+const ProductDevelopment = () => {
+  const texts = ["Design", "Build", "Launch"];
   const [index, setIndex] = useState(0);
   const router = useRouter();
 
   const metrics = [
     {
-      value: "3-5x",
-      unit: "Faster",
-      title: "Load Times",
+      value: "200+",
+      unit: "",
+      title: "Innovation Patents",
       description:
-        "Deliver significantly faster page speeds that enhance user experience and directly improve conversion rates.",
+        "A strong foundation of original thinking and engineering excellence.",
       icon: TrendingUp,
     },
     {
-      value: "90+",
+      value: "4X",
       unit: "",
-      title: "Lighthouse Scores",
+      title: "Faster Market Entry",
       description:
-        "Achieve consistently high scores across Performance, Accessibility, Best Practices, and SEO.",
+        "Optimized discovery, agile execution, and parallel development cycles.",
       icon: Target,
     },
     {
-      value: "50%",
-      unit: "Lower",
-      title: "Bounce Rate",
+      value: "95%",
+      unit: "",
+      title: "On-Time Delivery",
       description:
-        "Keep users engaged longer with fast, responsive, and intuitive user experiences.",
-      icon: Undo2,
+        "Predictable timelines with transparent planning and execution.",
+      icon: Cable,
     },
   ];
 
   const specialties = [
     {
-      title: "Multi-Lingual Website Development",
+      title: "Product Design & Engineering",
       description:
-        "Global-ready websites with seamless language and localization support.",
+        "User-centric design combined with solid engineering to build intuitive, scalable products.",
       icon: PanelBottomClose,
       color: "bg-[#4FC6E0]",
     },
     {
-      title: "Sanity & Headless CMS Implementations",
+      title: "POC & MVP Development",
       description:
-        "Flexible content management without sacrificing performance.",
+        "Validate ideas quickly, reduce risk, and test market fit before full-scale investment.",
       icon: Database,
       color: "bg-[#0066A4]",
     },
     {
-      title: "AI Automation & Workflow Enablement",
+      title: "AI Product & Engineering",
       description:
-        "Intelligent automation to streamline publishing and operations.",
+        "Embed intelligence into your products using machine learning, predictive analytics, and automation.",
       icon: CalendarSync,
       color: "bg-[#02B2E3]",
     },
     {
-      title: "CRM & ERP Integrations",
+      title: "Enterprise Product Development",
       description:
-        "Seamless integration with enterprise systems for unified data flow.",
+        "Robust, secure, and scalable enterprise-grade products built for complex business environments.",
       icon: Cable,
       color: "bg-[#484393]",
+    },
+    {
+      title: "SaaS Product Development",
+      description:
+        "End-to-end SaaS platforms from architecture and UX to billing, security, and scalability.",
+      icon: Target,
+      color: "bg-[#248BB3]",
+    },
+    {
+      title: "Product Migration & Modernization",
+      description:
+        "Upgrade legacy systems to modern architectures without disrupting business continuity.",
+      icon: Undo2,
+      color: "bg-[#1f6fb2]",
     },
   ];
 
@@ -130,7 +146,7 @@ const EnterpriseWebsiteDevelopment = () => {
         <div className="relative mx-auto max-w-7xl px-6 py-18 text-center">
           <h1 className="text-5xl md:text-7xl text-[#1f6fb2] font-bold md:font-extrabold tracking-tight">
             <span className="flex flex-col gap-0 md:gap-1 justify-center items-center">
-              Create & Migrate {"  "}
+              We {"  "}
               <br />
               <span className="relative inline-block ml-2 md:ml-2 align-middle">
                 <span key={index} className="animate-slide-fade">
@@ -138,17 +154,16 @@ const EnterpriseWebsiteDevelopment = () => {
                 </span>
                 <span className="bg-clip-text mt-2 md:mt-0 text-transparent bg-linear-to-r from-cyan-400 to-blue-500">
                   {" "}
-                  to Next.js
+                  Products
                 </span>
               </span>
             </span>
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-xl text-black/70">
-            Transform your legacy website into a lightning-fast,
-            developer-friendly Next.js application.Built for modern businesses
-            that demand performance, scalability, and a future-proof digital
-            architecture.
+            Full-Cycle Product Development Company. Pi Bi Tech helps startups
+            and enterprises design, engineer, and launch scalable digital
+            products without unnecessary complexity.
           </p>
 
           <div className="mt-10 flex justify-center items-center gap-6 flex-col md:flex-row">
@@ -156,7 +171,7 @@ const EnterpriseWebsiteDevelopment = () => {
               onClick={() => router.push("/contact-us")}
               className="group inline-flex items-center gap-3 cursor-pointer rounded-lg bg-[#1f6fb2] px-6 py-3 text-md md:text-xl font-semibold text-white transition hover:bg-[#1f6fb2]/90"
             >
-              Get a Migration Quote
+              Build My Product
               <span className="flex h-9 w-9 items-center justify-center rounded-md bg-white text-[#1f6fb2] transition group-hover:translate-x-1">
                 <ArrowRight size={18} />
               </span>
@@ -165,7 +180,7 @@ const EnterpriseWebsiteDevelopment = () => {
               onClick={() => router.push("/contact-us")}
               className="group inline-flex items-center gap-3 cursor-pointer rounded-lg text-[#1f6fb2] border border-[#1f6fb2] px-6 py-3 text-md md:text-xl font-semibold bg-white transition hover:bg-[#1f6fb2]/90 hover:text-white"
             >
-              Talk to an Expert
+              Get a Project Estimate
               <span className="flex h-9 w-9 items-center justify-center rounded-md text-white bg-[#1f6fb2] transition group-hover:text-[#1f6fb2] group-hover:bg-white group-hover:translate-x-1">
                 <ArrowRight size={18} />
               </span>
@@ -178,13 +193,14 @@ const EnterpriseWebsiteDevelopment = () => {
           <div className="max-w-3xl mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
               <span className="bg-clip-text text-transparent bg-brand-gradient">
-                Measurable Business Impact
+                Key KPI Section
               </span>
             </h2>
+            <p className="text-black text-2xl leading-relaxed">
+              Why Pi Bi Tech for Digital Product Development?
+            </p>
             <p className="text-slate-700 text-xl leading-relaxed">
-              Enterprises that migrate from traditional CMS platforms to Next.js
-              consistently see measurable improvements across the metrics that
-              matter most to business growth.
+              Proven outcomes. Measurable impact. Reliable delivery.
             </p>
           </div>
 
@@ -200,11 +216,13 @@ const EnterpriseWebsiteDevelopment = () => {
                     <Icon className="w-7 h-7 text-[#248BB3]" />
                   </div>
 
-                  <div className="mb-2">
-                    <span className="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-brand-gradient">
-                      {item.value}
-                    </span>
-                    <span className="ml-2 text-2xl font-semibold text-[#248BB3]">
+                  <div className="mb-2 flex gap-2 justify-center items-baseline">
+                    {item.value && (
+                      <span className="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-brand-gradient">
+                        {item.value}
+                      </span>
+                    )}
+                    <span className="text-2xl font-semibold text-[#248BB3]">
                       {item.unit}
                     </span>
                   </div>
@@ -227,12 +245,12 @@ const EnterpriseWebsiteDevelopment = () => {
           <div className="max-w-3xl mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
               <span className="bg-clip-text text-transparent bg-brand-gradient">
-                We are specialists at
+                Full-Cycle Product Development for Modern Businesses
               </span>
             </h2>
             <p className="text-slate-700 text-xl leading-relaxed">
-              Tailored vertical AI agents built for high-stakes industries where
-              precision, compliance, and performance matter most.
+              We support your product at every stage whether you’re validating
+              an idea or scaling a mature platform.
             </p>
           </div>
 
@@ -251,40 +269,39 @@ const EnterpriseWebsiteDevelopment = () => {
             </Swiper>
           </div>
 
-          <div className="hidden sm:grid grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="hidden sm:grid grid-cols-2 lg:grid-cols-3 gap-6">
             {specialties.map((item, index) => (
               <Card key={index} item={item} />
             ))}
           </div>
         </div>
       </section>
-      <ModernTechStack />
-      <LegacyPainPoints />
-      <NextJsAdvantage />
-      <OurProcess />
-      <section className="bg-linear-to-b from-slate-700 to-slate-900 py-16 px-6">
+      <TechnologyStack />
+      <DigitalTransformation />
+      <ProvenMethodologyRoadmap />
+      <EnterpriseWhyChooseUs />
+      <IndustriesWeServe />
+      <ProductDevelopmentBenefits />
+
+      <section className="bg-linear-to-b from-slate-800 to-slate-900 py-16 px-6">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white">
-            Ready to Leave Traditional Websites Behind?
+            From Idea to Launch — We Build Digital Products
           </h2>
 
           <p className="mt-4 text-lg text-slate-100 max-w-3xl mx-auto">
-            Transform your website into a modern, high-performance Next.js
-            application that delivers real business results.
+            That Power Your Business Growth. Navigating product development
+            doesn't have to be complex. Our expert product teams help you
+            design, build, and scale digital solutions that meet market needs
+            and exceed user expectations.
           </p>
 
-          <div className="mt-8 flex flex-col md:flex-row justify-center gap-6">
+          <div className="mt-8">
             <Link
               href="/contact-us"
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-8 py-4 text-base font-semibold text-slate-900 transition-all duration-300 text-center w-full hover:bg-slate-200 hover:scale-105"
+              className="inline-flex items-center gap-2 rounded-xl bg-white px-8 py-4 text-base font-semibold text-slate-900 transition-all duration-300 hover:bg-slate-200 hover:scale-105"
             >
-              Start Your Migration
-            </Link>
-            <Link
-              href="/contact-us"
-              className="inline-flex text-center items-center justify-center gap-2 rounded-xl text-white border border-white px-8 py-4 text-base font-semibold transition-all duration-300 w-full hover:bg-white hover:text-slate-900 hover:scale-105"
-            >
-              Talk to an Expert
+              Let's Talk
             </Link>
           </div>
         </div>
@@ -293,4 +310,4 @@ const EnterpriseWebsiteDevelopment = () => {
   );
 };
 
-export default EnterpriseWebsiteDevelopment;
+export default ProductDevelopment;

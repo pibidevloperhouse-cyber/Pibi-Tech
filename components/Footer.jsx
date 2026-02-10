@@ -102,15 +102,15 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/contact-us"
+                  href="/enterprise-website-development"
                   className="text-slate-400 hover:text-primary transition"
                 >
-                  Multi Lingual Website Development
+                  Enterprise Website Development
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/contact-us"
+                  href="/product-development"
                   className="text-slate-400 hover:text-primary transition"
                 >
                   Product Development & Engineering

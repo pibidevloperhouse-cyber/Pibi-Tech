@@ -31,7 +31,7 @@ const offerings = [
     title: "Product Development & Engineering",
     description:
       "A full-stack product engineering partnership to take your idea from concept to design, build, and scale products that are reliable, adaptable, and market fit.",
-    link: "contact-us",
+    link: "product-development",
     icon: FolderLock,
     color: "bg-[#0066A4]",
   },
