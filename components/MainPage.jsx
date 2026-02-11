@@ -115,12 +115,7 @@ export function MainPage() {
         <ChevronRight size={25} color="black" />
       </div>
       <Swiper
-        modules={[Autoplay, A11y, Keyboard, Navigation, Pagination]}
-        autoplay={{
-          delay: 4000,
-          disableOnInteraction: false,
-          waitForTransition: true,
-        }}
+        modules={[A11y, Keyboard, Navigation, Pagination]}
         pagination={{ clickable: true, type: "progressbar" }}
         a11y={{ enabled: true }}
         keyboard={{ enabled: true }}
