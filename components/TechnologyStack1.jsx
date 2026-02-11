@@ -3,27 +3,14 @@
 import { useState } from "react";
 import Image from "next/image";
 
-// Foundation Models:
-//  {GPT-4} | {Claude} | {Gemini} | {Custom Fine-Tuned Models}
-// Agent Frameworks:
-//  {LangChain} | {CrewAI} | {Auto-GPT} | {Custom Orchestration Layers}
-// Memory & Data:
-//  {Vector Databases} | {Enterprise Data Lakes} | {Knowledge Graphs}
-// Tools & Actions:
-//  {APIs} | {RPA Tools} | {Internal Business Systems}
-// Evaluation & Monitoring:
-//  {Agent Performance Metrics} | {Drift Detection} | {Observability Dashboards}
-// Deployment & Infrastructure:
-//  {AWS} | {Azure} | {GCP} | {Private Cloud}
-
 const techStack = [
   {
     category: "Froundation Models",
-    items: ["gpt", "claude", "gemini", "custom-fine-tuned"],
+    items: ["gpt", "claude", "gemini"],
   },
   {
     category: "Agent Frameworks",
-    items: ["langchain", "crewai", "auto-gpt", "custom-orchestration-layers"],
+    items: ["langchain", "crewai", "auto-gpt"],
   },
   {
     category: "Memory & Data",
