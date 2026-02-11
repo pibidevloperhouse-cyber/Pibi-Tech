@@ -56,7 +56,7 @@ export default function AgenticAISteps() {
 
         <div className="max-w-7xl mx-auto p-3">
           <div className="border-l-0 border-b-0 border-2 p-5 pb-20 border-slate-200 rounded-r-xl relative">
-            <div className="bg-[#1f6fb2] w-5 h-5 absolute hidden lg:block rounded-full top-0 left-0 transform -translate-1/2"></div>
+            <div className="bg-[#1f6fb2] w-4 h-4 absolute hidden lg:block rounded-full top-0 left-0 transform -translate-1/2"></div>
             <div className="grid lg:grid-cols-3 gap-y-24 gap-x-10 relative">
               {steps.slice(0, 3).map((step, index) => {
                 return (
@@ -115,7 +115,7 @@ export default function AgenticAISteps() {
             </div>
           </div>
           <div className="p-5 pb-20 border-slate-200 rounded-r-xl relative">
-            <div className="bg-[#1f6fb2] w-5 h-5 absolute hidden lg:block rounded-full top-0 right-0 transform -translate-y-1/2 translate-x-1/2"></div>
+            <div className="bg-[#1f6fb2] w-4 h-4 absolute hidden lg:block rounded-full top-0 right-0 transform -translate-y-1/2 translate-x-1/2"></div>
             <div className="grid lg:grid-cols-3 gap-y-24 gap-x-10 relative">
               {steps.slice(6).map((step, index) => {
                 return (

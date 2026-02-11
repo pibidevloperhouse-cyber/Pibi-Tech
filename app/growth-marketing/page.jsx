@@ -3,19 +3,21 @@
 import AgenticAIServices from "@/components/AgenticAIServices";
 import AgenticAISteps from "@/components/AgenticAISteps";
 import AgenticAITypes from "@/components/AgenticAITypes";
+import GrowthServices from "@/components/GrowthServices";
 import IndustriesAgenticAI from "@/components/IndustriesAgenticAI";
 import TechnologyStack1 from "@/components/TechnologyStack1";
+import UnlockGrowth from "@/components/UnlockGrowth";
 import WhyAgenticAi from "@/components/WhyAgenticAi";
+import WhyMarGrowth from "@/components/WhyMarGrowth";
 import { ArrowRight, Target, TrendingUp, Undo2 } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const AgenticProcessAutomation = () => {
-  const texts = ["Build", "Connect", "Automate", "Optimize"];
+  const texts = ["Automate", "Optimize", "Personalize", "Scale"];
   const [index, setIndex] = useState(0);
   const router = useRouter();
-
   const metrics = [
     {
       value: "",
@@ -62,6 +64,9 @@ const AgenticProcessAutomation = () => {
     <div>
       <section className="relative overflow-hidden text-white">
         <div className="relative mx-auto max-w-7xl px-6 pt-18 text-center">
+          <div className="mb-4 text-[#1f6fb2] text-2xl font-medium uppercase tracking-wide">
+            Build a Revenue-Driven MarTech & Automation Ecosystem
+          </div>
           <h1 className="text-5xl md:text-7xl text-[#1f6fb2] font-extrabold tracking-tight">
             <span className="flex flex-col gap-0 md:gap-1 md:flex-row justify-center items-center">
               We{"  "}
@@ -70,16 +75,11 @@ const AgenticProcessAutomation = () => {
                   {texts[index]} <br className="block md:hidden" />
                 </span>
                 <span className="bg-clip-text mt-2 md:mt-0 text-transparent bg-linear-to-r from-cyan-400 to-blue-500">
-                  {"AGENTIC AI"}
+                  Your Marketing Operations
                 </span>
               </span>
             </span>
           </h1>
-
-          <p className="mx-auto mt-6 max-w-2xl text-xl text-black/70">
-            Self-operating systems that connect your tools, automate decisions,
-            and keep your business moving without constant manual work.
-          </p>
 
           <div className="mt-10 flex justify-center">
             <button
@@ -92,77 +92,27 @@ const AgenticProcessAutomation = () => {
               </span>
             </button>
           </div>
-
-          <div className="mt-20">
-            <p className="mb-8 text-xl text-black/70">
-              Trusted by Global Enterprises and Business Leaders
-            </p>
-          </div>
+          <p className="mx-auto mt-6 max-w-2xl text-xl text-black/70">
+            Transform conventional marketing into a connected, data-powered
+            growth engine that consistently generates leads, nurtures prospects,
+            and accelerates revenue.
+          </p>
         </div>
       </section>
-      <section className="section-padding bg-blue-50">
-        <div className="container-max">
-          <div className="max-w-3xl mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              <span className="bg-clip-text text-transparent bg-brand-gradient">
-                How Agentic AI Makes Businesses Powerful
-              </span>
-            </h2>
-            <p className="text-slate-700 text-xl leading-relaxed">
-              Agentic AI goes beyond traditional automation. It doesn't just
-              respond — it plans, decides, acts, and improves on its own.
-            </p>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {metrics.map((item, index) => {
-              const Icon = item.icon;
-              return (
-                <div
-                  key={index}
-                  className="bg-white border border-slate-200 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 text-center"
-                >
-                  <div className="mx-auto w-14 h-14 flex items-center justify-center rounded-xl bg-[#248BB3]/10 mb-6">
-                    <Icon className="w-7 h-7 text-[#248BB3]" />
-                  </div>
-
-                  {/* <div className="mb-2">
-                    <span className="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-brand-gradient">
-                      {item.value}
-                    </span>
-                    <span className="ml-2 text-2xl font-semibold text-[#248BB3]">
-                      {item.unit}
-                    </span>
-                  </div> */}
-
-                  <h3 className="text-xl font-bold text-slate-900 mb-3">
-                    {item.title}
-                  </h3>
-
-                  <p className="text-slate-600 text-md leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-      <AgenticAIServices />
-      <TechnologyStack1 />
-      <AgenticAISteps />
-      <IndustriesAgenticAI />
+      <WhyMarGrowth />
+      <GrowthServices />
       <AgenticAITypes />
-      <WhyAgenticAi />
+      <UnlockGrowth />
       <section className="bg-linear-to-b from-slate-700 to-slate-900 py-16 px-6">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white">
-            How Autonomous AI Agents Can Drive Real Results in Your Industry
+            Kick Off Your MarTech & Automation Journey Today
           </h2>
 
           <p className="mt-4 text-lg text-slate-100 max-w-3xl mx-auto">
-            Reduce operational friction, Accelerate execution, Make smarter
-            decisions continuously.
+            Transform your marketing into a connected, intelligent growth
+            engine.
           </p>
 
           <div className="mt-8 flex flex-col md:flex-row justify-center gap-6">
@@ -170,15 +120,12 @@ const AgenticProcessAutomation = () => {
               href="/contact-us"
               className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-8 py-4 text-base font-semibold text-slate-900 transition-all duration-300 text-center w-full hover:bg-slate-200 hover:scale-105"
             >
-              Book Your Free Agentic AI Strategy Session
-            </Link>
-            <Link
-              href="/contact-us"
-              className="inline-flex text-center items-center justify-center gap-2 rounded-xl text-white border border-white px-8 py-4 text-base font-semibold transition-all duration-300 w-full hover:bg-white hover:text-slate-900 hover:scale-105"
-            >
-              Talk to an Agentic AI Expert
+              Let’s Work Together
             </Link>
           </div>
+          <p className="mt-4 text-lg text-center text-slate-100 max-w-3xl mx-auto">
+            Build smarter campaigns. Automate revenue. Scale with confidence.
+          </p>
         </div>
       </section>
     </div>
