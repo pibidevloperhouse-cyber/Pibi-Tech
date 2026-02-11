@@ -68,7 +68,7 @@ export default function AgenticAITypes() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-          <div className="space-y-4 max-h-64 overflow-y-scroll">
+          <div className="space-y-4 max-h-64 overflow-y-scroll custom-scroll">
             {agentTypes.map((item, index) => {
               const Icon = item.icon;
               const isActive = index === activeIndex;

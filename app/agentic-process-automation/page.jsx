@@ -1,6 +1,7 @@
 "use client";
 
 import AgenticAIServices from "@/components/AgenticAIServices";
+import AgenticAISteps from "@/components/AgenticAISteps";
 import AgenticAITypes from "@/components/AgenticAITypes";
 import IndustriesAgenticAI from "@/components/IndustriesAgenticAI";
 import TechnologyStack1 from "@/components/TechnologyStack1";
@@ -113,13 +114,12 @@ const AgenticProcessAutomation = () => {
           <div className="max-w-3xl mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
               <span className="bg-clip-text text-transparent bg-brand-gradient">
-                Measurable Business Impact
+                How Agentic AI Makes Businesses Powerful
               </span>
             </h2>
             <p className="text-slate-700 text-xl leading-relaxed">
-              Enterprises that migrate from traditional CMS platforms to Next.js
-              consistently see measurable improvements across the metrics that
-              matter most to business growth.
+              Agentic AI goes beyond traditional automation. It doesn't just
+              respond — it plans, decides, acts, and improves on its own.
             </p>
           </div>
 
@@ -159,6 +159,7 @@ const AgenticProcessAutomation = () => {
       </section>
       <AgenticAIServices />
       <TechnologyStack1 />
+      <AgenticAISteps />
       <IndustriesAgenticAI />
       <AgenticAITypes />
       <WhyAgenticAi />
