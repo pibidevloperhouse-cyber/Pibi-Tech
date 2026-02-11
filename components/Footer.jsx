@@ -118,7 +118,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/contact-us"
+                  href="/agentic-process-automation"
                   className="text-slate-400 hover:text-primary transition"
                 >
                   AI & Agentic Process Automation
@@ -134,7 +134,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/contact-us"
+                  href="/growth-marketing"
                   className="text-slate-400 hover:text-primary transition"
                 >
                   MarTech & Growth Hacking

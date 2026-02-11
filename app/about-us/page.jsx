@@ -45,7 +45,7 @@ const offerings = [
     title: "AI & Agentic Process Automation",
     description:
       "Autonomous AI agents that replace repetitive work, accelerate decisions, and reduce operational costs  and drive measurable efficiency gains.",
-    link: "intelligent-process-automation",
+    link: "agentic-process-automation",
     icon: BriefcaseBusiness,
     color: "bg-[#02B2E3]",
   },
@@ -72,7 +72,7 @@ const offerings = [
     title: "MarTech & Growth Hacking",
     description:
       "A technology-driven growth system that consistently generates qualified leads and converts them into predictable revenue.",
-    link: "contact-us",
+    link: "growth-marketing",
     icon: FolderLock,
     color: "bg-[#0066A4]",
   },
