@@ -144,7 +144,7 @@ const ProductDevelopment = () => {
     <div>
       <section className="relative overflow-hidden text-white">
         <div className="relative mx-auto max-w-7xl px-6 py-20 text-center">
-          <div className="bg-[#1f6fb2]/30 text-[#1f6fb2] md:w-max mx-auto mb-4 font-medium text-xl p-2 rounded-lg">
+          <div className="mb-4 text-[#1f6fb2] text-2xl font-medium uppercase tracking-wide">
             Full-Cycle Product Development Company
           </div>
 
@@ -163,7 +163,7 @@ const ProductDevelopment = () => {
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-xl text-black/70">
-            We Tech helps startups and enterprises design, engineer, and launch
+            We helps startups and enterprises design, engineer, and launch
             scalable digital products without unnecessary complexity.
           </p>
 

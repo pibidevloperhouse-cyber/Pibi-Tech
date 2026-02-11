@@ -127,8 +127,8 @@ const EnterpriseWebsiteDevelopment = () => {
   return (
     <div>
       <section className="relative overflow-hidden text-white">
-        <div className="relative mx-auto max-w-7xl px-6 py-18 text-center">
-          <h1 className="text-5xl md:text-7xl text-[#1f6fb2] font-bold md:font-extrabold tracking-tight">
+        <div className="relative mx-auto max-w-7xl px-3 md:px-6 py-18 text-center">
+          <h1 className="text-4xl md:text-7xl text-[#1f6fb2] font-bold md:font-extrabold tracking-tight">
             <span className="flex flex-col gap-0 md:gap-1 justify-center items-center">
               Create & Migrate {"  "}
               <br />
@@ -138,7 +138,7 @@ const EnterpriseWebsiteDevelopment = () => {
                 </span>
                 <span className="bg-clip-text mt-2 md:mt-0 text-transparent bg-linear-to-r from-cyan-400 to-blue-500">
                   {" "}
-                  to Next.js
+                  to <br className="block md:hidden" /> Next.js
                 </span>
               </span>
             </span>
@@ -146,9 +146,7 @@ const EnterpriseWebsiteDevelopment = () => {
 
           <p className="mx-auto mt-6 max-w-2xl text-xl text-black/70">
             Transform your legacy website into a lightning-fast,
-            developer-friendly Next.js application.Built for modern businesses
-            that demand performance, scalability, and a future-proof digital
-            architecture.
+            developer-friendly Next.js application.
           </p>
 
           <div className="mt-10 flex justify-center items-center gap-6 flex-col md:flex-row">
@@ -171,6 +169,10 @@ const EnterpriseWebsiteDevelopment = () => {
               </span>
             </button>
           </div>
+          <p className="mx-auto mt-6 max-w-2xl text-xl text-black/50">
+            Built for modern businesses that demand performance, scalability,
+            and a future-proof digital architecture.
+          </p>
         </div>
       </section>
       <section className="section-padding bg-blue-50">
