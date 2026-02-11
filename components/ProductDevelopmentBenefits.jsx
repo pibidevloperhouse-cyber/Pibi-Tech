@@ -1,3 +1,10 @@
+"use client";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+
 import {
   Target,
   GitBranch,
@@ -11,7 +18,7 @@ const benefits = [
   {
     title: "Tailored Product Solutions",
     description:
-      "Products built specifically around your business goals, users, and long-term vision — never one-size-fits-all.",
+      "Products built specifically around your business goals, users, and long‑term vision   never one‑size‑fits‑all.",
     icon: Target,
   },
   {
@@ -29,7 +36,7 @@ const benefits = [
   {
     title: "Extensive Industry Experience",
     description:
-      "Deep domain expertise shaped by real-world business challenges across multiple industries.",
+      "Deep domain expertise shaped by real‑world business challenges across multiple industries.",
     icon: BriefcaseBusiness,
   },
   {
@@ -50,7 +57,7 @@ export default function ProductDevelopmentBenefits() {
   return (
     <section className="section-padding bg-blue-50">
       <div className="container-max">
-        <div className="max-w-3xl mb-16">
+        <div className="max-w-3xl">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="bg-clip-text text-transparent bg-brand-gradient">
               Reap the Benefits of Custom Product Development
@@ -62,7 +69,37 @@ export default function ProductDevelopmentBenefits() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="block sm:hidden">
+          <Swiper
+            modules={[Pagination]}
+            pagination={{ clickable: true }}
+            spaceBetween={20}
+            slidesPerView={1}
+          >
+            {benefits.map((item, index) => {
+              const Icon = item.icon;
+              return (
+                <SwiperSlide className="py-10 h-full" key={index}>
+                  <div className="bg-white border border-slate-200 rounded-2xl p-8 hover:shadow-xl transition-all duration-300">
+                    <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-[#248BB3]/10 mb-6">
+                      <Icon className="w-7 h-7 text-[#248BB3]" />
+                    </div>
+
+                    <h3 className="text-xl font-bold text-slate-900 mb-3">
+                      {item.title}
+                    </h3>
+
+                    <p className="text-slate-600 text-md leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
+        </div>
+
+        <div className="hidden sm:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {benefits.map((item, index) => {
             const Icon = item.icon;
             return (

@@ -52,7 +52,7 @@ export default function TechnologyStack() {
           </h2>
           <p className="text-xl text-slate-700 leading-relaxed">
             We choose technologies based on performance, scalability, and
-            long-term product vision—not trends.
+            long-term product vision not trends.
           </p>
         </div>
 

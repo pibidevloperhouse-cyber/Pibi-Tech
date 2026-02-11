@@ -143,17 +143,19 @@ const ProductDevelopment = () => {
   return (
     <div>
       <section className="relative overflow-hidden text-white">
-        <div className="relative mx-auto max-w-7xl px-6 py-18 text-center">
-          <h1 className="text-5xl md:text-7xl text-[#1f6fb2] font-bold md:font-extrabold tracking-tight">
-            <span className="flex flex-col gap-0 md:gap-1 justify-center items-center">
-              We {"  "}
-              <br />
-              <span className="relative inline-block ml-2 md:ml-2 align-middle">
-                <span key={index} className="animate-slide-fade">
+        <div className="relative mx-auto max-w-7xl px-6 py-20 text-center">
+          <div className="bg-[#1f6fb2]/30 text-[#1f6fb2] md:w-max mx-auto mb-4 font-medium text-xl p-2 rounded-lg">
+            Full-Cycle Product Development Company
+          </div>
+
+          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-black">
+            <span className="flex flex-col gap-1 justify-center items-center">
+              We
+              <span className="relative inline-block ml-2 text-[#1f6fb2] align-middle">
+                <span className="animate-slide-fade">
                   {texts[index]} <br className="block md:hidden" />
                 </span>
-                <span className="bg-clip-text mt-2 md:mt-0 text-transparent bg-linear-to-r from-cyan-400 to-blue-500">
-                  {" "}
+                <span className="bg-clip-text text-transparent bg-linear-to-r from-cyan-400 to-blue-500 mt-2 md:mt-0">
                   Products
                 </span>
               </span>
@@ -161,36 +163,37 @@ const ProductDevelopment = () => {
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-xl text-black/70">
-            Full-Cycle Product Development Company. Pi Bi Tech helps startups
-            and enterprises design, engineer, and launch scalable digital
-            products without unnecessary complexity.
+            We Tech helps startups and enterprises design, engineer, and launch
+            scalable digital products without unnecessary complexity.
           </p>
 
-          <div className="mt-10 flex justify-center items-center gap-6 flex-col md:flex-row">
+          <div className="mt-10 flex flex-col md:flex-row justify-center items-center gap-6">
             <button
               onClick={() => router.push("/contact-us")}
-              className="group inline-flex items-center gap-3 cursor-pointer rounded-lg bg-[#1f6fb2] px-6 py-3 text-md md:text-xl font-semibold text-white transition hover:bg-[#1f6fb2]/90"
+              className="group inline-flex items-center gap-3 rounded-lg bg-[#1f6fb2] px-6 py-3 text-md md:text-xl font-semibold text-white transition hover:bg-[#1f6fb2]/90"
             >
               Build My Product
               <span className="flex h-9 w-9 items-center justify-center rounded-md bg-white text-[#1f6fb2] transition group-hover:translate-x-1">
                 <ArrowRight size={18} />
               </span>
             </button>
+
             <button
               onClick={() => router.push("/contact-us")}
-              className="group inline-flex items-center gap-3 cursor-pointer rounded-lg text-[#1f6fb2] border border-[#1f6fb2] px-6 py-3 text-md md:text-xl font-semibold bg-white transition hover:bg-[#1f6fb2]/90 hover:text-white"
+              className="group inline-flex items-center gap-3 rounded-lg border border-[#1f6fb2] px-6 py-3 text-md md:text-xl font-semibold text-[#1f6fb2] bg-white transition hover:bg-[#1f6fb2]/90 hover:text-white"
             >
               Get a Project Estimate
-              <span className="flex h-9 w-9 items-center justify-center rounded-md text-white bg-[#1f6fb2] transition group-hover:text-[#1f6fb2] group-hover:bg-white group-hover:translate-x-1">
+              <span className="flex h-9 w-9 items-center justify-center rounded-md bg-[#1f6fb2] text-white transition group-hover:bg-white group-hover:text-[#1f6fb2] group-hover:translate-x-1">
                 <ArrowRight size={18} />
               </span>
             </button>
           </div>
         </div>
       </section>
+
       <section className="section-padding bg-blue-50">
         <div className="container-max">
-          <div className="max-w-3xl mb-16">
+          {/* <div className="max-w-3xl mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
               <span className="bg-clip-text text-transparent bg-brand-gradient">
                 Key KPI Section
@@ -202,7 +205,7 @@ const ProductDevelopment = () => {
             <p className="text-slate-700 text-xl leading-relaxed">
               Proven outcomes. Measurable impact. Reliable delivery.
             </p>
-          </div>
+          </div> */}
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {metrics.map((item, index) => {
@@ -286,7 +289,7 @@ const ProductDevelopment = () => {
       <section className="bg-linear-to-b from-slate-800 to-slate-900 py-16 px-6">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white">
-            From Idea to Launch — We Build Digital Products
+            From Idea to Launch We Build Digital Products
           </h2>
 
           <p className="mt-4 text-lg text-slate-100 max-w-3xl mx-auto">
@@ -301,7 +304,7 @@ const ProductDevelopment = () => {
               href="/contact-us"
               className="inline-flex items-center gap-2 rounded-xl bg-white px-8 py-4 text-base font-semibold text-slate-900 transition-all duration-300 hover:bg-slate-200 hover:scale-105"
             >
-              Let's Talk
+              Get a Project Estimate
             </Link>
           </div>
         </div>

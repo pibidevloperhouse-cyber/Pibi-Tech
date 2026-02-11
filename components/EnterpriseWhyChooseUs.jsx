@@ -25,7 +25,7 @@ const EnterpriseWhyChooseUs = () => {
     {
       title: "Cross-Platform Development",
       description:
-        "Build once, deploy everywhere—without compromising performance, security, or user experience.",
+        "Build once, deploy everywhere without compromising performance, security, or user experience.",
       icon: Layers,
       color: "bg-[#0066A4]",
     },
