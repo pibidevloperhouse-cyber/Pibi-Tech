@@ -64,9 +64,9 @@ const AgenticProcessAutomation = () => {
     <div>
       <section className="relative overflow-hidden text-white">
         <div className="relative mx-auto max-w-7xl px-6 pt-18 text-center">
-          <div className="mb-4 text-[#1f6fb2] text-2xl font-medium uppercase tracking-wide">
+         {/* <div className="mb-4 text-[#1f6fb2] text-2xl font-medium uppercase tracking-wide">
             Build a Revenue-Driven MarTech & Automation Ecosystem
-          </div>
+          </div> */}
           <h1 className="text-5xl md:text-7xl text-[#1f6fb2] font-extrabold tracking-tight">
             <span className="flex flex-col gap-0 md:gap-1 md:flex-row justify-center items-center">
               We{"  "}
