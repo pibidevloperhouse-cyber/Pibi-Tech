@@ -40,7 +40,7 @@ const offerings = [
     title: "AI & Agentic Process Automation",
     description:
       "Autonomous AI agents that replace repetitive work, accelerate decisions, and reduce operational costs  and drive measurable efficiency gains.",
-    link: "intelligent-process-automation",
+    link: "agentic-process-automation",
     icon: BriefcaseBusiness,
     color: "bg-[#02B2E3]",
   },
