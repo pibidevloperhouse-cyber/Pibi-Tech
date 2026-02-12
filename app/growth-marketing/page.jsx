@@ -69,7 +69,7 @@ const AgenticProcessAutomation = () => {
           </div>
           <h1 className="text-5xl md:text-7xl text-[#1f6fb2] font-extrabold tracking-tight">
             <span className="flex flex-col gap-0 md:gap-1 md:flex-row justify-center items-center">
-              We{"  "}
+              We{"  "} <br />
               <span className="relative inline-block ml-2 md:ml-2 align-middle">
                 <span key={index} className="animate-slide-fade">
                   {texts[index]} <br className="block md:hidden" />
