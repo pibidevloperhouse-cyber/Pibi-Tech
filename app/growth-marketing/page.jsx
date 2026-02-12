@@ -64,15 +64,15 @@ const AgenticProcessAutomation = () => {
     <div>
       <section className="relative overflow-hidden text-white">
         <div className="relative mx-auto max-w-7xl px-6 pt-18 text-center">
-         {/* <div className="mb-4 text-[#1f6fb2] text-2xl font-medium uppercase tracking-wide">
+          {/* <div className="mb-4 text-[#1f6fb2] text-2xl font-medium uppercase tracking-wide">
             Build a Revenue-Driven MarTech & Automation Ecosystem
           </div> */}
           <h1 className="text-5xl md:text-7xl text-[#1f6fb2] font-extrabold tracking-tight">
-            <span className="flex flex-col gap-0 md:gap-1 md:flex-row justify-center items-center">
+            <span className="flex flex-col gap-0 md:gap-1 justify-center items-center">
               We{"  "} <br />
               <span className="relative inline-block ml-2 md:ml-2 align-middle">
                 <span key={index} className="animate-slide-fade">
-                  {texts[index]} <br className="block md:hidden" />
+                  {texts[index]} <br />
                 </span>
                 <span className="bg-clip-text mt-2 md:mt-0 text-transparent bg-linear-to-r from-cyan-400 to-blue-500">
                   Your Marketing Operations
