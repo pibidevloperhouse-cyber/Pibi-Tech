@@ -58,7 +58,7 @@ const offerings = [
     title: "Enterprise Infrastructure & Cloud Ops",
     description:
       "A resilient, secure cloud foundation that supports business continuity, scale, and operational efficiency.",
-    link: "contact-us",
+    link: "cloud-ops",
     icon: Brain,
     color: "bg-[#4FC6E0]",
   },

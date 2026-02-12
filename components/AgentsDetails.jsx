@@ -112,7 +112,7 @@ const AgentsDetails = () => {
       description:
         "We design, and operate AWS, Azure, and GCP so your teams can ship faster with well-architected cloud foundations.",
       tags: ["Cloud Native", "DevOps", "Kubernetes"],
-      onClick: () => router.push("/contact-us"),
+      onClick: () => router.push("/cloud-ops"),
       variant: "light",
     },
   ];

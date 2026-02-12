@@ -88,7 +88,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/contact-us"
+                  href="/cloud-ops"
                   className="text-slate-400 hover:text-primary transition"
                 >
                   Cloud Ops

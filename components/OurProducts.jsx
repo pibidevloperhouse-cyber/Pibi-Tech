@@ -49,7 +49,7 @@ export default function OurProducts() {
       tag: "AI Pricing Intelligence",
       description:
         "Price with Confidence.Analyze demand, competition, and performance signals. Optimize pricing decisions to improve margins and win rates.",
-      link: "contact-us",
+      link: "price-sense",
     },
     {
       title: "SharpTarget",
