@@ -64,9 +64,9 @@ const AgenticProcessAutomation = () => {
     <div>
       <section className="relative overflow-hidden text-white">
         <div className="relative mx-auto max-w-7xl px-6 pt-18 text-center">
-          <div className="mb-4 text-[#1f6fb2] text-2xl font-medium uppercase tracking-wide">
+         {/* <div className="mb-4 text-[#1f6fb2] text-2xl font-medium uppercase tracking-wide">
             Build a Revenue-Driven MarTech & Automation Ecosystem
-          </div>
+          </div> */}
           <h1 className="text-5xl md:text-7xl text-[#1f6fb2] font-extrabold tracking-tight">
             <span className="flex flex-col gap-0 md:gap-1 md:flex-row justify-center items-center">
               We{"  "} <br />
@@ -86,7 +86,7 @@ const AgenticProcessAutomation = () => {
               onClick={() => router.push("/contact-us")}
               className="group inline-flex items-center gap-3 cursor-pointer rounded-lg bg-[#1f6fb2] px-6 py-3 text-md md:text-xl font-semibold text-white transition hover:bg-[#1f6fb2]/90"
             >
-              Adopt AI and Automation Now
+              Let's Work Together
               <span className="flex h-9 w-9 items-center justify-center rounded-md bg-white text-[#1f6fb2] transition group-hover:translate-x-1">
                 <ArrowRight size={18} />
               </span>
@@ -102,7 +102,6 @@ const AgenticProcessAutomation = () => {
 
       <WhyMarGrowth />
       <GrowthServices />
-      <AgenticAITypes />
       <UnlockGrowth />
       <section className="bg-linear-to-b from-slate-700 to-slate-900 py-16 px-6">
         <div className="max-w-5xl mx-auto text-center">
