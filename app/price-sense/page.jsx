@@ -17,8 +17,8 @@ const page = () => {
     <div>
       <div className="mx-auto max-w-7xl text-center md:text-start px-6 py-24">
         <div className="md:col-span-3">
-          <p className="mb-4 text-[#1f6fb2] text-2xl font-medium uppercase tracking-wide">
-            PriceSens
+          <p className="mb-4 text-[#1f6fb2] text-2xl font-medium tracking-wide">
+            PriceSense
           </p>
 
           <h1 className="text-3xl text-black md:text-5xl max-w-4xl font-semibold leading-tight">

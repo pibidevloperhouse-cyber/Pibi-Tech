@@ -1,24 +1,13 @@
 "use client";
 
-import AgenticAIServices from "@/components/AgenticAIServices";
-import AgenticAISteps from "@/components/AgenticAISteps";
-import AgenticAITypes from "@/components/AgenticAITypes";
 import CloudOpsServices from "@/components/CloudOpsServices";
 import CloudOpsSteps from "@/components/CloudOpsSteps";
 import CloudOpsTechStacks from "@/components/CloudOpsTechStacks";
-import IndustriesAgenticAI from "@/components/IndustriesAgenticAI";
-import TechnologyStack1 from "@/components/TechnologyStack1";
-import WhyAgenticAi from "@/components/WhyAgenticAi";
 import { ArrowRight, Target, TrendingUp, Undo2 } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
 
 const CloudOps = () => {
-  const texts = ["Scales", "Self-Heals", "Secures", "Automates", "Optimizes"];
-  const [index, setIndex] = useState(0);
-  const router = useRouter();
-
   const metrics = [
     {
       value: "01",
@@ -45,58 +34,37 @@ const CloudOps = () => {
       icon: Undo2,
     },
   ];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % texts.length);
-    }, 2000);
-    return () => clearInterval(interval);
-  }, []);
+  const router = useRouter();
 
   return (
     <div>
       <section className="relative overflow-hidden text-white">
-        <div className="relative mx-auto max-w-7xl px-3 md:px-6 py-18 text-center">
-          <h1 className="text-4xl md:text-7xl text-[#1f6fb2] font-bold md:font-extrabold tracking-tight">
-            <span className="flex flex-col gap-0 md:gap-1 justify-center items-center">
-              Build Infrastructure That {"  "}
-              <br />
-              <span className="relative inline-block ml-2 md:ml-2 align-middle">
-                <span key={index} className="animate-slide-fade">
-                  {texts[index]} <br className="block md:hidden" />
+        <div className="mx-auto max-w-7xl text-center md:text-start px-6 py-24">
+          <div className="md:col-span-3">
+            <h1 className="text-3xl text-black md:text-5xl max-w-4xl font-semibold leading-tight">
+              Build Intelligent Infrastructure That Powers Automated Growth
+            </h1>
+            <p className="mt-6 max-w-xl text-xl text-black/70">
+              Cloud, DevOps, SRE, and DevSecOps unified into a resilient, secure
+              infrastructure foundation
+            </p>
+            <div className="mt-10 flex items-center gap-6">
+              <button
+                onClick={() => router.push("/contact-us")}
+                className="group inline-flex items-center max-sm:mx-auto gap-3 rounded-lg bg-[#1f6fb2] px-6 py-3 text-lg font-semibold text-white transition hover:bg-[#1f6fb2]/90"
+              >
+                Start Building Smarter Infrastructure
+                <span className="flex h-9 w-9 items-center justify-center rounded-md bg-white text-[#1f6fb2] transition group-hover:translate-x-1">
+                  <ArrowRight size={18} />
                 </span>
-                <span className="bg-clip-text mt-2 md:mt-0 text-transparent bg-linear-to-r from-cyan-400 to-blue-500">
-                  {" "}
-                  Your Business Growth
-                </span>
-              </span>
-            </span>
-          </h1>
+              </button>
+            </div>
 
-          <p className="mx-auto mt-6 max-w-2xl text-xl text-black/70">
-            Cloud, DevOps, cybersecurity, and intelligent infrastructure
-            engineered for modern enterprises and fast-growing startups.
-          </p>
-
-          <div className="mt-10 flex justify-center items-center gap-6 flex-col md:flex-row">
-            <button
-              onClick={() => router.push("/contact-us")}
-              className="group inline-flex items-center gap-3 cursor-pointer rounded-lg bg-[#1f6fb2] px-6 py-3 text-md md:text-xl font-semibold text-white transition hover:bg-[#1f6fb2]/90"
-            >
-              Modernize Infrastructure
-              <span className="flex h-9 w-9 items-center justify-center rounded-md bg-white text-[#1f6fb2] transition group-hover:translate-x-1">
-                <ArrowRight size={18} />
-              </span>
-            </button>
-            <button
-              onClick={() => router.push("/contact-us")}
-              className="group inline-flex items-center gap-3 cursor-pointer rounded-lg text-[#1f6fb2] border border-[#1f6fb2] px-6 py-3 text-md md:text-xl font-semibold bg-white transition hover:bg-[#1f6fb2]/90 hover:text-white"
-            >
-              Talk to an Expert
-              <span className="flex h-9 w-9 items-center justify-center rounded-md text-white bg-[#1f6fb2] transition group-hover:text-[#1f6fb2] group-hover:bg-white group-hover:translate-x-1">
-                <ArrowRight size={18} />
-              </span>
-            </button>
+            <p className="mt-6 max-w-xl text-xl text-black/70">
+              Engineered to scale operations, accelerate delivery, and support
+              continuous business growth for modern enterprises and
+              high-velocity startups.
+            </p>
           </div>
         </div>
       </section>
