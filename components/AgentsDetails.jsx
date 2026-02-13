@@ -29,7 +29,7 @@ const AgentsDetails = () => {
         "KPI Frameworks",
         "Self-Service BI",
       ],
-      onClick: () => router.push("/contact-us"),
+      onClick: () => router.push("/bussiness-intelligent"),
       variant: "light",
     },
     {

@@ -56,7 +56,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/contact-us"
+                  href="/business-intelligent"
                   className="text-slate-400 hover:text-primary transition"
                 >
                   Business Intelligence
@@ -126,7 +126,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/contact-us"
+                  href="/application-development"
                   className="text-slate-400 hover:text-primary transition"
                 >
                   Application Development

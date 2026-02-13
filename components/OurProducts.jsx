@@ -14,7 +14,7 @@ export default function OurProducts() {
       tag: "Enterprise AI Platform",
       description:
         "A unified AI-powered platform that connects growth, management, and operations into one intelligent system. Profit Engine helps businesses scale faster, close better deals, and stay consistently profitable  without operational complexity.",
-      link: "contact-us",
+      link: "profit-engine",
     },
     {
       title: "Astro Kids",

@@ -54,7 +54,7 @@ const offerings = [
     title: "Application Development",
     description:
       "Robust digital applications engineered for performance, security, and continuous business growth.",
-    link: "contact-us",
+    link: "application-development",
     icon: CalendarSync,
     color: "bg-[#484393]",
   },
