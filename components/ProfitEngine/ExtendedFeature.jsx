@@ -324,16 +324,6 @@ export default function ExtendedFeature() {
           transition={{ duration: 0.6 }}
           className="mt-12 mb-12"
         >
-          <div className="flex justify-start mb-8">
-            <button
-              onClick={() => window.history.back()}
-              className="flex px-6 py-2 rounded-full text-white items-center gap-2 bg-linear-to-r from-secondary to-primary shadow-lg hover:shadow-primary/20 transition-all font-bold text-sm"
-            >
-              <span className="text-lg">←</span>
-              Back
-            </button>
-          </div>
-
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-black text-accent leading-tight tracking-tight">
               Product Capabilities
