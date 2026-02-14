@@ -285,10 +285,9 @@ const SUB_FEATURES = [
 ];
 
 export default function ExtendedFeature() {
-  const [activeLayer, setActiveLayer] = useState < Layer["id"] > "operations";
-  const [selectedSubFeatureId, setSelectedSubFeatureId] =
-    (useState < string) | (null > null);
-  const panelRef = (useRef < HTMLDivElement) | (null > null);
+  const [activeLayer, setActiveLayer] = useState("operations");
+  const [selectedSubFeatureId, setSelectedSubFeatureId] = useState(null);
+  const panelRef = useRef(null);
 
   const filteredSubFeatures = useMemo(
     () => SUB_FEATURES.filter((sf) => sf.layer === activeLayer),
