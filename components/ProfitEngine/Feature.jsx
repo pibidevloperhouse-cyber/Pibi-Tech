@@ -307,36 +307,6 @@ export default function Feature({ fadeUp }) {
             );
           })}
         </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.4, duration: 0.6 }}
-          className="text-center mt-12"
-        >
-          <motion.a
-            href="/form"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center gap-3 rounded-full bg-linear-to-r from-secondary to-primary text-white px-10 py-4 font-bold shadow-lg hover:shadow-primary/20 transition-all"
-          >
-            Explore All Features
-            <svg
-              className="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
-            </svg>
-          </motion.a>
-        </motion.div>
       </div>
     </section>
   );

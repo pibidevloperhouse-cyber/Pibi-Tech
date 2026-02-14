@@ -6,6 +6,8 @@ import Hero from "@/components/ProfitEngine/Hero";
 import HowItWorks from "@/components/ProfitEngine/HowItWorks";
 import Testimonials from "@/components/ProfitEngine/Testimonials";
 import "@/app/app.css";
+import ExtendedFeature from "@/components/ProfitEngine/ExtendedFeature";
+import Pricing from "@/components/ProfitEngine/Pricing";
 
 export default function BusinessIntelligent() {
   const fadeUp = {
@@ -22,8 +24,10 @@ export default function BusinessIntelligent() {
       <main className="relative z-10">
         <Hero fadeUp={fadeUp} />
         <Feature fadeUp={fadeUp} />
+        <ExtendedFeature />
         <Testimonials fadeUp={fadeUp} />
         <HowItWorks fadeUp={fadeUp} />
+        <Pricing />
         <CTA fadeUp={fadeUp} />
       </main>
     </div>
