@@ -28,7 +28,7 @@ export default function OurProducts() {
       tag: "GST Compliance Verification",
       description:
         "Verify GST. Avoid Penalties. Automatically verify GST filings and detect mismatches in real time.Reduce compliance risk and avoid penalties with minimal manual effort.",
-      link: "contact-us",
+      link: "compliance-bot",
     },
     // {
     //   title: "Brand Trust+",
