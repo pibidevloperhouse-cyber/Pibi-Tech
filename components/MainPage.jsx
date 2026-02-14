@@ -49,7 +49,7 @@ export function MainPage() {
       subtitle:
         "Design modern BI systems that transform raw data into clear insights, enabling faster decisions, measurable performance, and revenue visibility.",
       cta: "Explore BI Solutions",
-      link: "/contact-us",
+      link: "/bussiness-intelligent",
       hashtag: "#InsightToImpact",
     },
     {
@@ -59,7 +59,7 @@ export function MainPage() {
       subtitle:
         "Centralize information with AI-powered knowledge systems that deliver accurate answers, automate workflows, and support confident decisions.",
       cta: "Build AI Knowledge Base",
-      link: "/contact-us",
+      link: "/ai-knowledge-base",
       hashtag: "#KnowledgeWithAI",
     },
     {

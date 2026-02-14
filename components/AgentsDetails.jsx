@@ -44,7 +44,7 @@ const AgentsDetails = () => {
         "Vector Databases",
         "Enterprise RAG",
       ],
-      onClick: () => router.push("/contact-us"),
+      onClick: () => router.push("/ai-knowledge-base"),
       variant: "blue",
     },
     {
