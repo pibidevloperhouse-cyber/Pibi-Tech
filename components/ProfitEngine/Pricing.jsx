@@ -22,16 +22,6 @@ export default function Pricing() {
           transition={{ duration: 0.6 }}
           className="flex flex-col items-center mb-24"
         >
-          <div className="w-full flex justify-start mb-8">
-            <button
-              onClick={() => window.history.back()}
-              className="bg-linear-to-r from-secondary to-primary text-white flex items-center gap-2 px-6 py-2 rounded-full shadow-lg hover:shadow-primary/20 transition-all font-black text-sm"
-            >
-              <span className="text-lg">←</span>
-              Back
-            </button>
-          </div>
-
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-black mb-8 bg-linear-to-r from-secondary to-primary bg-clip-text text-transparent leading-tight pb-2 text-center">
             Pricing Plans
           </h1>
