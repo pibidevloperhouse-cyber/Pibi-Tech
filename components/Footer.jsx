@@ -20,13 +20,12 @@ export default function Footer() {
               <span className="hidden sm:inline">Pibi Tech</span>
             </div>
           </div>
-
           <div>
             <h4 className="text-white font-bold mb-4">Products</h4>
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/contact-us"
+                  href="/profit-engine"
                   className="text-slate-400 hover:text-primary transition"
                 >
                   Profit Engine
@@ -34,10 +33,26 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/contact-us"
+                  href="https://www.astrokids.ai/"
                   className="text-slate-400 hover:text-primary transition"
                 >
-                  Astro kIds
+                  Astro Kids
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/compliance-bot"
+                  className="text-slate-400 hover:text-primary transition"
+                >
+                  Compliance Guard
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/price-sense"
+                  className="text-slate-400 hover:text-primary transition"
+                >
+                  PriceSense
                 </Link>
               </li>
             </ul>

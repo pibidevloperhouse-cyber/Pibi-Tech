@@ -47,21 +47,21 @@ const AgentsDetails = () => {
       onClick: () => router.push("/ai-knowledge-base"),
       variant: "blue",
     },
-    {
-      id: 6,
-      number: "03",
-      title: "Data Engineering",
-      description:
-        "We architect scalable data pipelines and platforms that ensure reliable, high-quality data flows for analytics, AI, and business applications.",
-      tags: [
-        "Data Pipelines",
-        "ETL / ELT",
-        "Streaming Data",
-        "Data Warehousing",
-      ],
-      onClick: () => router.push("/contact-us"),
-      variant: "light",
-    },
+    // {
+    //   id: 6,
+    //   number: "03",
+    //   title: "Data Engineering",
+    //   description:
+    //     "We architect scalable data pipelines and platforms that ensure reliable, high-quality data flows for analytics, AI, and business applications.",
+    //   tags: [
+    //     "Data Pipelines",
+    //     "ETL / ELT",
+    //     "Streaming Data",
+    //     "Data Warehousing",
+    //   ],
+    //   onClick: () => router.push("/contact-us"),
+    //   variant: "light",
+    // },
     {
       id: 1,
       number: "04",

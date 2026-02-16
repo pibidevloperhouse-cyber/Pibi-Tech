@@ -62,16 +62,16 @@ export function MainPage() {
       link: "/ai-knowledge-base",
       hashtag: "#KnowledgeWithAI",
     },
-    {
-      key: "data",
-      eyebrow: "Data Engineering",
-      title: "Engineering Data Foundations for AI and Growth",
-      subtitle:
-        "Architect scalable, reliable data pipelines that power analytics, AI initiatives, and mission-critical business applications.",
-      cta: "Modernize Data Platforms",
-      link: "/contact-us",
-      hashtag: "#DataBuiltRight",
-    },
+    // {
+    //   key: "data",
+    //   eyebrow: "Data Engineering",
+    //   title: "Engineering Data Foundations for AI and Growth",
+    //   subtitle:
+    //     "Architect scalable, reliable data pipelines that power analytics, AI initiatives, and mission-critical business applications.",
+    //   cta: "Modernize Data Platforms",
+    //   link: "/contact-us",
+    //   hashtag: "#DataBuiltRight",
+    // },
   ];
 
   useEffect(() => {
