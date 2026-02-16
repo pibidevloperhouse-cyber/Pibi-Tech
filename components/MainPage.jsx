@@ -186,7 +186,7 @@ export function MainPage() {
 
             <div className="mt-10 flex justify-center">
               <button
-                onClick={() => router.push("/contact-us")}
+                onClick={() => router.push("/agentic-process-automation")}
                 className="group inline-flex items-center gap-3 cursor-pointer rounded-lg bg-[#1f6fb2] px-6 py-3 text-md md:text-xl font-semibold text-white transition hover:bg-[#1f6fb2]/90"
               >
                 Adopt AI and Automation Now
