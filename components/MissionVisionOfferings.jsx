@@ -1,11 +1,13 @@
 "use client";
 
 import {
+  AppWindowMac,
   ArrowRight,
-  Brain,
-  BriefcaseBusiness,
-  CalendarSync,
-  FolderLock,
+  BotMessageSquare,
+  Cloud,
+  PanelsTopLeft,
+  Rocket,
+  TrendingUp,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -23,7 +25,7 @@ const offerings = [
     description:
       "An AI-powered growth driven website that works as a 24/7 sales and qualification system that attracts, qualifies, and converts visitors into revenue opportunities  not just a digital brochure.",
     link: "enterprise-website-development",
-    icon: Brain,
+    icon: PanelsTopLeft,
     color: "bg-[#4FC6E0]",
   },
   {
@@ -32,7 +34,7 @@ const offerings = [
     description:
       "A full-stack product engineering partnership to take your idea from concept to design, build, and scale products that are reliable, adaptable, and market fit.",
     link: "product-development",
-    icon: FolderLock,
+    icon: Rocket,
     color: "bg-[#0066A4]",
   },
   {
@@ -41,7 +43,7 @@ const offerings = [
     description:
       "Autonomous AI agents that replace repetitive work, accelerate decisions, and reduce operational costs  and drive measurable efficiency gains.",
     link: "agentic-process-automation",
-    icon: BriefcaseBusiness,
+    icon: BotMessageSquare,
     color: "bg-[#02B2E3]",
   },
   {
@@ -50,7 +52,7 @@ const offerings = [
     description:
       "Robust digital applications engineered for performance, security, and continuous business growth.",
     link: "application-development",
-    icon: CalendarSync,
+    icon: AppWindowMac,
     color: "bg-[#484393]",
   },
   {
@@ -59,7 +61,7 @@ const offerings = [
     description:
       "A resilient, secure cloud foundation that supports business continuity, scale, and operational efficiency.",
     link: "cloud-ops",
-    icon: Brain,
+    icon: Cloud,
     color: "bg-[#4FC6E0]",
   },
   {
@@ -68,7 +70,7 @@ const offerings = [
     description:
       "A technology-driven growth system that consistently generates qualified leads and converts them into predictable revenue.",
     link: "growth-marketing",
-    icon: FolderLock,
+    icon: TrendingUp,
     color: "bg-[#0066A4]",
   },
 ];

@@ -92,7 +92,7 @@ const AgentsDetails = () => {
         "Context Engineering",
         "LLMOps",
       ],
-      onClick: () => router.push("/agentic-ai"),
+      onClick: () => router.push("/contact-us"),
       variant: "light",
     },
     {
@@ -102,7 +102,7 @@ const AgentsDetails = () => {
       description:
         "We build infrastructure that thinks, combining agentic AI and cloud ops into systems that adapt, learn, and scale.",
       tags: ["Infrastructure as a code", "Monitoring", "Observability", "SLO"],
-      onClick: () => router.push("/intelligent-infrastructure"),
+      onClick: () => router.push("/contact-us"),
       variant: "blue",
     },
     {
