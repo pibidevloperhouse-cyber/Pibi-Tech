@@ -21,13 +21,19 @@ const ComplianceBot = () => {
           </p>
 
           <h1 className="text-3xl text-black md:text-5xl max-w-4xl font-semibold leading-tight">
-            Verification-First Compliance Intelligence — Validate Before You
-            File
+            Verification-First Compliance Intelligence, Validate Before You File
           </h1>
 
           <p className="mt-6 max-w-xl text-xl text-black/70">
             Filing tools submit data. Compliance Bot protects it.
           </p>
+
+          <p className="mt-6 max-w-xl text-xl text-black/70">
+            Before any tax or GST return is filed, Compliance Bot verifies
+            accuracy, detects risks, and highlights compliance gaps — ensuring
+            every submission is review-ready and penalty-safe.
+          </p>
+
           <div className="mt-10 flex items-center gap-6">
             <button
               onClick={() => router.push("/contact-us")}
@@ -39,12 +45,6 @@ const ComplianceBot = () => {
               </span>
             </button>
           </div>
-
-          <p className="mt-6 max-w-xl text-xl text-black/70">
-            Before any tax or GST return is filed, Compliance Bot verifies
-            accuracy, detects risks, and highlights compliance gaps — ensuring
-            every submission is review-ready and penalty-safe.
-          </p>
         </div>
       </div>
       <FirstSection />

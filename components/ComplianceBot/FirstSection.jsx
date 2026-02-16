@@ -8,7 +8,7 @@ const FirstSection = () => {
       value: "70%",
       title: "Fewer Filing Errors",
       description:
-        "AI validation flags inconsistencies, omissions, and high-risk entries before submission — avoiding rework and notices.",
+        "AI validation flags inconsistencies, omissions, and high-risk entries before submission, avoiding rework and notices.",
       icon: Target,
     },
     {

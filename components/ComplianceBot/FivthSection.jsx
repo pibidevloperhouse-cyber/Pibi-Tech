@@ -53,8 +53,7 @@ const FivthSection = () => {
           <p className="text-slate-700 text-xl leading-relaxed">
             Compliance Bot prevents problems instead of reacting to them. Every
             filing passes through layered validation, deadline awareness, and
-            risk intelligence — ensuring compliance confidence before
-            submission.
+            risk intelligence, ensuring compliance confidence before submission.
           </p>
         </div>
 

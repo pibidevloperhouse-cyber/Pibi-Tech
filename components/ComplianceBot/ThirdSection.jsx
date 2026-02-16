@@ -2,41 +2,6 @@
 
 import { Radar, BarChart3, Cpu, Percent, ShieldCheck } from "lucide-react";
 
-// Intelligent Compliance Monitoring
-// Real-time GST status and due-date tracking
-
-// Automated WhatsApp reminders
-
-// Escalation alerts before penalty windows
-
-// Guided Tax Workflow
-// Question-based filing flow
-
-// Complex structures simplified
-
-// Automatic mapping to tax formats
-
-// Secure Digital Filing
-// One-click electronic submission
-
-// Filing acknowledgment tracking
-
-// Encrypted record storage
-
-// AI Verification & Risk Detection
-// Pre-filing validation checks
-
-// Compliance risk scoring
-
-// Rule-aligned anomaly detection
-
-// Document Intelligence
-// Automated extraction from uploaded records
-
-// Cross-validation of entries
-
-// Early inconsistency detection
-
 const ThirdSection = () => {
   const modules = [
     {
@@ -92,7 +57,7 @@ const ThirdSection = () => {
         <div className="max-w-3xl mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
             <span className="bg-clip-text text-transparent bg-brand-gradient">
-              Core Capabilities — Built for Accuracy, Designed for Simplicity
+              Core Capabilities
             </span>
           </h2>
         </div>

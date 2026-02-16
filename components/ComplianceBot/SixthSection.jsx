@@ -2,43 +2,10 @@
 
 import { Search, Settings, RefreshCcw } from "lucide-react";
 
-// Phase 1 — Compliance Discovery
-// Business and obligation assessment
-
-// Workflow and risk review
-
-// Automation requirements mapping
-
-// Implementation roadmap creation
-
-// Phase 2 — Platform Configuration
-// Secure setup and permissions
-
-// Data and document integration
-
-// Validation engine configuration
-
-// Deadline alert activation
-
-// Pilot testing and verification
-
-// Phase 3 — Continuous Monitoring
-// Automated deadline tracking
-
-// Pre-filing verification cycles
-
-// Risk alerts and anomaly reporting
-
-// Secure digital filing
-
-// Compliance dashboards and updates
-
-// This phased structure ensures adoption without disruption while strengthening compliance posture.
-
 const SixthSection = () => {
   const phases = [
     {
-      title: "Phase 1 — Compliance Discovery",
+      title: "Phase 1 - Compliance Discovery",
       subtitle: "Understand how compliance impacts your operations.",
       icon: Search,
       points: [
@@ -49,7 +16,7 @@ const SixthSection = () => {
       ],
     },
     {
-      title: "Phase 2 — Platform Configuration",
+      title: "Phase 2 - Platform Configuration",
       subtitle: "Securely set up and customize Compliance Bot.",
       icon: Settings,
       points: [
@@ -61,7 +28,7 @@ const SixthSection = () => {
       ],
     },
     {
-      title: "Phase 3 — Continuous Monitoring",
+      title: "Phase 3 - Continuous Monitoring",
       subtitle: "Ongoing oversight and compliance assurance.",
       icon: RefreshCcw,
       points: [

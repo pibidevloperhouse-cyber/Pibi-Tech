@@ -62,6 +62,10 @@ const page = () => {
             protecting profitability.
           </p>
 
+          <p className="mt-4 text-lg text-slate-100 max-w-3xl mx-auto">
+            Every price becomes intentional. Every decision becomes measurable.
+          </p>
+
           <div className="mt-8 flex flex-col md:flex-row justify-center gap-6">
             <Link
               href="/contact-us"
@@ -76,9 +80,6 @@ const page = () => {
               Talk to a Pricing Specialist
             </Link>
           </div>
-          <p className="mt-4 text-lg text-slate-100 max-w-3xl mx-auto">
-            Every price becomes intentional. Every decision becomes measurable.
-          </p>
         </div>
       </section>
     </div>
