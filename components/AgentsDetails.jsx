@@ -63,23 +63,8 @@ const AgentsDetails = () => {
       variant: "light",
     },
     {
-      id: 7,
-      number: "04",
-      title: "Intelligent Web Engine",
-      description:
-        "We build an AI-powered web intelligence layer that understands visitor intent, personalizes engagement in real time, and converts traffic into qualified pipeline and revenue outcomes.",
-      tags: [
-        "Intent Intelligence",
-        "Behavioral Context",
-        "Dynamic Personalization",
-        "Conversion Skills",
-      ],
-      onClick: () => router.push("/contact-us"),
-      variant: "blue",
-    },
-    {
       id: 1,
-      number: "05",
+      number: "04",
       title: "Agentic AI",
       description:
         "We help you build and modernize your AI Stack so AI agents can plug in seamlessly and deliver real business impact.",
@@ -97,23 +82,13 @@ const AgentsDetails = () => {
     },
     {
       id: 2,
-      number: "06",
+      number: "05",
       title: "Intelligent Infrastructure",
       description:
         "We build infrastructure that thinks, combining agentic AI and cloud ops into systems that adapt, learn, and scale.",
       tags: ["Infrastructure as a code", "Monitoring", "Observability", "SLO"],
       onClick: () => router.push("/contact-us"),
       variant: "blue",
-    },
-    {
-      id: 3,
-      number: "07",
-      title: "Cloud Ops",
-      description:
-        "We design, and operate AWS, Azure, and GCP so your teams can ship faster with well-architected cloud foundations.",
-      tags: ["Cloud Native", "DevOps", "Kubernetes"],
-      onClick: () => router.push("/cloud-ops"),
-      variant: "light",
     },
   ];
 
