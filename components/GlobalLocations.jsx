@@ -4,17 +4,17 @@ const globalOffices = [
   {
     country: "USA",
     icon: "/usa.png",
-    address: ["Texas 78660"],
+    address: ["Pflugerville, Travis, Texas 78660"],
   },
   {
     country: "Canada",
     icon: "/canada.png",
-    address: ["Ontario L1N 4W2"],
+    address: ["Whitby, Durham Region, Ontario L1N 4W2"],
   },
   {
     country: "Germany",
     icon: "/germany.png",
-    address: ["Königsbergerstr. 19, 41812"],
+    address: ["Erkelenz, Königsbergerstr. 19, 41812"],
   },
   {
     country: "United Arab Emirates",

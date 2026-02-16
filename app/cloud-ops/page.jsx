@@ -3,6 +3,7 @@
 import CloudOpsServices from "@/components/CloudOpsServices";
 import CloudOpsSteps from "@/components/CloudOpsSteps";
 import CloudOpsTechStacks from "@/components/CloudOpsTechStacks";
+import CTASection from "@/components/CTASection";
 import { ArrowRight, Target, TrendingUp, Undo2 } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -116,28 +117,11 @@ const CloudOps = () => {
       <CloudOpsServices />
       <CloudOpsTechStacks />
       <CloudOpsSteps />
-      <section className="bg-linear-to-b from-slate-700 to-slate-900 py-16 px-6">
-        <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white">
-            Infrastructure That Grows With Your Business
-          </h2>
-
-          <p className="mt-4 text-lg text-slate-100 max-w-3xl mx-auto">
-            We engineer cloud and infrastructure ecosystems that stay secure,
-            automated, and resilient — so your teams focus on innovation, not
-            firefighting.
-          </p>
-
-          <div className="mt-8">
-            <Link
-              href="/contact-us"
-              className="inline-flex items-center justify-center w-max mx-auto gap-2 rounded-xl bg-white px-8 py-4 text-base font-semibold text-slate-900 transition-all duration-300 text-center hover:bg-slate-200 hover:scale-105"
-            >
-              Start Your Infrastructure Transformation
-            </Link>
-          </div>
-        </div>
-      </section>
+      <CTASection
+        title="Infrastructure That Grows With Your Business"
+        content="We engineer cloud and infrastructure ecosystems that stay secure, automated, and resilient — so your teams focus on innovation, not firefighting."
+        ctaText1="Start Your Infrastructure Journey"
+      />
     </div>
   );
 };

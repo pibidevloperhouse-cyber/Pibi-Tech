@@ -58,7 +58,11 @@ export default function HomePage() {
       <Specialist />
       <PerformanceGuarantee />
       <Roadmap />
-      <CTASection />
+      <CTASection
+        title="Planning your next product build?"
+        content="Align strategy, design, and engineering under one expert team."
+        ctaText1="Talk to Product Experts"
+      />
       <GlobalLocations />
       {/* <RecentEngagements /> */}
     </div>

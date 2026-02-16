@@ -6,6 +6,7 @@ import BusinessSolutions from "@/components/BusinessIntelligent/BusinessSolution
 import BusinessSteps from "@/components/BusinessIntelligent/BusinessSteps";
 import BusinessTechStack from "@/components/BusinessIntelligent/BusinessTechStack";
 import CloudOpsSteps from "@/components/CloudOpsSteps";
+import CTASection from "@/components/CTASection";
 import { ArrowRight, Target, TrendingUp, Undo2 } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -148,33 +149,12 @@ const BusinessIntelligent = () => {
       </section>
       <BusinessSolutions />
       <BusinessSteps />
-      <section className="bg-linear-to-b from-slate-700 to-slate-900 py-16 px-6">
-        <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white">
-            Spot Opportunities Before Your Competitors Do
-          </h2>
-
-          <p className="mt-4 text-lg text-slate-100 max-w-3xl mx-auto">
-            Build an analytics ecosystem that empowers faster, smarter business
-            decisions.
-          </p>
-
-          <div className="mt-8 flex flex-col md:flex-row justify-center gap-6">
-            <Link
-              href="/contact-us"
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-8 py-4 text-base font-semibold text-slate-900 transition-all duration-300 text-center w-full hover:bg-slate-200 hover:scale-105"
-            >
-              Gain Your Data Advantage
-            </Link>
-            <Link
-              href="/contact-us"
-              className="inline-flex text-center items-center justify-center gap-2 rounded-xl text-white border border-white px-8 py-4 text-base font-semibold transition-all duration-300 w-full hover:bg-white hover:text-slate-900 hover:scale-105"
-            >
-              Schedule a BI Consultation
-            </Link>
-          </div>
-        </div>
-      </section>
+      <CTASection
+        title="Spot Opportunities Before Your Competitors Do"
+        content="Build an analytics ecosystem that empowers faster, smarter business decisions."
+        ctaText1="Gain Your Data Advantage"
+        ctaText2="Schedule a BI Consultation"
+      />
     </div>
   );
 };

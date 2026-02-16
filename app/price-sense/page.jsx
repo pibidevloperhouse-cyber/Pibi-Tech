@@ -1,5 +1,6 @@
 "use client";
 
+import CTASection from "@/components/CTASection";
 import ImplementationProcessSection from "@/components/PriceSense/ImplementationProcessSection";
 import OurAdvantageSection from "@/components/PriceSense/OurAdvantageSection";
 import PriceSenseIntroSection from "@/components/PriceSense/PriceSenseIntroSection";
@@ -50,6 +51,13 @@ const page = () => {
       <OurAdvantageSection />
       <ImplementationProcessSection />
       <WhoPriceSenseIsFor />
+      <CTASection
+        title="Turn Pricing Into a Competitive Advantage"
+        content="PriceSense transforms pricing from a reactive task into a structured revenue engine helping organizations close deals faster while protecting profitability."
+        content2="Every price becomes intentional. Every decision becomes measurable."
+        ctaText1="Request a Demo"
+        ctaText2="Talk to a Pricing Specialist"
+      />
       <section className="bg-linear-to-b from-slate-700 to-slate-900 py-16 px-6">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white">

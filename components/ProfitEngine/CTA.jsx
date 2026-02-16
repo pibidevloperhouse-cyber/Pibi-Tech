@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function CTA({ fadeUp }) {
   return (
@@ -24,12 +25,12 @@ export default function CTA({ fadeUp }) {
             journey. Join thousands of teams already scaling with Pi Bi.
           </p>
           <div className="mt-8 relative z-10">
-            <a
-              href="/form"
+            <Link
+              href="/contact-us"
               className="inline-flex items-center gap-3 rounded-full bg-linear-to-r from-secondary to-primary text-white border-2 border-white/20 px-8 py-3.5 font-bold shadow-2xl transform-gpu hover:scale-110 transition-all"
             >
               Request demo ↗
-            </a>
+            </Link>
           </div>
         </div>
       </div>

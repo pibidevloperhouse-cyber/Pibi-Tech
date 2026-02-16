@@ -3,6 +3,7 @@
 import AgenticAIServices from "@/components/AgenticAIServices";
 import AgenticAISteps from "@/components/AgenticAISteps";
 import AgenticAITypes from "@/components/AgenticAITypes";
+import CTASection from "@/components/CTASection";
 import GrowthServices from "@/components/GrowthServices";
 import IndustriesAgenticAI from "@/components/IndustriesAgenticAI";
 import TechnologyStack1 from "@/components/TechnologyStack1";
@@ -103,30 +104,12 @@ const AgenticProcessAutomation = () => {
       <WhyMarGrowth />
       <GrowthServices />
       <UnlockGrowth />
-      <section className="bg-linear-to-b from-slate-700 to-slate-900 py-16 px-6">
-        <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white">
-            Kick Off Your MarTech & Automation Journey Today
-          </h2>
-
-          <p className="mt-4 text-lg text-slate-100 max-w-3xl mx-auto">
-            Transform your marketing into a connected, intelligent growth
-            engine.
-          </p>
-
-          <div className="mt-8 flex flex-col md:flex-row justify-center gap-6">
-            <Link
-              href="/contact-us"
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-8 py-4 text-base font-semibold text-slate-900 transition-all duration-300 text-center w-full hover:bg-slate-200 hover:scale-105"
-            >
-              Let’s Work Together
-            </Link>
-          </div>
-          <p className="mt-4 text-lg text-center text-slate-100 max-w-3xl mx-auto">
-            Build smarter campaigns. Automate revenue. Scale with confidence.
-          </p>
-        </div>
-      </section>
+      <CTASection
+        title="Kick Off Your MarTech & Automation Journey Today"
+        content="Transform your marketing into a connected, intelligent growth engine."
+        content2="Build smarter campaigns. Automate revenue. Scale with confidence."
+        ctaText1="Let’s Work Together"
+      />
     </div>
   );
 };

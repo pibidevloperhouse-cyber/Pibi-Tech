@@ -13,6 +13,7 @@ import { useRouter } from "next/navigation";
 import AIBusinessOutcomesSection from "@/components/AIKnowlegdeBase/AIBusinessOutcomesSection";
 import AIWhyChooseSection from "@/components/AIKnowlegdeBase/AIWhyChooseSection";
 import Link from "next/link";
+import CTASection from "@/components/CTASection";
 
 const AIKnowledgeBase = () => {
   const router = useRouter();
@@ -94,34 +95,12 @@ const AIKnowledgeBase = () => {
       <AIImplementationSequenceSection />
       <AIBusinessOutcomesSection />
       <AIWhyChooseSection />
-      <section className="bg-linear-to-b from-slate-700 to-slate-900 py-16 px-6">
-        <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white">
-            Reliable answers shouldn’t depend on who you ask or where you look.
-          </h2>
-
-          <p className="mt-4 text-lg text-slate-100 max-w-3xl mx-auto">
-            An AI knowledge base ensures verified intelligence flows directly
-            into everyday workflows — enabling faster decisions and smoother
-            operations.
-          </p>
-
-          <div className="mt-8 flex flex-col md:flex-row justify-center gap-6">
-            <Link
-              href="/contact-us"
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-8 py-4 text-base font-semibold text-slate-900 transition-all duration-300 text-center w-full hover:bg-slate-200 hover:scale-105"
-            >
-              Build Your AI Knowledge Base
-            </Link>
-            <Link
-              href="/contact-us"
-              className="inline-flex text-center items-center justify-center gap-2 rounded-xl text-white border border-white px-8 py-4 text-base font-semibold transition-all duration-300 w-full hover:bg-white hover:text-slate-900 hover:scale-105"
-            >
-              Book a Solution Consultation
-            </Link>
-          </div>
-        </div>
-      </section>
+      <CTASection
+        title="Reliable answers shouldn’t depend on who you ask or where you look."
+        content="An AI knowledge base ensures verified intelligence flows directly into everyday workflows, enabling faster decisions and smoother operations."
+        ctaText1="Build Your AI Knowledge Base"
+        ctaText2="Book a Solution Consultation"
+      />
     </div>
   );
 };

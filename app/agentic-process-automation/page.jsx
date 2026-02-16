@@ -3,6 +3,7 @@
 import AgenticAIServices from "@/components/AgenticAIServices";
 import AgenticAISteps from "@/components/AgenticAISteps";
 import AgenticAITypes from "@/components/AgenticAITypes";
+import CTASection from "@/components/CTASection";
 import IndustriesAgenticAI from "@/components/IndustriesAgenticAI";
 import TechnologyStack1 from "@/components/TechnologyStack1";
 import WhyAgenticAi from "@/components/WhyAgenticAi";
@@ -154,33 +155,13 @@ const AgenticProcessAutomation = () => {
       <IndustriesAgenticAI />
       <AgenticAITypes />
       <WhyAgenticAi />
-      <section className="bg-linear-to-b from-slate-700 to-slate-900 py-16 px-6">
-        <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white">
-            How Autonomous AI Agents Can Drive Real Results in Your Industry
-          </h2>
 
-          <p className="mt-4 text-lg text-slate-100 max-w-3xl mx-auto">
-            Reduce operational friction, Accelerate execution, Make smarter
-            decisions continuously.
-          </p>
-
-          <div className="mt-8 flex flex-col md:flex-row justify-center gap-6">
-            <Link
-              href="/contact-us"
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-8 py-4 text-base font-semibold text-slate-900 transition-all duration-300 text-center w-full hover:bg-slate-200 hover:scale-105"
-            >
-              Book Your Free Agentic AI Strategy Session
-            </Link>
-            <Link
-              href="/contact-us"
-              className="inline-flex text-center items-center justify-center gap-2 rounded-xl text-white border border-white px-8 py-4 text-base font-semibold transition-all duration-300 w-full hover:bg-white hover:text-slate-900 hover:scale-105"
-            >
-              Talk to an Agentic AI Expert
-            </Link>
-          </div>
-        </div>
-      </section>
+      <CTASection
+        title="How Autonomous AI Agents Can Drive Real Results in Your Industry"
+        content="Reduce operational friction, Accelerate execution, Make smarter decisions continuously."
+        ctaText1="Book Your Free Agentic AI Strategy Session"
+        ctaText2="Talk to an Agentic AI Expert"
+      />
     </div>
   );
 };
