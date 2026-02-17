@@ -30,7 +30,7 @@ export default function CTASection({
           <div className="mt-8 flex flex-col md:flex-row justify-center gap-6">
             <Link
               href={`/${ctaLink1}`}
-              className="inline-flex items-center gap-3 rounded-full bg-linear-to-r from-secondary to-primary text-white border-2 border-white/20 px-8 py-3.5 font-bold shadow-2xl transform-gpu hover:scale-110 transition-all"
+              className="inline-flex items-center justify-center gap-3 rounded-full bg-linear-to-r from-secondary to-primary text-white border-2 border-white/20 px-8 py-3.5 font-bold shadow-2xl transform-gpu hover:scale-110 transition-all"
             >
               {ctaText1}
             </Link>

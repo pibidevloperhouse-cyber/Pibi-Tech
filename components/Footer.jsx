@@ -63,7 +63,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/contact-us"
+                  href="/agentic-ai"
                   className="text-slate-400 hover:text-primary transition"
                 >
                   Agentic AI
@@ -79,7 +79,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/contact-us"
+                  href="/ai-knowledge-base"
                   className="text-slate-400 hover:text-primary transition"
                 >
                   AI Knowledge Base

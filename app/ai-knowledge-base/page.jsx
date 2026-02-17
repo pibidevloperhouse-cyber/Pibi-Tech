@@ -12,7 +12,6 @@ import { ArrowRight } from "lucide-react";
 import { useRouter } from "next/navigation";
 import AIBusinessOutcomesSection from "@/components/AIKnowlegdeBase/AIBusinessOutcomesSection";
 import AIWhyChooseSection from "@/components/AIKnowlegdeBase/AIWhyChooseSection";
-import Link from "next/link";
 import CTASection from "@/components/CTASection";
 
 const AIKnowledgeBase = () => {

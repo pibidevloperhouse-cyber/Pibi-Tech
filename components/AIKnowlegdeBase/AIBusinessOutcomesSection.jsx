@@ -1,14 +1,6 @@
 "use client";
 
-import {
-  Zap,
-  Repeat,
-  ShieldCheck,
-  TrendingUp,
-  Users,
-  Rocket,
-  CheckCircle,
-} from "lucide-react";
+import { CheckCircle } from "lucide-react";
 
 const outcomes = [
   {
