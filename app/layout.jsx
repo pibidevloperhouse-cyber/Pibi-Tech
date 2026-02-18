@@ -2,6 +2,7 @@ import { Geist, Figtree } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import GlobalLocations from "@/components/GlobalLocations";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
         <main>
           <Navbar />
           {children}
+          <GlobalLocations />
           <Footer />
         </main>
       </body>

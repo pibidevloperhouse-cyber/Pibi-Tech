@@ -462,7 +462,6 @@ const AboutUs = () => {
         </div>
       </section>
       <RecentEngagements />
-      <GlobalLocations />
     </div>
   );
 };

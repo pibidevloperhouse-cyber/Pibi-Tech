@@ -63,7 +63,6 @@ export default function HomePage() {
         content="Align strategy, design, and engineering under one expert team."
         ctaText1="Talk to Product Experts"
       />
-      <GlobalLocations />
       {/* <RecentEngagements /> */}
     </div>
   );
