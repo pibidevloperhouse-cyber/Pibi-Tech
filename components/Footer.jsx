@@ -87,26 +87,10 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/contact-us"
+                  href="/intelligent-infrastructure"
                   className="text-slate-400 hover:text-primary transition"
                 >
-                  Intelligent Web Engine
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact-us"
-                  className="text-slate-400 hover:text-primary transition"
-                >
-                  Data Engineering
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/cloud-ops"
-                  className="text-slate-400 hover:text-primary transition"
-                >
-                  Cloud Ops
+                  Intelligent Infrastructure
                 </Link>
               </li>
             </ul>

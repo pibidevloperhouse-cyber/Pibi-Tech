@@ -64,7 +64,7 @@ const AgentsDetails = () => {
     // },
     {
       id: 1,
-      number: "04",
+      number: "03",
       title: "Agentic AI",
       description:
         "We help you build and modernize your AI Stack so AI agents can plug in seamlessly and deliver real business impact.",
@@ -82,7 +82,7 @@ const AgentsDetails = () => {
     },
     {
       id: 2,
-      number: "05",
+      number: "04",
       title: "Intelligent Infrastructure",
       description:
         "We build infrastructure that thinks, combining agentic AI and cloud ops into systems that adapt, learn, and scale.",
