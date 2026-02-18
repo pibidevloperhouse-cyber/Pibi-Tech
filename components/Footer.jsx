@@ -71,7 +71,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/business-intelligent"
+                  href="/bussiness-intelligent"
                   className="text-slate-400 hover:text-primary transition"
                 >
                   Business Intelligence
