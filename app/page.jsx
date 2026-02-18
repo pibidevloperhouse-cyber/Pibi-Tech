@@ -42,7 +42,7 @@ export default function HomePage() {
             </p>
           </div>
           <button
-            className={`flex items-center justify-center gap-3 rounded-full bg-linear-to-r from-secondary to-primary text-white border-2 border-white/20 px-8 py-3.5 font-bold shadow-2xl transform-gpu hover:scale-110 transition-all`}
+            className={`flex items-center mx-auto justify-center gap-3 rounded-full bg-linear-to-r from-secondary to-primary text-white border-2 border-white/20 px-8 py-3.5 font-bold shadow-2xl transform-gpu hover:scale-110 transition-all`}
             onClick={() => router.push("/about-us")}
           >
             Read Our Story
