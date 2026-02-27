@@ -67,7 +67,7 @@ const CloudOps = () => {
             <div className="mt-10 flex items-center gap-6">
               <button
                 onClick={() => router.push("/contact-us")}
-                className="group inline-flex items-center max-sm:mx-auto gap-3 rounded-lg bg-[#1f6fb2] px-6 py-3 text-lg font-semibold text-white transition hover:bg-[#1f6fb2]/90"
+                className="group inline-flex items-center max-sm:mx-auto gap-3 rounded-lg bg-linear-to-r from-[#2563eb] to-[#059669] px-6 py-3 text-lg font-semibold text-white transition"
               >
                 {" "}
                 Build Your Agentic AI System

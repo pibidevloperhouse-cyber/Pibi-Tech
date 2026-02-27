@@ -153,7 +153,7 @@ const EnterpriseWebsiteDevelopment = () => {
           <div className="mt-10 flex justify-center items-center gap-6 flex-col md:flex-row">
             <button
               onClick={() => router.push("/contact-us")}
-              className="group inline-flex items-center gap-3 cursor-pointer rounded-lg bg-[#1f6fb2] px-6 py-3 text-md md:text-xl font-semibold text-white transition hover:bg-[#1f6fb2]/90"
+              className="group inline-flex items-center max-sm:mx-auto gap-3 rounded-lg bg-linear-to-r from-[#2563eb] to-[#059669] px-6 py-3 text-lg font-semibold text-white transition"
             >
               Get a Migration Quote
               <span className="flex h-9 w-9 items-center justify-center rounded-md bg-white text-[#1f6fb2] transition group-hover:translate-x-1">
