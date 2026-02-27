@@ -43,7 +43,7 @@ const indiaOffices = [
 
 export default function GlobalLocations() {
   return (
-    <section className="bg-[#2f4576] py-12">
+    <section className="bg-linear-to-br from-[#1e293b] to-[#2563eb] py-12">
       <div className="mx-auto max-w-7xl px-6 space-y-14">
         <div>
           <h2 className="mb-8 text-3xl font-bold text-white text-center">

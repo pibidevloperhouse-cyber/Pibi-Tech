@@ -132,7 +132,7 @@ export function MainPage() {
           <div className="mx-auto max-w-7xl text-center md:text-start px-6 pt-24">
             <div className="md:col-span-3">
               {slides[1].eyebrow && (
-                <p className="mb-4 text-[#1f6fb2] text-2xl font-medium uppercase tracking-wide">
+                <p className="mb-4 bg-linear-to-br from-[#2563eb] to-[#059669] bg-clip-text text-transparent text-2xl font-medium uppercase tracking-wide">
                   {slides[1].eyebrow}
                 </p>
               )}
@@ -143,7 +143,7 @@ export function MainPage() {
               <div className="mt-10 flex items-center gap-6">
                 <button
                   onClick={() => router.push(slides[1].link)}
-                  className="group inline-flex items-center max-sm:mx-auto gap-3 rounded-lg bg-[#1f6fb2] px-6 py-3 text-lg font-semibold text-white transition hover:bg-[#1f6fb2]/90"
+                  className="group inline-flex items-center max-sm:mx-auto gap-3 rounded-lg bg-linear-to-r from-[#2563eb] to-[#059669] px-6 py-3 text-lg font-semibold text-white transition"
                 >
                   {slides[1].cta}
                   <span className="flex h-9 w-9 items-center justify-center rounded-md bg-white text-[#1f6fb2] transition group-hover:translate-x-1">
@@ -187,7 +187,7 @@ export function MainPage() {
             <div className="mt-10 flex justify-center">
               <button
                 onClick={() => router.push("/agentic-process-automation")}
-                className="group inline-flex items-center gap-3 cursor-pointer rounded-lg bg-[#1f6fb2] px-6 py-3 text-md md:text-xl font-semibold text-white transition hover:bg-[#1f6fb2]/90"
+                className="group inline-flex items-center gap-3 cursor-pointer rounded-lg bg-linear-to-r from-[#2563eb] to-[#059669] px-6 py-3 text-md md:text-xl font-semibold text-white transition"
               >
                 Adopt AI and Automation Now
                 <span className="flex h-9 w-9 items-center justify-center rounded-md bg-white text-[#1f6fb2] transition group-hover:translate-x-1">
@@ -208,7 +208,7 @@ export function MainPage() {
             <div className="mx-auto max-w-7xl text-center md:text-start px-6 pt-24">
               <div className="md:col-span-3">
                 {slide.eyebrow && (
-                  <p className="mb-4 text-[#1f6fb2] text-2xl font-medium uppercase tracking-wide">
+                  <p className="mb-4 bg-clip-text text-transparent bg-linear-to-br from-[#2563eb] to-[#059669] text-2xl font-medium uppercase tracking-wide">
                     {slide.eyebrow}
                   </p>
                 )}
@@ -219,7 +219,7 @@ export function MainPage() {
                 <div className="mt-10 flex items-center gap-6">
                   <button
                     onClick={() => router.push(slide.link)}
-                    className="group inline-flex items-center max-sm:mx-auto gap-3 rounded-lg bg-[#1f6fb2] px-6 py-3 text-lg font-semibold text-white transition hover:bg-[#1f6fb2]/90"
+                    className="group inline-flex items-center max-sm:mx-auto gap-3 rounded-lg bg-linear-to-r from-[#2563eb] to-[#059669] px-6 py-3 text-lg font-semibold text-white transition"
                   >
                     {slide.cta}
                     <span className="flex h-9 w-9 items-center justify-center rounded-md bg-white text-[#1f6fb2] transition group-hover:translate-x-1">
