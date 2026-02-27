@@ -37,7 +37,7 @@ export function MainPage() {
       eyebrow: "Enterprise Website Development",
       title: "Web Experiences Powered by Intelligent Agents",
       subtitle:
-        "Build agent-driven websites that understand intent, adapt in real time, automate interactions, and continuously optimize engagement and conversions.",
+        "Build Agent-driven websites that understand intent, adapt in real time, automate interactions, and continuously optimize engagement and conversions.",
       cta: "Build Smarter Websites",
       link: "/enterprise-website-development",
       hashtag: "#EnterpriseWeb",
