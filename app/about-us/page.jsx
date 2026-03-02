@@ -216,7 +216,7 @@ const AboutUs = () => {
                 sustainable growth.
               </p>
 
-              <button className="mt-10 inline-flex items-center gap-2 rounded-full bg-blue-600 px-8 py-3 text-white text-base font-medium hover:bg-blue-700 transition">
+              <button className="mt-10 inline-flex items-center gap-2 rounded-full bg-linear-to-r from-[#2563eb] to-[#059669] px-8 py-3 text-white text-base font-medium hover:bg-blue-700 transition">
                 Reach Us!
                 <ArrowRight className="h-5 w-5" />
               </button>

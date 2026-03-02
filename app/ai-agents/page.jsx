@@ -116,7 +116,7 @@ export default function Index() {
                 Talk with a leading expert to build the perfect Agentic AI
                 solution that reduces bottlenecks without adding headcount.
               </p>
-              <button className="bg-blue-400 text-white px-6 py-4 md:px-8 md:py-5 text-sm md:text-[17px] font-bold hover:bg-[#248BB3] transition-colors">
+              <button className="bg-linear-to-r from-[#2563eb] to-[#059669] text-white px-6 py-4 md:px-8 md:py-5 text-sm md:text-[17px] font-bold">
                 Book a Discovery Call
               </button>
             </div>
@@ -537,7 +537,7 @@ export default function Index() {
                 business transformation.
               </p>
             </div>
-            <button className="px-6 py-3 border border-slate-400 text-sm font-bold uppercase tracking-[1.4px] text-[#000052] hover:bg-slate-50 transition-colors">
+            <button className="px-6 py-3 text-sm font-bold uppercase tracking-[1.4px] bg-linear-to-r from-[#2563eb] to-[#059669] text-white">
               View All Articles
             </button>
           </div>
@@ -607,7 +607,7 @@ export default function Index() {
             </p>
           </div>
           <div className="flex justify-center">
-            <button className="px-10 py-4 bg-orange-400 text-[#000052] text-sm font-bold uppercase tracking-[1.4px] hover:bg-[#008080] transition-colors">
+            <button className="px-10 py-4 bg-linear-to-r from-[#2563eb] to-[#059669] text-white text-sm font-bold uppercase tracking-[1.4px] hover:bg-[#008080] transition-colors">
               Get Started
             </button>
           </div>
@@ -664,7 +664,7 @@ export default function Index() {
                       />
                     </div>
                   </div>
-                  <button className="w-full bg-white text-[#000052] py-3 px-6 flex items-center justify-center gap-2 text-sm font-bold uppercase tracking-[1.4px] hover:bg-slate-100 transition-colors">
+                  <button className="w-full bg-linear-to-r from-[#2563eb] to-[#059669] py-3 px-6 flex items-center justify-center gap-2 text-sm font-bold uppercase tracking-[1.4px] text-white">
                     <Download className="w-4 h-4" />
                     Download Guide
                   </button>

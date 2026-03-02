@@ -136,7 +136,7 @@ export default function ProvenMethodologyRoadmap() {
         </div>
 
         <div className="mt-12 text-center">
-          <button className="inline-flex items-center gap-3 rounded-lg bg-[#1f6fb2] px-8 py-4 text-lg font-semibold text-white transition hover:bg-[#1f6fb2]/90">
+          <button className="inline-flex items-center gap-3 rounded-lg bg-linear-to-r from-[#2563eb] to-[#059669] px-8 py-4 text-lg font-semibold text-white">
             Start Your Product Journey →
           </button>
         </div>

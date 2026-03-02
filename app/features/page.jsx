@@ -40,7 +40,7 @@ export default function Index() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button className="w-full sm:w-auto bg-[#248BB3] hover:bg-[#248BB3]/90 text-white font-medium px-8 py-3 rounded-full flex items-center justify-center gap-3 transition-all shadow-lg shadow-[#248BB3]/25 group">
+            <button className="w-full sm:w-auto bg-linear-to-r from-[#2563eb] to-[#059669] text-white font-medium px-8 py-3 rounded-full flex items-center justify-center gap-3 transition-all shadow-lg shadow-[#248BB3]/25 group">
               Start Your Content Autopilot
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>

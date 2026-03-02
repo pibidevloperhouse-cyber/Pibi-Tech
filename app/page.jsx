@@ -7,7 +7,6 @@ import PerformanceGuarantee from "@/components/PerformanceGuarantee";
 import Roadmap from "@/components/RoadMap";
 import { MainPage } from "@/components/MainPage";
 import AgentsDetails from "@/components/AgentsDetails";
-import GlobalLocations from "@/components/GlobalLocations";
 import { useRouter } from "next/navigation";
 import { ArrowRight } from "lucide-react";
 import CTASection from "@/components/CTASection";
@@ -42,7 +41,7 @@ export default function HomePage() {
             </p>
           </div>
           <button
-            className={`flex items-center mx-auto justify-center gap-3 rounded-full bg-linear-to-r from-secondary to-primary text-white border-2 border-white/20 px-8 py-3.5 font-bold shadow-2xl transform-gpu hover:scale-110 transition-all`}
+            className={`flex items-center mx-auto justify-center gap-3 rounded-full bg-linear-to-r from-[#3b82f6] to-[#10b981]  text-white border-2 border-white/20 px-8 py-3.5 font-bold shadow-2xl transform-gpu hover:scale-110 transition-all`}
             onClick={() => router.push("/about-us")}
           >
             Read Our Story

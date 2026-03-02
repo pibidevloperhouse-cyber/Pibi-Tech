@@ -40,7 +40,7 @@ export default function Index() {
           <h1 className="text-white text-4xl sm:text-5xl lg:text-[36px] font-semibold leading-tight tracking-tight mb-8 max-w-3xl">
             Pibi Tech AI-Powered Month-End Close Assistant
           </h1>
-          <button className="bg-white text-[#248BB3] hover:bg-gray-100 font-semibold px-4 py-3 h-auto text-[15px] tracking-wide">
+          <button className="bg-white bg-linear-to-r from-[#2563eb] to-[#059669] text-white font-semibold px-4 py-3 h-auto text-[15px] tracking-wide">
             Book a Demo
           </button>
         </div>

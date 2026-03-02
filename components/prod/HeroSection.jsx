@@ -9,7 +9,7 @@ export function HeroSection() {
           "url('https://api.builder.io/api/v1/image/assets/TEMP/c2e756fe79a5a3776116393031b1eef8ecacbbd5?width=2850')",
       }}
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40" />
+      <div className="absolute inset-0 bg-linear-to-b from-black/60 to-black/40" />
       <div className="container relative z-10 mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex flex-col items-center justify-center text-center space-y-6">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white max-w-3xl leading-tight">
