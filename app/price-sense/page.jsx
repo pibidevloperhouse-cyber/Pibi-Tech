@@ -10,9 +10,11 @@ import ProfitPrecisionFramework from "@/components/PriceSense/ProfitPrecisionFra
 import TraditionalPricingChallenges from "@/components/PriceSense/TraditionalPricingChallenges";
 import WhoPriceSenseIsFor from "@/components/PriceSense/WhoPriceSenseIsFor";
 import { ArrowRight } from "lucide-react";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const page = () => {
+  const router = useRouter();
   return (
     <div>
       <div className="mx-auto max-w-7xl text-center md:text-start px-6 py-24">
