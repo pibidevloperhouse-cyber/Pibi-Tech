@@ -5,7 +5,7 @@ import BusinessServices from "@/components/BusinessIntelligent/BusinessServices"
 import BusinessSolutions from "@/components/BusinessIntelligent/BusinessSolutions";
 import BusinessSteps from "@/components/BusinessIntelligent/BusinessSteps";
 import BusinessTechStack from "@/components/BusinessIntelligent/BusinessTechStack";
-import CloudOpsSteps from "@/components/CloudOpsSteps";
+import DataEngineeringArchitecture from "@/components/BusinessIntelligent/DataEngineeringArchitecture";
 import CTASection from "@/components/CTASection";
 import { ArrowRight, Target, TrendingUp, Undo2 } from "lucide-react";
 import Link from "next/link";
@@ -66,7 +66,7 @@ const BusinessIntelligent = () => {
               </button>
               <button
                 onClick={() => router.push("/contact-us")}
-                className="group inline-flex items-center gap-3 cursor-pointer rounded-lg text-[#1f6fb2] border border-[#1f6fb2] px-6 py-3 text-md md:text-xl font-semibold bg-white transition hover:bg-[#1f6fb2]/90 hover:text-white"
+                className="group inline-flex w-max items-center gap-3 cursor-pointer rounded-lg text-[#1f6fb2] border border-[#1f6fb2] px-6 py-3 text-md md:text-xl mx-auto font-semibold bg-white transition hover:bg-[#1f6fb2]/90 hover:text-white"
               >
                 Talk to a BI Specialist
                 <span className="flex h-9 w-9 items-center justify-center rounded-md text-white bg-[#1f6fb2] transition group-hover:text-[#1f6fb2] group-hover:bg-white group-hover:translate-x-1">
@@ -123,6 +123,7 @@ const BusinessIntelligent = () => {
           </div>
         </div>
       </section>
+      <DataEngineeringArchitecture />
       <BusinessServices />
       <BusinessTechStack />
       <BusinessBenefits />

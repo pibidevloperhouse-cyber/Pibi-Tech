@@ -26,17 +26,17 @@ export default function CTASection({
             </p>
           )}
 
-          <div className="mt-8 flex flex-col md:flex-row justify-center gap-6">
+          <div className="mt-8 flex flex-col md:flex-row items-center justify-center gap-6">
             <Link
               href={`/${ctaLink1}`}
-              className="inline-flex items-center justify-center gap-3 rounded-full bg-linear-to-r from-[#3b82f6] to-[#10b981] text-white border-2 border-white/20 px-8 py-3.5 font-bold shadow-2xl transform-gpu hover:scale-110 transition-all"
+              className="inline-flex items-center justify-center gap-3 rounded-full bg-linear-to-r from-[#3b82f6] to-[#10b981] text-white border-2 border-white/20 px-8 py-3.5 font-bold shadow-2xl transform-gpu hover:scale-105 transition-all"
             >
               {ctaText1}
             </Link>
             {ctaText2 && (
               <Link
                 href={`/${ctaLink2}`}
-                className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-8 py-4 text-base font-semibold text-slate-900 transition-all duration-300 text-center w-full hover:bg-slate-200 hover:scale-105"
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-8 py-4 text-base font-semibold text-slate-900 transition-all duration-300 text-center hover:bg-slate-200 hover:scale-105"
               >
                 {ctaText2}
               </Link>

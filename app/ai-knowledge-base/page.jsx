@@ -38,7 +38,7 @@ const AIKnowledgeBase = () => {
           <div className="mt-10 flex flex-col md:flex-row gap-6">
             <button
               onClick={() => router.push("/contact-us")}
-              className="group inline-flex items-center gap-3 rounded-lg bg-[#1f6fb2] px-6 py-3 text-md md:text-xl font-semibold text-white transition hover:bg-[#1f6fb2]/90"
+              className="group inline-flex items-center gap-3 rounded-lg bg-linear-to-r from-[#3b82f6] to-[#10b981] px-6 py-3 text-md md:text-xl font-semibold text-white"
             >
               Build Your AI Knowledge Base
               <span className="flex h-9 w-9 items-center justify-center rounded-md bg-white text-[#1f6fb2] transition group-hover:translate-x-1">
@@ -76,7 +76,7 @@ const AIKnowledgeBase = () => {
             </p>
           </div>
           <button
-            className={`flex mt-4 px-4 py-2 rounded-lg mx-auto items-center gap-2 text-sm font-bold uppercase tracking-[1.4px] text-white bg-[#1f6fb2] hover:opacity-80 cursor-pointer`}
+            className={`flex mt-4 px-4 py-2 rounded-lg mx-auto items-center gap-2 text-sm font-bold uppercase tracking-[1.4px] text-white bg-linear-to-r from-[#3b82f6] to-[#10b981] hover:opacity-80 cursor-pointer`}
             onClick={() => router.push("/about-us")}
           >
             Read Our Story
