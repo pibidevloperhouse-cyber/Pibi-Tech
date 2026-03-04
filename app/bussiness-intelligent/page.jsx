@@ -54,7 +54,7 @@ const BusinessIntelligent = () => {
               finance and healthcare to retail and logistics.
             </p>
 
-            <div className="mt-10 flex gap-6 flex-col md:flex-row">
+            <div className="mt-10 md:w-max flex gap-6 flex-col md:flex-row">
               <button
                 onClick={() => router.push("/contact-us")}
                 className="group inline-flex items-center max-sm:mx-auto gap-3 rounded-lg bg-linear-to-r from-[#2563eb] to-[#059669] px-6 py-3 text-lg font-semibold text-white transition"
@@ -74,11 +74,6 @@ const BusinessIntelligent = () => {
                 </span>
               </button>
             </div>
-
-            <p className="mt-6 max-w-xl text-xl text-black/70">
-              Our BI systems help teams move faster, operate smarter, and make
-              confident decisions backed by real data.
-            </p>
           </div>
         </div>
       </section>
