@@ -1,3 +1,4 @@
+
 export const revalidate = 3600;
 
 export default function sitemap() {
@@ -29,13 +30,13 @@ export default function sitemap() {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/product-development-engineering`,
+      url: `${baseUrl}/product-development`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/ai-agentic-process-automation`,
+      url: `${baseUrl}/agentic-process-automation`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
@@ -53,6 +54,13 @@ export default function sitemap() {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/cloud-ops`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    
+    {
       url: `${baseUrl}/profit-engine`,
       lastModified: new Date(),
       changeFrequency: "weekly",
@@ -68,6 +76,32 @@ export default function sitemap() {
       url: `${baseUrl}/price-sense`,
       lastModified: new Date(),
       changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/bussiness-intelligent`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+
+  {
+      url: `${baseUrl}/ai-knowledge-base`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+
+ {
+      url: `${baseUrl}/agentic-ai`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+ {
+      url: `${baseUrl}/intelligent-infrastructure`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
       priority: 0.8,
     },
   ];

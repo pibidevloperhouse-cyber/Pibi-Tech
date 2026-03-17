@@ -1,8 +1,10 @@
 "use client";
 import { Home } from "lucide-react";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Index() {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     fullName: "",
     lastName: "",
@@ -16,7 +18,7 @@ export default function Index() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
-    // Handle form submission
+    router.push("/schedule-meeting");
   };
 
   const handleChange = (e) => {

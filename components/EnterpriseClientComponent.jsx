@@ -160,7 +160,7 @@ const EnterpriseClientComponent = () => {
               </span>
             </button>
             <button
-              onClick={() => router.push("/contact-us")}
+              onClick={() => router.push("/schedule-meeting")}
               className="group inline-flex items-center gap-3 cursor-pointer rounded-lg text-[#1f6fb2] border border-[#1f6fb2] px-6 py-3 text-md md:text-xl font-semibold bg-white transition hover:bg-[#1f6fb2]/90 hover:text-white"
             >
               Talk to an Expert
@@ -269,6 +269,7 @@ const EnterpriseClientComponent = () => {
         content="Transform your website into a modern, high-performance Next.js application that delivers real business results."
         ctaText1="Start Your Migration"
         ctaText2="Talk to an Expert"
+        ctaLink2="schedule-meeting"
       />
     </div>
   );
