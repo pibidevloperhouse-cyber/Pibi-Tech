@@ -1,4 +1,4 @@
-import { Linkedin, Twitter, MessageCircle } from "lucide-react";
+import { Linkedin, Youtube, Instagram } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -168,22 +168,26 @@ export default function Footer() {
 
             <div className="flex gap-4">
               <Link
-                href="/contact-us"
+                href="https://www.linkedin.com/company/pi-bi-technologies"
+                target="_blank"
                 className="text-slate-400 hover:text-primary transition"
               >
                 <Linkedin className="w-5 h-5" />
               </Link>
               <Link
-                href="/contact-us"
+                href="https://www.youtube.com/@PiBiTechnologies"
+                target="_blank"
                 className="text-slate-400 hover:text-primary transition"
               >
-                <Twitter className="w-5 h-5" />
+                <Instagram className="w-5 h-5" />
+
               </Link>
               <Link
-                href="/contact-us"
+                href="https://www.instagram.com/pibi_technologies/"
+                target="_blank"
                 className="text-slate-400 hover:text-primary transition"
               >
-                <MessageCircle className="w-5 h-5" />
+                <Youtube className="w-5 h-5" />
               </Link>
             </div>
           </div>

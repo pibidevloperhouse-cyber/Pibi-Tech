@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Menu, X, Linkedin, Twitter } from "lucide-react";
+import { Menu, X, Linkedin, Instagram } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -66,16 +66,18 @@ export default function Navbar() {
 
           <div className="hidden lg:flex items-center gap-4">
             <Link
-              href="contact-us"
+              href="https://www.linkedin.com/company/pi-bi-technologies"
+              target="_blank"
               className="text-slate-600 hover:text-primary transition"
             >
               <Linkedin className="w-5 h-5" />
             </Link>
             <Link
-              href="contact-us"
+              href="https://www.instagram.com/pibi_technologies/"
+              target="_blank"
               className="text-slate-600 hover:text-primary transition"
             >
-              <Twitter className="w-5 h-5" />
+              <Instagram className="w-5 h-5" />
             </Link>
           </div>
 
@@ -130,18 +132,20 @@ export default function Navbar() {
 
             <div className="flex gap-4 pt-4 border-t border-slate-200">
               <Link
-                href="/contact-us"
+                href="https://www.linkedin.com/company/pi-bi-technologies"
+                target="_blank"
                 onClick={handleNavClick}
                 className="text-slate-600 hover:text-primary transition"
               >
                 <Linkedin className="w-5 h-5" />
               </Link>
               <Link
-                href="/contact-us"
+                href="https://www.instagram.com/pibi_technologies/"
+                target="_blank"
                 onClick={handleNavClick}
                 className="text-slate-600 hover:text-primary transition"
               >
-                <Twitter className="w-5 h-5" />
+                <Instagram className="w-5 h-5" />
               </Link>
             </div>
           </div>
