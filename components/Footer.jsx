@@ -55,6 +55,15 @@ export default function Footer() {
                   PriceSense
                 </Link>
               </li>
+
+                <li>
+                <Link
+                  href="https://scaluplayout.vercel.app/"
+                  className="text-slate-400 hover:text-primary transition"
+                >
+                  Scalup
+                </Link>
+              </li>
             </ul>
           </div>
 
