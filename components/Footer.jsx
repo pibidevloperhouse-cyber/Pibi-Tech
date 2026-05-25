@@ -23,6 +23,15 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-bold mb-4">Products</h4>
             <ul className="space-y-2">
+              
+                <li>
+                <Link
+                  href="https://scaluplayout.vercel.app/"
+                  className="text-slate-400 hover:text-primary transition"
+                >
+                  Scalup
+                </Link>
+              </li>
               <li>
                 <Link
                   href="/profit-engine"
@@ -56,14 +65,6 @@ export default function Footer() {
                 </Link>
               </li>
 
-                <li>
-                <Link
-                  href="https://scaluplayout.vercel.app/"
-                  className="text-slate-400 hover:text-primary transition"
-                >
-                  Scalup
-                </Link>
-              </li>
             </ul>
           </div>
 
