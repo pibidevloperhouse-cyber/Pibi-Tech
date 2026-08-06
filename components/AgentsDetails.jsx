@@ -138,10 +138,9 @@ const AgentsDetails = () => {
             <span
               key={idx}
               className={`px-3 py-1 text-xs font-bold uppercase tracking-wider border
-                ${
-                  card.variant === "blue"
-                    ? "border-white/20 bg-[#248BB3] text-white"
-                    : "border-slate-300 bg-slate-100 text-slate-700"
+                ${card.variant === "blue"
+                  ? "border-white/20 bg-[#248BB3] text-white"
+                  : "border-slate-300 bg-slate-100 text-slate-700"
                 }
               `}
             >
@@ -158,10 +157,9 @@ const AgentsDetails = () => {
       >
         <button
           className={`flex items-center gap-2 text-sm font-bold uppercase tracking-[1.4px]
-            ${
-              card.variant === "blue"
-                ? "hover:opacity-80"
-                : "text-slate-600 hover:text-[#000052]"
+            ${card.variant === "blue"
+              ? "hover:opacity-80"
+              : "text-slate-600 hover:text-[#000052]"
             }
           `}
         >
@@ -202,6 +200,18 @@ const AgentsDetails = () => {
                 spaceBetween: 20,
               },
               640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+              },
+              1280: {
                 slidesPerView: 3,
                 spaceBetween: 40,
               },
