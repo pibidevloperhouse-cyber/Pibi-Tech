@@ -37,7 +37,7 @@ const indiaOffices = [
   {
     city: "Madurai",
     icon: "/madurai.png",
-    address: ["Thirupalai, Madurai - 625014"],
+    address: ["Thiruppalai, Madurai - 625014"],
   },
 ];
 
