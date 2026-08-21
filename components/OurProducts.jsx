@@ -128,7 +128,7 @@ export default function OurProducts() {
             }}
           >
             {products.map((product, index) => (
-              <SwiperSlide className="py-10 h-full" key={index}>
+              <SwiperSlide className="py-10 !h-auto" key={index}>
                 <Card product={product} />
               </SwiperSlide>
             ))}

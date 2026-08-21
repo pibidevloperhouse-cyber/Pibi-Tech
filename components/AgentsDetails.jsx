@@ -95,7 +95,7 @@ const AgentsDetails = () => {
   const Card = ({ card }) => (
     <div
       onClick={card.onClick}
-      className={`border-2 border-[#000052] min-h-150 p-8 flex flex-col justify-between group hover:shadow-lg transition-shadow cursor-pointer ${card.variant === "blue" ? "bg-linear-to-r from-[#2563eb] to-[#059669] text-white transition-all" : "bg-white"}`}
+      className={`border-2 border-[#000052] h-full min-h-150 p-8 flex flex-col justify-between group hover:shadow-lg transition-shadow cursor-pointer ${card.variant === "blue" ? "bg-linear-to-r from-[#2563eb] to-[#059669] text-white transition-all" : "bg-white"}`}
     >
       <div>
         <div className="flex items-start justify-between mb-8">
@@ -138,10 +138,9 @@ const AgentsDetails = () => {
             <span
               key={idx}
               className={`px-3 py-1 text-xs font-bold uppercase tracking-wider border
-                ${
-                  card.variant === "blue"
-                    ? "border-white/20 bg-[#248BB3] text-white"
-                    : "border-slate-300 bg-slate-100 text-slate-700"
+                ${card.variant === "blue"
+                  ? "border-white/20 bg-[#248BB3] text-white"
+                  : "border-slate-300 bg-slate-100 text-slate-700"
                 }
               `}
             >
@@ -158,10 +157,9 @@ const AgentsDetails = () => {
       >
         <button
           className={`flex items-center gap-2 text-sm font-bold uppercase tracking-[1.4px]
-            ${
-              card.variant === "blue"
-                ? "hover:opacity-80"
-                : "text-slate-600 hover:text-[#000052]"
+            ${card.variant === "blue"
+              ? "hover:opacity-80"
+              : "text-slate-600 hover:text-[#000052]"
             }
           `}
         >
@@ -202,6 +200,18 @@ const AgentsDetails = () => {
                 spaceBetween: 20,
               },
               640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+              },
+              1280: {
                 slidesPerView: 3,
                 spaceBetween: 40,
               },
@@ -209,7 +219,7 @@ const AgentsDetails = () => {
             className="h-max"
           >
             {cards.map((card) => (
-              <SwiperSlide className="py-10 h-full" key={card.id}>
+              <SwiperSlide className="py-10 !h-auto" key={card.id}>
                 <Card card={card} />
               </SwiperSlide>
             ))}

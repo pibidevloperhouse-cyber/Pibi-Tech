@@ -8,6 +8,10 @@ import {
   PanelsTopLeft,
   Rocket,
   TrendingUp,
+  Atom,
+  FileCode2,
+  Cpu,
+  LineChart,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -25,7 +29,7 @@ const offerings = [
     description:
       "An AI-powered growth driven website that works as a 24/7 sales and qualification system that attracts, qualifies, and converts visitors into revenue opportunities  not just a digital brochure.",
     link: "enterprise-website-development",
-    icon: PanelsTopLeft,
+    icon: "/enter.jpg",
     color: "bg-[#4FC6E0]",
   },
   {
@@ -34,7 +38,7 @@ const offerings = [
     description:
       "A full-stack product engineering partnership to take your idea from concept to design, build, and scale products that are reliable, adaptable, and market fit.",
     link: "product-development",
-    icon: Rocket,
+    icon: "/pro.jpg",
     color: "bg-[#0066A4]",
   },
   {
@@ -43,7 +47,7 @@ const offerings = [
     description:
       "Autonomous AI agents that replace repetitive work, accelerate decisions, and reduce operational costs  and drive measurable efficiency gains.",
     link: "agentic-process-automation",
-    icon: BotMessageSquare,
+    icon: "/ai.jpg",
     color: "bg-[#02B2E3]",
   },
   {
@@ -52,7 +56,7 @@ const offerings = [
     description:
       "Robust digital applications engineered for performance, security, and continuous business growth.",
     link: "application-development",
-    icon: AppWindowMac,
+    icon: "/app.jpg",
     color: "bg-[#484393]",
   },
   {
@@ -61,7 +65,7 @@ const offerings = [
     description:
       "A resilient, secure cloud foundation that supports business continuity, scale, and operational efficiency.",
     link: "cloud-ops",
-    icon: Cloud,
+    icon: "/oop.jpg",
     color: "bg-[#4FC6E0]",
   },
   {
@@ -70,7 +74,7 @@ const offerings = [
     description:
       "A technology-driven growth system that consistently generates qualified leads and converts them into predictable revenue.",
     link: "growth-marketing",
-    icon: TrendingUp,
+    icon: "/mar.jpg",
     color: "bg-[#0066A4]",
   },
 ];
@@ -90,8 +94,14 @@ const OfferingCard = ({ offering }) => (
       </div>
     </div>
 
-    <div className="flex items-center justify-center border w-max p-4 text-white border-white rounded-full mb-5">
-      <offering.icon className="w-10 h-10" />
+    <div className="flex items-center justify-center border w-max p-4 text-white border-white rounded-full mb-5 overflow-hidden">
+      {typeof offering.icon === "string" ? (
+        <div className="relative w-10 h-10">
+          <Image src={offering.icon} alt={offering.title} fill className="object-contain invert mix-blend-screen" />
+        </div>
+      ) : (
+        <offering.icon className="w-10 h-10" />
+      )}
     </div>
 
     <div>
@@ -130,16 +140,25 @@ export default function MissionVisionOfferings() {
             breakpoints={{
               640: {
                 slidesPerView: 2,
+                spaceBetween: 20,
               },
               768: {
-                slidesPerView: 4,
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+              },
+              1280: {
+                slidesPerView: 3,
                 spaceBetween: 40,
               },
             }}
             autoplay={{ delay: 4000, disableOnInteraction: false }}
           >
             {offerings.map((offering) => (
-              <SwiperSlide className="py-10 h-full" key={offering.id}>
+              <SwiperSlide className="py-10 !h-auto" key={offering.id}>
                 <OfferingCard offering={offering} />
               </SwiperSlide>
             ))}

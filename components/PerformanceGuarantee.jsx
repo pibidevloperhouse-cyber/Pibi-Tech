@@ -54,11 +54,11 @@ export default function PerformanceGuarantee() {
                   <Icon className="w-7 h-7 text-[#248BB3]" />
                 </div>
 
-                <div className="mb-2">
-                  <span className="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-brand-gradient">
+                <div className="mb-2 flex flex-col items-center justify-center gap-1">
+                  <span className="text-4xl lg:text-5xl font-bold bg-clip-text text-transparent bg-brand-gradient">
                     {item.value}
                   </span>
-                  <span className="ml-2 text-2xl font-semibold text-[#248BB3]">
+                  <span className="text-xl lg:text-2xl font-semibold text-[#248BB3]">
                     {item.unit}
                   </span>
                 </div>

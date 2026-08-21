@@ -15,41 +15,45 @@ export default function Specialist() {
       title: "Healthcare",
       description:
         "Streamlined clinical workflows and intelligent patient management processes designed for accuracy, compliance, and care continuity.",
-      icon: HeartPulse,
+      icon: "/health.jpg",
       color: "bg-[#4FC6E0]",
     },
     {
       title: "Manufacturing",
       description:
         "Optimized facilities and AI-driven production workflows that increase efficiency, reduce downtime, and improve operational visibility.",
-      icon: Factory,
+      icon: "/man.jpg",
       color: "bg-[#0066A4]",
     },
     {
       title: "SaaS Startups",
       description:
         "Scalable system architecture and AI acceleration enabling 5× faster agile execution and speed to market.",
-      icon: Rocket,
+      icon: "/sas.jpg",
       color: "bg-[#02B2E3]",
     },
     {
       title: "GCC",
       description:
         "Localized intelligence systems designed to navigate regional regulations, supply chains, and market dynamics with confidence.",
-      icon: Globe2,
+      icon: "/gcc.jpg",
       color: "bg-[#484393]",
     },
   ];
 
   const Card = ({ item }) => {
-    const Icon = item.icon;
-
     return (
       <div
         className={`border border-slate-200 relative rounded-2xl p-6 h-full hover:shadow-xl transition-all duration-300 ${item.color} hover:brightness-110 text-white`}
       >
-        <div className="flex items-center justify-center border w-max p-4 border-white rounded-full mb-5">
-          <Icon className="w-12 h-12" />
+        <div className="flex items-center justify-center border w-max p-4 border-white rounded-full mb-5 overflow-hidden">
+          {typeof item.icon === "string" ? (
+            <div className="relative w-12 h-12">
+              <Image src={item.icon} alt={item.title} fill className="object-contain invert mix-blend-screen" />
+            </div>
+          ) : (
+            <item.icon className="w-12 h-12" />
+          )}
         </div>
 
         <div className="absolute -top-5 -right-5 rotate-12 opacity-20">
@@ -95,7 +99,7 @@ export default function Specialist() {
             slidesPerView={1}
           >
             {specialties.map((item, index) => (
-              <SwiperSlide className="py-10 h-full" key={index}>
+              <SwiperSlide className="py-10 !h-auto" key={index}>
                 <Card item={item} />
               </SwiperSlide>
             ))}
