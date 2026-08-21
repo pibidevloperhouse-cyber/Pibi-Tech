@@ -32,7 +32,7 @@ export default function Navbar() {
           </Link>
 
           <div className="hidden lg:flex items-center gap-8">
-            <Link
+            {/* <Link
               href="/#Products"
               className="text-slate-700 hover:text-primary transition"
             >
@@ -49,7 +49,7 @@ export default function Navbar() {
               className="text-slate-700 hover:text-primary transition"
             >
               Solutions
-            </Link>
+            </Link> */}
             <Link
               href="/about-us"
               className="text-slate-700 hover:text-primary transition"
@@ -91,7 +91,7 @@ export default function Navbar() {
 
         {isOpen && (
           <div className="lg:hidden pb-6 border-t border-slate-200">
-            <Link
+            {/* <Link
               href="/#Products"
               onClick={handleNavClick}
               className="block py-3 text-slate-700 hover:text-primary transition"
@@ -113,7 +113,7 @@ export default function Navbar() {
               className="block py-3 text-slate-700 hover:text-primary transition"
             >
               Solutions
-            </Link>
+            </Link> */}
 
             <Link
               href="/about-us"
