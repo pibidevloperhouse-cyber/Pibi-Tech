@@ -10,14 +10,20 @@ import AgentsDetails from "@/components/AgentsDetails";
 import { useRouter } from "next/navigation";
 import { ArrowRight } from "lucide-react";
 import CTASection from "@/components/CTASection";
+import AboutUsClientComponent from "@/components/AboutUsClientComponent";
 
 export default function HomePage() {
+  return <AboutUsClientComponent />;
+}
+
+// Keeping the original code below as a separate function to act as a "commented out" version.
+function HomePageOld() {
   const router = useRouter();
   return (
     <div className="min-h-screen bg-white">
       <MainPage />
-      {/* <HeroCarousel /> */}
-      {/* <IntroSection /> */}
+      //////{/* <HeroCarousel /> */}
+      /////////{/* <IntroSection /> */}
       <section className="relative py-8 px-4 bg-blue-50">
         <div className="relative max-w-7xl rounded-xl bg-white py-8 mx-auto px-4 sm:px-6">
           <div className="flex flex-col md:flex-row justify-start items-start gap-8 pb-8 ">
@@ -50,10 +56,10 @@ export default function HomePage() {
         </div>
       </section>
       <MissionVisionOfferings />
-      {/* <WhyChooseUs /> */}
+    ///////  {/* <WhyChooseUs /> */}
       <OurProducts />
       <AgentsDetails />
-      {/* <TechInovation /> */}
+      ///////////{/* <TechInovation /> */}
       <Specialist />
       <PerformanceGuarantee />
       <Roadmap />
@@ -62,7 +68,7 @@ export default function HomePage() {
         content="Align strategy, design, and engineering under one expert team."
         ctaText1="Talk to Product Experts"
       />
-      {/* <RecentEngagements /> */}
+     /////// {/* <RecentEngagements /> */}
     </div>
   );
 }

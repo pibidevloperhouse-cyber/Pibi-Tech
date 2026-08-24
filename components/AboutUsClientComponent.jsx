@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React from "react";
 import { A11y, Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -81,7 +82,7 @@ const offerings = [
 const OfferingCard = ({ offering, size = true }) =>
   offering && (
     <div
-      className={`${offering?.color} rounded-xl ${size ? "md:min-h-100" : "md:min-h-80"} relative p-6 border border-slate-200 h-full flex flex-col justify-between`}
+      className={`${offering?.color} w-full rounded-xl ${size ? "md:min-h-100" : "md:min-h-80"} relative p-6 border border-slate-200 h-full flex flex-col justify-between`}
     >
       <div className="absolute -top-5 -right-5 rotate-12 opacity-20">
         <div className="w-32 aspect-square relative">
@@ -118,6 +119,7 @@ const OfferingCard = ({ offering, size = true }) =>
   );
 
 const AboutUsClientComponent = () => {
+  const router = useRouter();
   const teams = [
     {
       name: "Siranjeevi Ramdoss                                                                                                                                                                 ",
@@ -216,7 +218,9 @@ const AboutUsClientComponent = () => {
                 sustainable growth.
               </p>
 
-              <button className="mt-10 inline-flex items-center gap-2 rounded-full bg-linear-to-r from-[#2563eb] to-[#059669] px-8 py-3 text-white text-base font-medium hover:bg-blue-700 transition">
+              <button 
+                onClick={() => router.push("/contact-us")}
+                className="mt-10 inline-flex items-center gap-2 rounded-full bg-linear-to-r from-[#2563eb] to-[#059669] px-8 py-3 text-white text-base font-medium hover:bg-blue-700 transition">
                 Reach Us!
                 <ArrowRight className="h-5 w-5" />
               </button>
@@ -277,7 +281,7 @@ const AboutUsClientComponent = () => {
               autoplay={{ delay: 4000, disableOnInteraction: false }}
             >
               {offerings.map((offering) => (
-                <SwiperSlide className="py-10 h-full" key={offering.id}>
+                <SwiperSlide className="py-10 !h-auto flex" key={offering.id}>
                   <OfferingCard offering={offering} />
                 </SwiperSlide>
               ))}
@@ -319,7 +323,7 @@ const AboutUsClientComponent = () => {
               className="h-max"
             >
               {approaches.map((item) => (
-                <SwiperSlide className="py-10 h-full" key={item.id}>
+                <SwiperSlide className="py-10 !h-auto flex" key={item.id}>
                   <OfferingCard offering={item} size={false} />
                 </SwiperSlide>
               ))}
@@ -399,10 +403,10 @@ const AboutUsClientComponent = () => {
                 >
                   <div className="relative mx-auto mb-4 h-28 w-28">
                     <Image
-                      src={`/team${index + 1}.jpeg`}
+                      src={`/team_${index + 1}.jpeg`}
                       alt={item?.name}
                       fill
-                      className="rounded-full object-cover border-4 border-white shadow-md"
+                      className="rounded-full object-cover object-top border-4 border-white shadow-md"
                     />
                   </div>
 

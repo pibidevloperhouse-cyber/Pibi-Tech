@@ -20,7 +20,7 @@ export default function RecentEngagements() {
     },
     {
       id: 3,
-      title: "User Experience, AI & Automation",
+      title: "AI & Automation",
       subtitle:
         "Technologies that directly impact users, processes, and outcomes",
       image: "/generative-ai.png",
@@ -50,7 +50,7 @@ export default function RecentEngagements() {
           {engagements.map((engagement, index) => (
             <div
               key={engagement.id}
-              className="group relative rounded-2xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_60px_rgba(0,0,0,0.5)]"
+              className="flex flex-col group relative rounded-2xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_60px_rgba(0,0,0,0.5)]"
             >
               <div className="relative h-56 overflow-hidden">
                 <Image
@@ -61,7 +61,7 @@ export default function RecentEngagements() {
                 />
               </div>
 
-              <div className="p-6 bg-black/60">
+              <div className="flex-1 flex flex-col p-6 bg-black/60">
                 <h3 className="text-2xl font-semibold text-white mb-2">
                   {engagement.title}
                 </h3>
