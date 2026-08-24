@@ -89,6 +89,7 @@ const OfferingCard = ({ offering }) => (
           src="/pi.png"
           alt="PI-BI Technologies"
           fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-contain"
         />
       </div>
@@ -97,7 +98,7 @@ const OfferingCard = ({ offering }) => (
     <div className="flex items-center justify-center border w-max p-4 text-white border-white rounded-full mb-5 overflow-hidden">
       {typeof offering.icon === "string" ? (
         <div className="relative w-10 h-10">
-          <Image src={offering.icon} alt={offering.title} fill className="object-contain invert mix-blend-screen" />
+          <Image src={offering.icon} alt={offering.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-contain invert mix-blend-screen" />
         </div>
       ) : (
         <offering.icon className="w-10 h-10" />

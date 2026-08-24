@@ -90,6 +90,7 @@ const OfferingCard = ({ offering, size = true }) =>
             src="/pi.png"
             alt="PI-BI Technologies"
             fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-contain"
           />
         </div>
@@ -122,19 +123,27 @@ const AboutUsClientComponent = () => {
   const router = useRouter();
   const teams = [
     {
-      name: "Siranjeevi Ramdoss                                                                                                                                                                 ",
+      name: "Siranjeevi Ramdoss",
       role: "Founder & CEO",
       linkedinUrl: "https://www.linkedin.com/in/siranjeevi-automation/",
       description:
         "Complete production deployment in 6–8 weeks  compared to the 3–4 month industry average.",
+      image: "/siranjeevi.jpg",
     },
     {
       name: "Palani Kumar Murugesan",
-      role: "CT0",
+      role: "CTO",
       linkedinUrl:
         "https://www.linkedin.com/in/palani-kumar-murugesan-5b2824b9/",
       description:
         "Significant reduction in administrative workload for our leading enterprise and healthcare providers.",
+    },
+    {
+      name: "Arsha Fahima",
+      role: "Business Development Manager",
+      linkedinUrl: "https://www.linkedin.com/in/arsha-fahima?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      description: "",
+      image: "/arsha.jpg",
     },
   ];
 
@@ -195,6 +204,7 @@ const AboutUsClientComponent = () => {
         <Image
           alt="Team Celebration"
           fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           priority
           src="/about-us.jpeg"
           className="object-cover"
@@ -232,6 +242,7 @@ const AboutUsClientComponent = () => {
                   src="/logo.png"
                   alt="PI-BI Technologies"
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-contain"
                 />
               </div>
@@ -394,7 +405,7 @@ const AboutUsClientComponent = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {teams.map((item, index) => {
               return (
                 <div
@@ -403,9 +414,10 @@ const AboutUsClientComponent = () => {
                 >
                   <div className="relative mx-auto mb-4 h-28 w-28">
                     <Image
-                      src={`/team_${index + 1}.jpeg`}
+                      src={item.image || `/team_${index + 1}.jpeg`}
                       alt={item?.name}
                       fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className="rounded-full object-cover object-top border-4 border-white shadow-md"
                     />
                   </div>
