@@ -50,8 +50,8 @@ export default function Navbar() {
               className="text-slate-700 hover:text-primary transition"
             >
               Solutions
-            </Link> */}
-            <Link
+            </Link>*/}
+            <Link 
               href="/about-us"
               className="text-slate-700 hover:text-primary transition"
             >

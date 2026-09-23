@@ -10,15 +10,15 @@ import AgentsDetails from "@/components/AgentsDetails";
 import { useRouter } from "next/navigation";
 import { ArrowRight } from "lucide-react";
 import CTASection from "@/components/CTASection";
-import AboutUsClientComponent from "@/components/AboutUsClientComponent";
-
+import { useEffect } from "react";
 export default function HomePage() {
-  return <AboutUsClientComponent />;
-}
-
-// Keeping the original code below as a separate function to act as a "commented out" version.
-function HomePageOld() {
   const router = useRouter();
+
+  // TEMPORARY REDIRECT TO ABOUT US
+  useEffect(() => {
+    router.push("/about-us");
+  }, [router]);
+
   return (
     <div className="min-h-screen bg-white">
       <MainPage />

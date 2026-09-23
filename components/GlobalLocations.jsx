@@ -6,11 +6,11 @@ const globalOffices = [
     icon: "/usa.png",
     address: ["Pflugerville, Travis, Texas 78660"],
   },
-  {
-    country: "Canada",
-    icon: "/canada.png",
-    address: ["Whitby, Durham Region, Ontario L1N 4W2"],
-  },
+  // {
+  //   country: "Canada",
+  //   icon: "/canada.png",
+  //   address: ["Whitby, Durham Region, Ontario L1N 4W2"],
+  // },
   {
     country: "Germany",
     icon: "/germany.png",
@@ -29,11 +29,11 @@ const indiaOffices = [
     icon: "/chennai.png",
     address: ["Tharamani, Chennai - 600 113"],
   },
-  {
-    city: "Coimbatore",
-    icon: "/coimbatore.png",
-    address: ["Peelamedu, Coimbatore - 641004"],
-  },
+  // {
+  //   city: "Coimbatore",
+  //   icon: "/coimbatore.png",
+  //   address: ["Peelamedu, Coimbatore - 641004"],
+  // },
   {
     city: "Madurai",
     icon: "/madurai.png",
