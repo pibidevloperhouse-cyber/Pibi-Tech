@@ -50,11 +50,11 @@ export default function GlobalLocations() {
             Global Offices
           </h2>
 
-          <div className="grid gap-8 grid-cols-2 md:grid-cols-4">
+          <div className="flex flex-wrap justify-center gap-10 md:gap-16">
             {globalOffices.map((loc, i) => (
               <div
                 key={i}
-                className="flex flex-col items-center text-center space-y-3"
+                className="flex flex-col items-center text-center space-y-3 w-full sm:w-[40%] md:w-[280px]"
               >
                 <div className="relative w-16 aspect-square invert brightness-0">
                   <Image
@@ -85,11 +85,11 @@ export default function GlobalLocations() {
             India Offices
           </h2>
 
-          <div className="grid gap-8 grid-cols-2 sm:grid-cols-3">
+          <div className="flex flex-wrap justify-center gap-10 md:gap-16">
             {indiaOffices.map((loc, i) => (
               <div
                 key={i}
-                className="flex flex-col items-center text-center space-y-3"
+                className="flex flex-col items-center text-center space-y-3 w-full sm:w-[40%] md:w-[280px]"
               >
                 <div className="relative w-16 aspect-square invert brightness-0">
                   <Image
